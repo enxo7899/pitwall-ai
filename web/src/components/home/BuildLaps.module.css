@@ -1,0 +1,77 @@
+.laps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.lap {
+  display: grid;
+  gap: 10px;
+  height: 100%;
+  padding: 20px;
+  background: var(--bg);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.lap:hover {
+  background: var(--bg-panel);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.stat {
+  font-size: 0.8125rem;
+  color: var(--amber);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-stretch: 112%;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.body {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+.more {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  transition: color 0.15s ease;
+}
+
+.lap:hover .more {
+  color: var(--amber);
+}
+
+@media (max-width: 900px) {
+  .laps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .laps {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,53 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  cursor: help;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink-3);
+}
+
+.status[data-stage="online"] .dot {
+  background: var(--pass);
+  box-shadow: 0 0 0 3px rgba(61, 214, 140, 0.16);
+}
+
+.status[data-stage="asleep"] .dot,
+.status[data-stage="starting"] .dot {
+  background: var(--amber);
+}
+
+.status[data-stage="starting"] .dot,
+.status[data-stage="checking"] .dot {
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+.status[data-stage="offline"] .dot {
+  background: var(--fail);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 760px) {
+  .text {
+    display: none;
+  }
+  .status {
+    margin-left: auto;
+  }
+}

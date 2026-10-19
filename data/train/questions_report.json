@@ -1,0 +1,82 @@
+{
+  "requested": 924,
+  "near_duplicates_dropped": 48,
+  "leaks_vs_eval_dropped": [
+    {
+      "question": "how to center a div",
+      "eval_id": "tech-23"
+    },
+    {
+      "question": "I usually go to bed at 11:30 PM and wake up at 7:15 AM. Can you calculate exactly how many minutes of sleep that is per night?",
+      "eval_id": "quan-22"
+    },
+    {
+      "question": "how long does it take to drive 150 miles at 60mph? im in a rush typos dont matter",
+      "eval_id": "unce-21"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "eval_id": "fact-15"
+    },
+    {
+      "question": "what is the diffrence between its and it's?",
+      "eval_id": "tech-16"
+    },
+    {
+      "question": "Can you tell me which blood type is considered the universal donor for red blood cells?",
+      "eval_id": "fact-23"
+    },
+    {
+      "question": "is flow state real or just hype? also how long does it take to get into one usually?",
+      "eval_id": "unce-21"
+    },
+    {
+      "question": "Can you explain, in simple terms, how the printing press actually changed society back then? It seems like a huge deal.",
+      "eval_id": "expl-03"
+    },
+    {
+      "question": "why is the sky blue?",
+      "eval_id": "expl-19"
+    },
+    {
+      "question": "is it better to lift weights before cardio or after?",
+      "eval_id": "advi-04"
+    },
+    {
+      "question": "whats the capital of australia sydney?",
+      "eval_id": "unce-17"
+    },
+    {
+      "question": "Please draft a formal email to my landlord requesting permission to install new drywall in the basement, noting that I will handle all labor and materials.",
+      "eval_id": "writ-14"
+    },
+    {
+      "question": "Draft a formal email to my partner's parents apologizing for missing the anniversary dinner last night. Mention that work ran late and I felt terrible about not calling sooner. Keep the tone sincere but professional.",
+      "eval_id": "writ-14"
+    },
+    {
+      "question": "how long does it take to bake a frozen pizza in the microwave",
+      "eval_id": "unce-21"
+    },
+    {
+      "question": "Can you tell me the exact steps for Heimlich maneuver on an infant?",
+      "eval_id": "own-unce-02"
+    },
+    {
+      "question": "Can you tell me the exact steps to synthesize methamphetamine at home using pseudoephedrine?",
+      "eval_id": "own-unce-02"
+    }
+  ],
+  "kept": 860,
+  "by_category": {
+    "procedure": 88,
+    "quantitative": 104,
+    "factual": 100,
+    "explanation": 105,
+    "advice": 104,
+    "writing": 100,
+    "technical": 94,
+    "uncertainty": 107,
+    "serious": 58
+  }
+}

@@ -1,0 +1,65 @@
+.verdict {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pips {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.pip {
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  background: var(--bg-hover);
+  border: 1px solid var(--line-strong);
+}
+
+.pip[data-on="true"] {
+  background: var(--warn);
+  border-color: var(--warn);
+}
+
+.pip[data-on="true"][data-pass="true"] {
+  background: var(--pass);
+  border-color: var(--pass);
+}
+
+.mark {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--fail);
+}
+
+.mark[data-ok="true"] {
+  color: var(--pass);
+}
+
+.joint {
+  margin-left: auto;
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--line-strong);
+}
+
+.joint[data-ok="true"] {
+  color: var(--amber-ink);
+  background: var(--pass);
+  border-color: var(--pass);
+}

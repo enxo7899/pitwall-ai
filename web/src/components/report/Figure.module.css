@@ -1,0 +1,43 @@
+.figure {
+  margin: 32px 0;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.title {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.body {
+  padding: 20px 16px 16px;
+  overflow-x: auto;
+}
+
+.caption {
+  padding: 12px 16px 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+@media (min-width: 700px) {
+  .body {
+    padding: 24px 24px 20px;
+  }
+}

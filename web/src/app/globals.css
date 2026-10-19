@@ -1,0 +1,259 @@
+/* PITWALL AI · design tokens and base styles.
+   A deliberate single dark theme: the look of a pit-wall timing screen at night.
+   One signal colour (amber) marks the fine-tuned model; timing colours mark verdicts. */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #0a0c0f;
+  --bg-panel: #0f1217;
+  --bg-raised: #141920;
+  --bg-hover: #1a2029;
+  --line: #1e252e;
+  --line-strong: #2c3540;
+
+  --ink: #eceff2;
+  --ink-2: #a5aeb9;
+  --ink-3: #6f7a86;
+
+  --amber: #ffb224;
+  --amber-ink: #1a1203;
+  --amber-wash: rgba(255, 178, 36, 0.1);
+
+  --arm-a: #7d8894;
+  --arm-b: #7fa6e8;
+  --arm-c: var(--amber);
+
+  --pass: #3dd68c;
+  --fail: #ff5d52;
+  --warn: #f5d04a;
+  --best: #b77dff;
+  --series-val: #7fa6e8;
+  --kerb: #e8352b;
+
+  --radius: 3px;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --measure: 68ch;
+  --page: 1200px;
+
+  --font-display: var(--font-archivo), "Arial Narrow", system-ui, sans-serif;
+  --font-sans: var(--font-plex-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.1875rem;
+  --step-2: 1.5rem;
+  --step-3: 2rem;
+  --step-4: clamp(2.25rem, 5vw, 3.5rem);
+  --step-5: clamp(2.6rem, 7vw, 5.25rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--amber-ink);
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+  transition:
+    text-decoration-color 0.15s ease,
+    color 0.15s ease;
+}
+a:hover {
+  text-decoration-color: var(--amber);
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+code,
+kbd,
+pre,
+.mono {
+  font-family: var(--font-mono);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Layout ---------------------------------------------------------------- */
+
+.page {
+  width: 100%;
+  max-width: calc(var(--page) + 64px);
+  margin-inline: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter-r);
+}
+
+@media (min-width: 900px) {
+  .page {
+    padding-left: max(32px, env(safe-area-inset-left, 0px));
+    padding-right: max(32px, env(safe-area-inset-right, 0px));
+  }
+}
+
+/* Small uppercase label used across panels, like the captions on a timing screen. */
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Motorsport details ------------------------------------------------------ */
+
+/* Red and white kerb blocks, as on the inside of a corner. */
+.kerb {
+  height: 4px;
+  background: repeating-linear-gradient(90deg, var(--kerb) 0 22px, #e9ecef 22px 44px);
+}
+
+/* A chequered band: 6 px squares. */
+.chequer {
+  height: 12px;
+  background: repeating-conic-gradient(#e9ecef 0 25%, var(--bg) 0 50%) 0 0 / 12px 12px;
+  opacity: 0.9;
+}
+
+/* Buttons --------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 42px;
+  padding: 0 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+.btn:hover {
+  border-color: var(--ink-3);
+  background: var(--bg-raised);
+}
+.btn-primary {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--amber-ink);
+  padding-inline: 24px;
+  border-radius: 0;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.btn-primary:hover {
+  background: #ffc14d;
+  border-color: #ffc14d;
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Arm swatch: a short bar in the arm's colour, used next to every arm name. */
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 4px;
+  border-radius: 1px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

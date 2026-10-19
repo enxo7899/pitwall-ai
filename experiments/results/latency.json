@@ -1,0 +1,30 @@
+{
+  "device": "mps",
+  "dtype": "torch.float16",
+  "machine": "macOS-27.0.1-arm64-arm-64bit",
+  "processor": "arm",
+  "questions": 10,
+  "new_tokens": 128,
+  "adapter": "outputs/sweep/checkpoint-315",
+  "lora": "unmerged",
+  "arms": {
+    "A": {
+      "label": "Base model",
+      "median_prompt_tokens": 27.0,
+      "median_first_token_ms": 71.1,
+      "median_decode_tokens_per_s": 31.0
+    },
+    "B": {
+      "label": "Base + F1 system prompt",
+      "median_prompt_tokens": 478.0,
+      "median_first_token_ms": 440.6,
+      "median_decode_tokens_per_s": 30.2
+    },
+    "C": {
+      "label": "PITWALL AI (fine-tuned)",
+      "median_prompt_tokens": 27.0,
+      "median_first_token_ms": 92.6,
+      "median_decode_tokens_per_s": 27.3
+    }
+  }
+}

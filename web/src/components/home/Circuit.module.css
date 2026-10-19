@@ -1,0 +1,42 @@
+.circuit {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.asphalt {
+  fill: none;
+  stroke: #1a2028;
+  stroke-width: 11;
+  stroke-linejoin: round;
+}
+
+.sector {
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+
+.finish {
+  fill: #eceff2;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  fill: var(--ink-3);
+}
+
+.car {
+  fill: var(--amber);
+  filter: drop-shadow(0 0 6px rgba(255, 178, 36, 0.8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car {
+    display: none;
+  }
+}

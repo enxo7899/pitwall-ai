@@ -1,0 +1,96 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(10, 12, 15, 0.86);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 60px;
+}
+
+.home {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: 1.0625rem;
+  letter-spacing: 0.02em;
+}
+
+.mark {
+  width: 26px;
+  height: 16px;
+}
+
+.ai {
+  margin-left: 6px;
+  padding: 1px 5px 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  font-stretch: 100%;
+  letter-spacing: 0.14em;
+  color: var(--ink-2);
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  margin-right: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  color: var(--ink-2);
+  text-decoration: none;
+  padding-block: 6px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--amber);
+}
+
+.external {
+  color: var(--ink-3) !important;
+}
+
+@media (max-width: 760px) {
+  .inner {
+    gap: 14px;
+    height: auto;
+    flex-wrap: wrap;
+    padding-block: 10px;
+  }
+  .nav {
+    order: 3;
+    width: 100%;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .external {
+    display: none;
+  }
+}

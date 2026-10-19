@@ -1,0 +1,152 @@
+.tower {
+  margin: 0;
+  overflow: hidden;
+}
+
+.legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+}
+
+.bestDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--best);
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 340px;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  padding: 10px 10px 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-align: left;
+}
+
+.table tbody tr {
+  border-top: 1px solid var(--line);
+}
+
+.table tbody tr[data-arm="C"] {
+  background: linear-gradient(90deg, var(--amber-wash), transparent 70%);
+}
+
+.table td,
+.table tbody th {
+  padding: 14px 10px;
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.pos {
+  width: 44px;
+  padding-left: 14px !important;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+
+.arm {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.armBar {
+  flex-shrink: 0;
+  width: 4px;
+  height: 34px;
+  border-radius: 1px;
+}
+
+.armName {
+  display: block;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.armSetup {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+  line-height: 1.35;
+  max-width: 30ch;
+}
+
+.num {
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.value {
+  display: block;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.count {
+  display: block;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+}
+
+.num[data-best="true"] .value {
+  color: var(--best);
+}
+
+.caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 18px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+}
+
+.caption strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .armSetup {
+    display: none;
+  }
+  .table td,
+  .table tbody th {
+    padding: 12px 8px;
+  }
+  .table thead th {
+    padding-inline: 8px;
+  }
+  .pos {
+    width: 36px;
+  }
+  .value {
+    font-size: 0.875rem;
+  }
+}

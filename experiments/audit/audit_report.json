@@ -1,0 +1,49 @@
+{
+  "freeze": {
+    "files_match_hashes": true,
+    "hashes_in_preregistration": true,
+    "commits_touching_eval_set": 1
+  },
+  "leakage": {
+    "training_questions": 630,
+    "exam_questions": 196,
+    "near_duplicates": 0,
+    "exam_questions_copied_verbatim": []
+  },
+  "metrics": {
+    "A": {
+      "covers_frozen_test_set": true,
+      "joint_success": 0,
+      "matches_summary": true
+    },
+    "B": {
+      "covers_frozen_test_set": true,
+      "joint_success": 20,
+      "matches_summary": true
+    },
+    "C": {
+      "covers_frozen_test_set": true,
+      "joint_success": 30,
+      "matches_summary": true
+    },
+    "C_vs_B": {
+      "difference_pp": 8.3,
+      "mcnemar_p": 0.0987,
+      "matches_summary": true
+    }
+  },
+  "repository": {
+    "tracked_files": 207,
+    "ignored_or_weight_files_tracked": [],
+    "secret_scan": "No secrets found in 207 files git would commit."
+  },
+  "adapter": {
+    "adapter_sha256": "553047bb395ca678c1a64b0560e9182e6e9cff4844efa0d6ceb7ec69c41e8c2c",
+    "off_equals_base_max_gap": 0.0,
+    "on_changes_output_max_gap": 22.8,
+    "lora_parameters": 17432576,
+    "lora_B_trained": "196/196",
+    "note": "carried over from the last --adapter run"
+  },
+  "failures": []
+}

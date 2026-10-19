@@ -1,0 +1,393 @@
+{
+ "what": "Owner's side-by-side review of every pass/fail disagreement between the blind first pass and the judge, made with the judge's evidence visible. The blind labels themselves are unchanged (data/labels/blind_labels.json).",
+ "disputed_scores": 48,
+ "sided_with_judge": 45,
+ "kept_first_pass": 2,
+ "left_undecided": 1,
+ "rows": [
+  {
+   "card": "L02",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L02",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L02",
+   "field": "style",
+   "blind_first_pass": 1,
+   "judge": 2,
+   "after_review": 2,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L03",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "yes",
+   "sided_with": "first pass"
+  },
+  {
+   "card": "L03",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 0,
+   "after_review": 0,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L04",
+   "field": "style",
+   "blind_first_pass": 1,
+   "judge": 2,
+   "after_review": 2,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L06",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L07",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L07",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L08",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L08",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L11",
+   "field": "helpful",
+   "blind_first_pass": 1,
+   "judge": 2,
+   "after_review": 2,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L12",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L13",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L13",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L14",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": null,
+   "sided_with": null
+  },
+  {
+   "card": "L14",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L16",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L16",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L19",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L19",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 0,
+   "after_review": 0,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L23",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L23",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L24",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L24",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L26",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L26",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L28",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L28",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L29",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "yes",
+   "sided_with": "first pass"
+  },
+  {
+   "card": "L29",
+   "field": "helpful",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L32",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L32",
+   "field": "style",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L33",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L33",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 0,
+   "after_review": 0,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L35",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L36",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L36",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L37",
+   "field": "style",
+   "blind_first_pass": 2,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L39",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L39",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L40",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L40",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 0,
+   "after_review": 0,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L41",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L42",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L43",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  },
+  {
+   "card": "L45",
+   "field": "correct",
+   "blind_first_pass": "yes",
+   "judge": "no",
+   "after_review": "no",
+   "sided_with": "judge"
+  },
+  {
+   "card": "L45",
+   "field": "helpful",
+   "blind_first_pass": 3,
+   "judge": 1,
+   "after_review": 1,
+   "sided_with": "judge"
+  }
+ ]
+}

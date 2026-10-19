@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+}
+
+.sector {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 20px 20px 22px;
+  position: relative;
+}
+
+.sector + .sector {
+  border-left: 1px solid var(--line);
+}
+
+/* A thin sector bar along the top: green where the adapter clearly helped, yellow where it did not. */
+.sector::before {
+  content: "";
+  position: absolute;
+  inset: -1px 0 auto;
+  height: 3px;
+  background: var(--warn);
+}
+
+.sector[data-tone="good"]::before {
+  background: var(--pass);
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.body {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sector:nth-child(3) {
+    border-left: 0;
+  }
+  .sector:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sector + .sector {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}

@@ -1,0 +1,4169 @@
+{
+ "model": {
+  "id": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "decoding": {
+   "do_sample": true,
+   "temperature": 0.7,
+   "top_p": 0.8,
+   "top_k": 20,
+   "min_p": 0.0,
+   "max_new_tokens": 1536
+  }
+ },
+ "arms": {
+  "A": {
+   "joint": {
+    "s": 0,
+    "n": 120,
+    "rate": 0.0,
+    "low": 0.0,
+    "high": 0.031020271055929513
+   },
+   "style": {
+    "s": 0,
+    "n": 120,
+    "rate": 0.0,
+    "low": 0.0,
+    "high": 0.031020271055929513
+   },
+   "correct": {
+    "s": 67,
+    "n": 120,
+    "rate": 0.5583333333333333,
+    "low": 0.46904360820302915,
+    "high": 0.6440040268404459
+   },
+   "helpful": {
+    "s": 72,
+    "n": 120,
+    "rate": 0.6,
+    "low": 0.5105585981828253,
+    "high": 0.6832373476059888
+   },
+   "mean_style": 0.0,
+   "joint_strict": {
+    "s": 0,
+    "n": 120,
+    "rate": 0.0,
+    "low": 0.0,
+    "high": 0.031020271055929513
+   }
+  },
+  "B": {
+   "joint": {
+    "s": 20,
+    "n": 120,
+    "rate": 0.16666666666666666,
+    "low": 0.11055912012704824,
+    "high": 0.24345439391023813
+   },
+   "style": {
+    "s": 70,
+    "n": 120,
+    "rate": 0.5833333333333334,
+    "low": 0.49387868684398173,
+    "high": 0.6676179346466968
+   },
+   "correct": {
+    "s": 48,
+    "n": 120,
+    "rate": 0.4,
+    "low": 0.3167626523940113,
+    "high": 0.4894414018171747
+   },
+   "helpful": {
+    "s": 45,
+    "n": 120,
+    "rate": 0.375,
+    "low": 0.2935229130478532,
+    "high": 0.4642321547161293
+   },
+   "mean_style": 1.5666666666666667,
+   "joint_strict": {
+    "s": 18,
+    "n": 120,
+    "rate": 0.15,
+    "low": 0.09703734033668816,
+    "high": 0.22467684940246252
+   }
+  },
+  "C": {
+   "joint": {
+    "s": 30,
+    "n": 120,
+    "rate": 0.25,
+    "low": 0.1810971138452223,
+    "high": 0.33441302168274245
+   },
+   "style": {
+    "s": 105,
+    "n": 120,
+    "rate": 0.875,
+    "low": 0.8039690855177497,
+    "high": 0.9227657111903032
+   },
+   "correct": {
+    "s": 45,
+    "n": 120,
+    "rate": 0.375,
+    "low": 0.2935229130478532,
+    "high": 0.4642321547161293
+   },
+   "helpful": {
+    "s": 37,
+    "n": 120,
+    "rate": 0.30833333333333335,
+    "low": 0.23272612182675728,
+    "high": 0.3958316487446824
+   },
+   "mean_style": 1.8666666666666667,
+   "joint_strict": {
+    "s": 18,
+    "n": 120,
+    "rate": 0.15,
+    "low": 0.09703734033668816,
+    "high": 0.22467684940246252
+   }
+  }
+ },
+ "comparisons": {
+  "C_vs_B": {
+   "joint_success": {
+    "diff": 8.3,
+    "low": -0.8,
+    "high": 17.5,
+    "p": 0.09873714670538902,
+    "only_first": 20,
+    "only_second": 10,
+    "verdict": "no reliable difference"
+   },
+   "style": {
+    "diff": 29.2,
+    "low": 19.2,
+    "high": 39.2,
+    "p": 1.7716986633331544e-07,
+    "only_first": 41,
+    "only_second": 6,
+    "verdict": "first arm better"
+   },
+   "correct": {
+    "diff": -2.5,
+    "low": -11.7,
+    "high": 6.7,
+    "p": 0.711071103811264,
+    "only_first": 13,
+    "only_second": 16,
+    "verdict": "no reliable difference"
+   },
+   "helpful": {
+    "diff": -6.7,
+    "low": -15.8,
+    "high": 2.5,
+    "p": 0.20048842206597328,
+    "only_first": 11,
+    "only_second": 19,
+    "verdict": "no reliable difference"
+   },
+   "joint_success_strict_rule": {
+    "diff": 0.0,
+    "low": -7.5,
+    "high": 7.5,
+    "p": 1.0,
+    "only_first": 10,
+    "only_second": 10,
+    "verdict": "no reliable difference"
+   }
+  },
+  "C_vs_A": {
+   "joint_success": {
+    "diff": 25.0,
+    "low": 17.5,
+    "high": 33.3,
+    "p": 1.862645149230957e-09,
+    "only_first": 30,
+    "only_second": 0,
+    "verdict": "first arm better"
+   },
+   "style": {
+    "diff": 87.5,
+    "low": 81.7,
+    "high": 93.3,
+    "p": 4.930380657631324e-32,
+    "only_first": 105,
+    "only_second": 0,
+    "verdict": "first arm better"
+   },
+   "correct": {
+    "diff": -18.3,
+    "low": -27.5,
+    "high": -9.2,
+    "p": 0.0004719867429230362,
+    "only_first": 8,
+    "only_second": 30,
+    "verdict": "second arm better"
+   },
+   "helpful": {
+    "diff": -29.2,
+    "low": -38.3,
+    "high": -19.2,
+    "p": 7.878384167270269e-08,
+    "only_first": 5,
+    "only_second": 40,
+    "verdict": "second arm better"
+   },
+   "joint_success_strict_rule": {
+    "diff": 15.0,
+    "low": 9.2,
+    "high": 21.7,
+    "p": 7.62939453125e-06,
+    "only_first": 18,
+    "only_second": 0,
+    "verdict": "first arm better"
+   }
+  },
+  "B_vs_A": {
+   "joint_success": {
+    "diff": 16.7,
+    "low": 10.0,
+    "high": 24.2,
+    "p": 1.9073486328125e-06,
+    "only_first": 20,
+    "only_second": 0,
+    "verdict": "first arm better"
+   },
+   "style": {
+    "diff": 58.3,
+    "low": 49.2,
+    "high": 67.5,
+    "p": 1.6940658945086007e-21,
+    "only_first": 70,
+    "only_second": 0,
+    "verdict": "first arm better"
+   },
+   "correct": {
+    "diff": -15.8,
+    "low": -25.0,
+    "high": -6.7,
+    "p": 0.001878225477412343,
+    "only_first": 8,
+    "only_second": 27,
+    "verdict": "second arm better"
+   },
+   "helpful": {
+    "diff": -22.5,
+    "low": -31.7,
+    "high": -13.3,
+    "p": 3.4654513001441956e-06,
+    "only_first": 4,
+    "only_second": 31,
+    "verdict": "second arm better"
+   },
+   "joint_success_strict_rule": {
+    "diff": 15.0,
+    "low": 9.2,
+    "high": 21.7,
+    "p": 7.62939453125e-06,
+    "only_first": 18,
+    "only_second": 0,
+    "verdict": "first arm better"
+   }
+  }
+ },
+ "categories": {
+  "A": {
+   "advice": {
+    "correct": 6,
+    "joint": 0,
+    "n": 15
+   },
+   "explanation": {
+    "correct": 6,
+    "joint": 0,
+    "n": 15
+   },
+   "factual": {
+    "correct": 14,
+    "joint": 0,
+    "n": 15
+   },
+   "procedure": {
+    "correct": 1,
+    "joint": 0,
+    "n": 15
+   },
+   "quantitative": {
+    "correct": 14,
+    "joint": 0,
+    "n": 15
+   },
+   "technical": {
+    "correct": 8,
+    "joint": 0,
+    "n": 15
+   },
+   "uncertainty": {
+    "correct": 7,
+    "joint": 0,
+    "n": 15
+   },
+   "writing": {
+    "correct": 11,
+    "joint": 0,
+    "n": 15
+   }
+  },
+  "B": {
+   "advice": {
+    "correct": 3,
+    "joint": 2,
+    "n": 15
+   },
+   "explanation": {
+    "correct": 5,
+    "joint": 4,
+    "n": 15
+   },
+   "factual": {
+    "correct": 14,
+    "joint": 7,
+    "n": 15
+   },
+   "procedure": {
+    "correct": 0,
+    "joint": 0,
+    "n": 15
+   },
+   "quantitative": {
+    "correct": 13,
+    "joint": 3,
+    "n": 15
+   },
+   "technical": {
+    "correct": 8,
+    "joint": 3,
+    "n": 15
+   },
+   "uncertainty": {
+    "correct": 1,
+    "joint": 1,
+    "n": 15
+   },
+   "writing": {
+    "correct": 4,
+    "joint": 0,
+    "n": 15
+   }
+  },
+  "C": {
+   "advice": {
+    "correct": 4,
+    "joint": 4,
+    "n": 15
+   },
+   "explanation": {
+    "correct": 3,
+    "joint": 2,
+    "n": 15
+   },
+   "factual": {
+    "correct": 13,
+    "joint": 8,
+    "n": 15
+   },
+   "procedure": {
+    "correct": 0,
+    "joint": 0,
+    "n": 15
+   },
+   "quantitative": {
+    "correct": 9,
+    "joint": 3,
+    "n": 15
+   },
+   "technical": {
+    "correct": 8,
+    "joint": 8,
+    "n": 15
+   },
+   "uncertainty": {
+    "correct": 3,
+    "joint": 2,
+    "n": 15
+   },
+   "writing": {
+    "correct": 5,
+    "joint": 3,
+    "n": 15
+   }
+  }
+ },
+ "judge": {
+  "canaries": {
+   "number_changed": "4/4",
+   "fact_contradicted": "4/4",
+   "critical_step_removed": "4/4",
+   "style_opener_only": "4/4",
+   "no_style": "4/4",
+   "padded_verbose": "4/4",
+   "minor_slip": "4/4"
+  },
+  "canaries_caught": 28,
+  "canaries_total": 28,
+  "retest": {
+   "n": 40,
+   "same_style_pass": 40,
+   "same_correct": 39,
+   "same_helpful_pass": 40,
+   "same_joint": 40,
+   "same_exact_style_score": 39,
+   "same_exact_helpful_score": 39
+  },
+  "human": {
+   "n": 45,
+   "kappa_style": 0.821,
+   "kappa_correct": 0.145,
+   "kappa_helpful": 0.088,
+   "disputed": 48,
+   "sided_with_judge": 45
+  }
+ },
+ "safety": {
+  "tone_acceptable": {
+   "A": [
+    14,
+    16
+   ],
+   "B": [
+    0,
+    16
+   ],
+   "C": [
+    7,
+    16
+   ]
+  },
+  "judge_correct_and_safe": {
+   "A": [
+    0,
+    16
+   ],
+   "B": [
+    1,
+    16
+   ],
+   "C": [
+    0,
+    16
+   ]
+  }
+ },
+ "latency": {
+  "A": {
+   "label": "Base model",
+   "median_prompt_tokens": 27.0,
+   "median_first_token_ms": 71.1,
+   "median_decode_tokens_per_s": 31.0
+  },
+  "B": {
+   "label": "Base + F1 system prompt",
+   "median_prompt_tokens": 478.0,
+   "median_first_token_ms": 440.6,
+   "median_decode_tokens_per_s": 30.2
+  },
+  "C": {
+   "label": "PITWALL AI (fine-tuned)",
+   "median_prompt_tokens": 27.0,
+   "median_first_token_ms": 92.6,
+   "median_decode_tokens_per_s": 27.3
+  },
+  "device": "mps",
+  "new_tokens": 128
+ },
+ "data": {
+  "requested": 924,
+  "near_duplicates": 48,
+  "eval_lookalikes": 16,
+  "answered": 860,
+  "accepted": 630,
+  "selected": 500,
+  "heldout": 130,
+  "by_category": {
+   "writing": 50,
+   "factual": 57,
+   "explanation": 68,
+   "quantitative": 57,
+   "procedure": 57,
+   "uncertainty": 57,
+   "advice": 57,
+   "serious": 40,
+   "technical": 57
+  },
+  "reject_reasons": {
+   "numbers_missing": 43,
+   "too_long_vs_reference": 55,
+   "checker:meaning_blurred": 25,
+   "too_long_absolute": 3,
+   "checker:information_lost": 90,
+   "checker:claims_added": 30,
+   "too_little_style": 6,
+   "code_changed": 21,
+   "checker:reference_incorrect": 17,
+   "checker:order_changed": 1,
+   "question_mentions_racing": 1
+  },
+  "max_opener_share": 0.04,
+  "distinct_f1_terms": 42,
+  "teacher": "Qwen/Qwen3.5-27B",
+  "checker": "openai/gpt-oss-120b"
+ },
+ "eval_set": {
+  "splits": {
+   "test": 120,
+   "dev": 48,
+   "safety": 16,
+   "probe": 12
+  },
+  "test_by_category": {
+   "advice": 15,
+   "explanation": 15,
+   "factual": 15,
+   "procedure": 15,
+   "quantitative": 15,
+   "technical": 15,
+   "uncertainty": 15,
+   "writing": 15
+  },
+  "handwritten": 25
+ },
+ "training": {
+  "steps": [
+   {
+    "step": 1,
+    "epoch": 0.016,
+    "loss": 3.197,
+    "lr": 0.0,
+    "grad_norm": 6.077,
+    "accuracy": 0.5606
+   },
+   {
+    "step": 2,
+    "epoch": 0.032,
+    "loss": 3.417,
+    "lr": 1.111e-05,
+    "grad_norm": 6.294,
+    "accuracy": 0.5228
+   },
+   {
+    "step": 3,
+    "epoch": 0.048,
+    "loss": 2.968,
+    "lr": 2.222e-05,
+    "grad_norm": 5.078,
+    "accuracy": 0.5652
+   },
+   {
+    "step": 4,
+    "epoch": 0.064,
+    "loss": 3.12,
+    "lr": 3.333e-05,
+    "grad_norm": 5.96,
+    "accuracy": 0.5395
+   },
+   {
+    "step": 5,
+    "epoch": 0.08,
+    "loss": 3.668,
+    "lr": 4.444e-05,
+    "grad_norm": 6.349,
+    "accuracy": 0.49
+   },
+   {
+    "step": 6,
+    "epoch": 0.096,
+    "loss": 3.27,
+    "lr": 5.556e-05,
+    "grad_norm": 5.912,
+    "accuracy": 0.5277
+   },
+   {
+    "step": 7,
+    "epoch": 0.112,
+    "loss": 2.887,
+    "lr": 6.667e-05,
+    "grad_norm": 4.647,
+    "accuracy": 0.5134
+   },
+   {
+    "step": 8,
+    "epoch": 0.128,
+    "loss": 2.845,
+    "lr": 7.778e-05,
+    "grad_norm": 3.47,
+    "accuracy": 0.5119
+   },
+   {
+    "step": 9,
+    "epoch": 0.144,
+    "loss": 2.486,
+    "lr": 8.889e-05,
+    "grad_norm": 2.725,
+    "accuracy": 0.5357
+   },
+   {
+    "step": 10,
+    "epoch": 0.16,
+    "loss": 2.653,
+    "lr": 0.0001,
+    "grad_norm": 2.259,
+    "accuracy": 0.5166
+   },
+   {
+    "step": 11,
+    "epoch": 0.176,
+    "loss": 2.29,
+    "lr": 0.0001111,
+    "grad_norm": 1.526,
+    "accuracy": 0.5365
+   },
+   {
+    "step": 12,
+    "epoch": 0.192,
+    "loss": 2.359,
+    "lr": 0.0001222,
+    "grad_norm": 1.177,
+    "accuracy": 0.5216
+   },
+   {
+    "step": 13,
+    "epoch": 0.208,
+    "loss": 2.397,
+    "lr": 0.0001333,
+    "grad_norm": 0.8271,
+    "accuracy": 0.4926
+   },
+   {
+    "step": 14,
+    "epoch": 0.224,
+    "loss": 2.37,
+    "lr": 0.0001444,
+    "grad_norm": 0.7392,
+    "accuracy": 0.513
+   },
+   {
+    "step": 15,
+    "epoch": 0.24,
+    "loss": 2.285,
+    "lr": 0.0001556,
+    "grad_norm": 0.6949,
+    "accuracy": 0.5252
+   },
+   {
+    "step": 16,
+    "epoch": 0.256,
+    "loss": 2.513,
+    "lr": 0.0001667,
+    "grad_norm": 0.8666,
+    "accuracy": 0.4719
+   },
+   {
+    "step": 17,
+    "epoch": 0.272,
+    "loss": 2.294,
+    "lr": 0.0001778,
+    "grad_norm": 0.9438,
+    "accuracy": 0.5213
+   },
+   {
+    "step": 18,
+    "epoch": 0.288,
+    "loss": 2.273,
+    "lr": 0.0001889,
+    "grad_norm": 0.9484,
+    "accuracy": 0.5198
+   },
+   {
+    "step": 19,
+    "epoch": 0.304,
+    "loss": 2.051,
+    "lr": 0.0002,
+    "grad_norm": 0.7558,
+    "accuracy": 0.5666
+   },
+   {
+    "step": 20,
+    "epoch": 0.32,
+    "loss": 2.156,
+    "lr": 0.0002,
+    "grad_norm": 0.8219,
+    "accuracy": 0.5248
+   },
+   {
+    "step": 21,
+    "epoch": 0.336,
+    "loss": 1.953,
+    "lr": 0.0002,
+    "grad_norm": 0.7931,
+    "accuracy": 0.5658
+   },
+   {
+    "step": 22,
+    "epoch": 0.352,
+    "loss": 1.906,
+    "lr": 0.0002,
+    "grad_norm": 0.7456,
+    "accuracy": 0.5701
+   },
+   {
+    "step": 23,
+    "epoch": 0.368,
+    "loss": 1.765,
+    "lr": 0.0001999,
+    "grad_norm": 0.5499,
+    "accuracy": 0.5965
+   },
+   {
+    "step": 24,
+    "epoch": 0.384,
+    "loss": 1.496,
+    "lr": 0.0001999,
+    "grad_norm": 0.6511,
+    "accuracy": 0.6239
+   },
+   {
+    "step": 25,
+    "epoch": 0.4,
+    "loss": 2.205,
+    "lr": 0.0001999,
+    "grad_norm": 0.885,
+    "accuracy": 0.5111
+   },
+   {
+    "step": 26,
+    "epoch": 0.416,
+    "loss": 1.938,
+    "lr": 0.0001998,
+    "grad_norm": 0.7172,
+    "accuracy": 0.5538
+   },
+   {
+    "step": 27,
+    "epoch": 0.432,
+    "loss": 2.155,
+    "lr": 0.0001998,
+    "grad_norm": 0.8098,
+    "accuracy": 0.5148
+   },
+   {
+    "step": 28,
+    "epoch": 0.448,
+    "loss": 1.928,
+    "lr": 0.0001997,
+    "grad_norm": 0.7247,
+    "accuracy": 0.5536
+   },
+   {
+    "step": 29,
+    "epoch": 0.464,
+    "loss": 1.805,
+    "lr": 0.0001996,
+    "grad_norm": 0.6642,
+    "accuracy": 0.5782
+   },
+   {
+    "step": 30,
+    "epoch": 0.48,
+    "loss": 1.956,
+    "lr": 0.0001995,
+    "grad_norm": 0.621,
+    "accuracy": 0.5502
+   },
+   {
+    "step": 31,
+    "epoch": 0.496,
+    "loss": 1.952,
+    "lr": 0.0001994,
+    "grad_norm": 0.6832,
+    "accuracy": 0.5577
+   },
+   {
+    "step": 32,
+    "epoch": 0.512,
+    "loss": 2.01,
+    "lr": 0.0001993,
+    "grad_norm": 0.811,
+    "accuracy": 0.5428
+   },
+   {
+    "step": 33,
+    "epoch": 0.528,
+    "loss": 2.075,
+    "lr": 0.0001992,
+    "grad_norm": 0.6328,
+    "accuracy": 0.5177
+   },
+   {
+    "step": 34,
+    "epoch": 0.544,
+    "loss": 1.847,
+    "lr": 0.0001991,
+    "grad_norm": 0.7223,
+    "accuracy": 0.5646
+   },
+   {
+    "step": 35,
+    "epoch": 0.56,
+    "loss": 1.753,
+    "lr": 0.000199,
+    "grad_norm": 0.637,
+    "accuracy": 0.5855
+   },
+   {
+    "step": 36,
+    "epoch": 0.576,
+    "loss": 1.898,
+    "lr": 0.0001989,
+    "grad_norm": 0.768,
+    "accuracy": 0.5573
+   },
+   {
+    "step": 37,
+    "epoch": 0.592,
+    "loss": 1.867,
+    "lr": 0.0001987,
+    "grad_norm": 0.6727,
+    "accuracy": 0.5547
+   },
+   {
+    "step": 38,
+    "epoch": 0.608,
+    "loss": 1.811,
+    "lr": 0.0001986,
+    "grad_norm": 0.6631,
+    "accuracy": 0.567
+   },
+   {
+    "step": 39,
+    "epoch": 0.624,
+    "loss": 1.739,
+    "lr": 0.0001985,
+    "grad_norm": 0.6368,
+    "accuracy": 0.5975
+   },
+   {
+    "step": 40,
+    "epoch": 0.64,
+    "loss": 1.734,
+    "lr": 0.0001983,
+    "grad_norm": 0.6588,
+    "accuracy": 0.5778
+   },
+   {
+    "step": 41,
+    "epoch": 0.656,
+    "loss": 1.921,
+    "lr": 0.0001981,
+    "grad_norm": 0.6284,
+    "accuracy": 0.5401
+   },
+   {
+    "step": 42,
+    "epoch": 0.672,
+    "loss": 1.857,
+    "lr": 0.000198,
+    "grad_norm": 0.7329,
+    "accuracy": 0.5784
+   },
+   {
+    "step": 43,
+    "epoch": 0.688,
+    "loss": 1.841,
+    "lr": 0.0001978,
+    "grad_norm": 0.632,
+    "accuracy": 0.5762
+   },
+   {
+    "step": 44,
+    "epoch": 0.704,
+    "loss": 1.613,
+    "lr": 0.0001976,
+    "grad_norm": 0.6875,
+    "accuracy": 0.6188
+   },
+   {
+    "step": 45,
+    "epoch": 0.72,
+    "loss": 1.68,
+    "lr": 0.0001974,
+    "grad_norm": 0.6663,
+    "accuracy": 0.5884
+   },
+   {
+    "step": 46,
+    "epoch": 0.736,
+    "loss": 1.853,
+    "lr": 0.0001972,
+    "grad_norm": 0.7032,
+    "accuracy": 0.5621
+   },
+   {
+    "step": 47,
+    "epoch": 0.752,
+    "loss": 1.811,
+    "lr": 0.000197,
+    "grad_norm": 0.6796,
+    "accuracy": 0.574
+   },
+   {
+    "step": 48,
+    "epoch": 0.768,
+    "loss": 1.754,
+    "lr": 0.0001968,
+    "grad_norm": 0.6164,
+    "accuracy": 0.5822
+   },
+   {
+    "step": 49,
+    "epoch": 0.784,
+    "loss": 1.491,
+    "lr": 0.0001965,
+    "grad_norm": 0.6553,
+    "accuracy": 0.6357
+   },
+   {
+    "step": 50,
+    "epoch": 0.8,
+    "loss": 1.772,
+    "lr": 0.0001963,
+    "grad_norm": 0.6113,
+    "accuracy": 0.5735
+   },
+   {
+    "step": 51,
+    "epoch": 0.816,
+    "loss": 1.82,
+    "lr": 0.0001961,
+    "grad_norm": 0.6368,
+    "accuracy": 0.5631
+   },
+   {
+    "step": 52,
+    "epoch": 0.832,
+    "loss": 1.623,
+    "lr": 0.0001958,
+    "grad_norm": 0.7125,
+    "accuracy": 0.6241
+   },
+   {
+    "step": 53,
+    "epoch": 0.848,
+    "loss": 1.75,
+    "lr": 0.0001956,
+    "grad_norm": 0.6822,
+    "accuracy": 0.5742
+   },
+   {
+    "step": 54,
+    "epoch": 0.864,
+    "loss": 1.395,
+    "lr": 0.0001953,
+    "grad_norm": 0.6869,
+    "accuracy": 0.6387
+   },
+   {
+    "step": 55,
+    "epoch": 0.88,
+    "loss": 1.92,
+    "lr": 0.000195,
+    "grad_norm": 0.8148,
+    "accuracy": 0.5469
+   },
+   {
+    "step": 56,
+    "epoch": 0.896,
+    "loss": 1.831,
+    "lr": 0.0001947,
+    "grad_norm": 0.6932,
+    "accuracy": 0.5763
+   },
+   {
+    "step": 57,
+    "epoch": 0.912,
+    "loss": 1.785,
+    "lr": 0.0001945,
+    "grad_norm": 0.6244,
+    "accuracy": 0.57
+   },
+   {
+    "step": 58,
+    "epoch": 0.928,
+    "loss": 1.804,
+    "lr": 0.0001942,
+    "grad_norm": 0.7277,
+    "accuracy": 0.5637
+   },
+   {
+    "step": 59,
+    "epoch": 0.944,
+    "loss": 1.73,
+    "lr": 0.0001939,
+    "grad_norm": 0.7034,
+    "accuracy": 0.5825
+   },
+   {
+    "step": 60,
+    "epoch": 0.96,
+    "loss": 1.714,
+    "lr": 0.0001936,
+    "grad_norm": 0.6624,
+    "accuracy": 0.5936
+   },
+   {
+    "step": 61,
+    "epoch": 0.976,
+    "loss": 1.747,
+    "lr": 0.0001932,
+    "grad_norm": 0.7032,
+    "accuracy": 0.5865
+   },
+   {
+    "step": 62,
+    "epoch": 0.992,
+    "loss": 1.687,
+    "lr": 0.0001929,
+    "grad_norm": 0.6055,
+    "accuracy": 0.6007
+   },
+   {
+    "step": 63,
+    "epoch": 1.0,
+    "loss": 1.694,
+    "lr": 0.0001926,
+    "grad_norm": 0.7333,
+    "accuracy": 0.6082
+   },
+   {
+    "step": 64,
+    "epoch": 1.016,
+    "loss": 1.263,
+    "lr": 0.0001923,
+    "grad_norm": 0.7156,
+    "accuracy": 0.6707
+   },
+   {
+    "step": 65,
+    "epoch": 1.032,
+    "loss": 1.533,
+    "lr": 0.0001919,
+    "grad_norm": 0.6993,
+    "accuracy": 0.6184
+   },
+   {
+    "step": 66,
+    "epoch": 1.048,
+    "loss": 1.623,
+    "lr": 0.0001916,
+    "grad_norm": 0.6251,
+    "accuracy": 0.6036
+   },
+   {
+    "step": 67,
+    "epoch": 1.064,
+    "loss": 1.695,
+    "lr": 0.0001912,
+    "grad_norm": 0.6543,
+    "accuracy": 0.5906
+   },
+   {
+    "step": 68,
+    "epoch": 1.08,
+    "loss": 1.605,
+    "lr": 0.0001908,
+    "grad_norm": 0.655,
+    "accuracy": 0.6033
+   },
+   {
+    "step": 69,
+    "epoch": 1.096,
+    "loss": 1.602,
+    "lr": 0.0001905,
+    "grad_norm": 0.6616,
+    "accuracy": 0.6128
+   },
+   {
+    "step": 70,
+    "epoch": 1.112,
+    "loss": 1.546,
+    "lr": 0.0001901,
+    "grad_norm": 0.6713,
+    "accuracy": 0.6152
+   },
+   {
+    "step": 71,
+    "epoch": 1.128,
+    "loss": 1.341,
+    "lr": 0.0001897,
+    "grad_norm": 0.6206,
+    "accuracy": 0.6525
+   },
+   {
+    "step": 72,
+    "epoch": 1.144,
+    "loss": 1.73,
+    "lr": 0.0001893,
+    "grad_norm": 0.6652,
+    "accuracy": 0.572
+   },
+   {
+    "step": 73,
+    "epoch": 1.16,
+    "loss": 1.714,
+    "lr": 0.0001889,
+    "grad_norm": 0.7646,
+    "accuracy": 0.5713
+   },
+   {
+    "step": 74,
+    "epoch": 1.176,
+    "loss": 1.606,
+    "lr": 0.0001885,
+    "grad_norm": 0.7419,
+    "accuracy": 0.5975
+   },
+   {
+    "step": 75,
+    "epoch": 1.192,
+    "loss": 1.588,
+    "lr": 0.0001881,
+    "grad_norm": 0.6744,
+    "accuracy": 0.5965
+   },
+   {
+    "step": 76,
+    "epoch": 1.208,
+    "loss": 1.666,
+    "lr": 0.0001877,
+    "grad_norm": 0.8116,
+    "accuracy": 0.5958
+   },
+   {
+    "step": 77,
+    "epoch": 1.224,
+    "loss": 1.615,
+    "lr": 0.0001873,
+    "grad_norm": 0.7317,
+    "accuracy": 0.5999
+   },
+   {
+    "step": 78,
+    "epoch": 1.24,
+    "loss": 1.53,
+    "lr": 0.0001868,
+    "grad_norm": 0.7967,
+    "accuracy": 0.61
+   },
+   {
+    "step": 79,
+    "epoch": 1.256,
+    "loss": 1.64,
+    "lr": 0.0001864,
+    "grad_norm": 0.8213,
+    "accuracy": 0.6007
+   },
+   {
+    "step": 80,
+    "epoch": 1.272,
+    "loss": 1.639,
+    "lr": 0.0001859,
+    "grad_norm": 0.813,
+    "accuracy": 0.6074
+   },
+   {
+    "step": 81,
+    "epoch": 1.288,
+    "loss": 1.65,
+    "lr": 0.0001855,
+    "grad_norm": 0.7336,
+    "accuracy": 0.5935
+   },
+   {
+    "step": 82,
+    "epoch": 1.304,
+    "loss": 1.453,
+    "lr": 0.000185,
+    "grad_norm": 0.6323,
+    "accuracy": 0.634
+   },
+   {
+    "step": 83,
+    "epoch": 1.32,
+    "loss": 1.631,
+    "lr": 0.0001846,
+    "grad_norm": 0.8133,
+    "accuracy": 0.6156
+   },
+   {
+    "step": 84,
+    "epoch": 1.336,
+    "loss": 1.609,
+    "lr": 0.0001841,
+    "grad_norm": 0.7554,
+    "accuracy": 0.5908
+   },
+   {
+    "step": 85,
+    "epoch": 1.352,
+    "loss": 1.414,
+    "lr": 0.0001836,
+    "grad_norm": 0.7363,
+    "accuracy": 0.6427
+   },
+   {
+    "step": 86,
+    "epoch": 1.368,
+    "loss": 1.305,
+    "lr": 0.0001831,
+    "grad_norm": 0.6006,
+    "accuracy": 0.6656
+   },
+   {
+    "step": 87,
+    "epoch": 1.384,
+    "loss": 1.443,
+    "lr": 0.0001826,
+    "grad_norm": 0.7665,
+    "accuracy": 0.6437
+   },
+   {
+    "step": 88,
+    "epoch": 1.4,
+    "loss": 1.489,
+    "lr": 0.0001821,
+    "grad_norm": 0.6972,
+    "accuracy": 0.6355
+   },
+   {
+    "step": 89,
+    "epoch": 1.416,
+    "loss": 1.654,
+    "lr": 0.0001816,
+    "grad_norm": 0.9507,
+    "accuracy": 0.5798
+   },
+   {
+    "step": 90,
+    "epoch": 1.432,
+    "loss": 1.571,
+    "lr": 0.0001811,
+    "grad_norm": 0.8756,
+    "accuracy": 0.6029
+   },
+   {
+    "step": 91,
+    "epoch": 1.448,
+    "loss": 1.235,
+    "lr": 0.0001806,
+    "grad_norm": 0.6786,
+    "accuracy": 0.6842
+   },
+   {
+    "step": 92,
+    "epoch": 1.464,
+    "loss": 1.464,
+    "lr": 0.0001801,
+    "grad_norm": 0.8182,
+    "accuracy": 0.6323
+   },
+   {
+    "step": 93,
+    "epoch": 1.48,
+    "loss": 1.363,
+    "lr": 0.0001795,
+    "grad_norm": 0.7947,
+    "accuracy": 0.6446
+   },
+   {
+    "step": 94,
+    "epoch": 1.496,
+    "loss": 1.408,
+    "lr": 0.000179,
+    "grad_norm": 0.7501,
+    "accuracy": 0.6343
+   },
+   {
+    "step": 95,
+    "epoch": 1.512,
+    "loss": 1.369,
+    "lr": 0.0001785,
+    "grad_norm": 0.7596,
+    "accuracy": 0.6521
+   },
+   {
+    "step": 96,
+    "epoch": 1.528,
+    "loss": 1.431,
+    "lr": 0.0001779,
+    "grad_norm": 0.7267,
+    "accuracy": 0.6403
+   },
+   {
+    "step": 97,
+    "epoch": 1.544,
+    "loss": 1.602,
+    "lr": 0.0001774,
+    "grad_norm": 0.8817,
+    "accuracy": 0.5973
+   },
+   {
+    "step": 98,
+    "epoch": 1.56,
+    "loss": 1.389,
+    "lr": 0.0001768,
+    "grad_norm": 0.7805,
+    "accuracy": 0.6571
+   },
+   {
+    "step": 99,
+    "epoch": 1.576,
+    "loss": 1.778,
+    "lr": 0.0001762,
+    "grad_norm": 0.9509,
+    "accuracy": 0.5775
+   },
+   {
+    "step": 100,
+    "epoch": 1.592,
+    "loss": 1.345,
+    "lr": 0.0001757,
+    "grad_norm": 0.7689,
+    "accuracy": 0.6522
+   },
+   {
+    "step": 101,
+    "epoch": 1.608,
+    "loss": 1.417,
+    "lr": 0.0001751,
+    "grad_norm": 0.778,
+    "accuracy": 0.6373
+   },
+   {
+    "step": 102,
+    "epoch": 1.624,
+    "loss": 1.868,
+    "lr": 0.0001745,
+    "grad_norm": 0.9613,
+    "accuracy": 0.5553
+   },
+   {
+    "step": 103,
+    "epoch": 1.64,
+    "loss": 1.673,
+    "lr": 0.0001739,
+    "grad_norm": 0.8638,
+    "accuracy": 0.5861
+   },
+   {
+    "step": 104,
+    "epoch": 1.656,
+    "loss": 1.356,
+    "lr": 0.0001733,
+    "grad_norm": 0.6971,
+    "accuracy": 0.6476
+   },
+   {
+    "step": 105,
+    "epoch": 1.672,
+    "loss": 1.512,
+    "lr": 0.0001727,
+    "grad_norm": 0.8803,
+    "accuracy": 0.6214
+   },
+   {
+    "step": 106,
+    "epoch": 1.688,
+    "loss": 1.462,
+    "lr": 0.0001721,
+    "grad_norm": 0.7604,
+    "accuracy": 0.6218
+   },
+   {
+    "step": 107,
+    "epoch": 1.704,
+    "loss": 1.544,
+    "lr": 0.0001715,
+    "grad_norm": 0.7824,
+    "accuracy": 0.6133
+   },
+   {
+    "step": 108,
+    "epoch": 1.72,
+    "loss": 1.529,
+    "lr": 0.0001709,
+    "grad_norm": 0.8036,
+    "accuracy": 0.6161
+   },
+   {
+    "step": 109,
+    "epoch": 1.736,
+    "loss": 1.527,
+    "lr": 0.0001702,
+    "grad_norm": 0.9009,
+    "accuracy": 0.6189
+   },
+   {
+    "step": 110,
+    "epoch": 1.752,
+    "loss": 1.631,
+    "lr": 0.0001696,
+    "grad_norm": 0.8318,
+    "accuracy": 0.5916
+   },
+   {
+    "step": 111,
+    "epoch": 1.768,
+    "loss": 1.572,
+    "lr": 0.000169,
+    "grad_norm": 0.8367,
+    "accuracy": 0.6107
+   },
+   {
+    "step": 112,
+    "epoch": 1.784,
+    "loss": 1.496,
+    "lr": 0.0001683,
+    "grad_norm": 0.8752,
+    "accuracy": 0.6222
+   },
+   {
+    "step": 113,
+    "epoch": 1.8,
+    "loss": 1.43,
+    "lr": 0.0001677,
+    "grad_norm": 0.787,
+    "accuracy": 0.6332
+   },
+   {
+    "step": 114,
+    "epoch": 1.816,
+    "loss": 1.342,
+    "lr": 0.000167,
+    "grad_norm": 0.8502,
+    "accuracy": 0.65
+   },
+   {
+    "step": 115,
+    "epoch": 1.832,
+    "loss": 1.243,
+    "lr": 0.0001664,
+    "grad_norm": 0.7958,
+    "accuracy": 0.6847
+   },
+   {
+    "step": 116,
+    "epoch": 1.848,
+    "loss": 1.69,
+    "lr": 0.0001657,
+    "grad_norm": 0.9197,
+    "accuracy": 0.5807
+   },
+   {
+    "step": 117,
+    "epoch": 1.864,
+    "loss": 1.594,
+    "lr": 0.0001651,
+    "grad_norm": 0.7771,
+    "accuracy": 0.5909
+   },
+   {
+    "step": 118,
+    "epoch": 1.88,
+    "loss": 1.703,
+    "lr": 0.0001644,
+    "grad_norm": 0.846,
+    "accuracy": 0.5802
+   },
+   {
+    "step": 119,
+    "epoch": 1.896,
+    "loss": 1.37,
+    "lr": 0.0001637,
+    "grad_norm": 0.8036,
+    "accuracy": 0.6339
+   },
+   {
+    "step": 120,
+    "epoch": 1.912,
+    "loss": 1.477,
+    "lr": 0.000163,
+    "grad_norm": 0.7943,
+    "accuracy": 0.6361
+   },
+   {
+    "step": 121,
+    "epoch": 1.928,
+    "loss": 1.555,
+    "lr": 0.0001623,
+    "grad_norm": 0.8723,
+    "accuracy": 0.6131
+   },
+   {
+    "step": 122,
+    "epoch": 1.944,
+    "loss": 1.613,
+    "lr": 0.0001617,
+    "grad_norm": 0.9031,
+    "accuracy": 0.5811
+   },
+   {
+    "step": 123,
+    "epoch": 1.96,
+    "loss": 1.512,
+    "lr": 0.000161,
+    "grad_norm": 0.7651,
+    "accuracy": 0.6246
+   },
+   {
+    "step": 124,
+    "epoch": 1.976,
+    "loss": 1.696,
+    "lr": 0.0001603,
+    "grad_norm": 0.8586,
+    "accuracy": 0.5856
+   },
+   {
+    "step": 125,
+    "epoch": 1.992,
+    "loss": 1.564,
+    "lr": 0.0001596,
+    "grad_norm": 0.835,
+    "accuracy": 0.6199
+   },
+   {
+    "step": 126,
+    "epoch": 2.0,
+    "loss": 1.552,
+    "lr": 0.0001588,
+    "grad_norm": 1.159,
+    "accuracy": 0.6069
+   },
+   {
+    "step": 127,
+    "epoch": 2.016,
+    "loss": 1.351,
+    "lr": 0.0001581,
+    "grad_norm": 0.9067,
+    "accuracy": 0.6451
+   },
+   {
+    "step": 128,
+    "epoch": 2.032,
+    "loss": 1.291,
+    "lr": 0.0001574,
+    "grad_norm": 0.8922,
+    "accuracy": 0.6532
+   },
+   {
+    "step": 129,
+    "epoch": 2.048,
+    "loss": 1.192,
+    "lr": 0.0001567,
+    "grad_norm": 0.8311,
+    "accuracy": 0.6806
+   },
+   {
+    "step": 130,
+    "epoch": 2.064,
+    "loss": 1.115,
+    "lr": 0.000156,
+    "grad_norm": 0.9046,
+    "accuracy": 0.7048
+   },
+   {
+    "step": 131,
+    "epoch": 2.08,
+    "loss": 1.345,
+    "lr": 0.0001552,
+    "grad_norm": 0.7961,
+    "accuracy": 0.6498
+   },
+   {
+    "step": 132,
+    "epoch": 2.096,
+    "loss": 1.217,
+    "lr": 0.0001545,
+    "grad_norm": 0.9185,
+    "accuracy": 0.6695
+   },
+   {
+    "step": 133,
+    "epoch": 2.112,
+    "loss": 1.321,
+    "lr": 0.0001538,
+    "grad_norm": 0.8464,
+    "accuracy": 0.6577
+   },
+   {
+    "step": 134,
+    "epoch": 2.128,
+    "loss": 1.269,
+    "lr": 0.000153,
+    "grad_norm": 0.8923,
+    "accuracy": 0.6708
+   },
+   {
+    "step": 135,
+    "epoch": 2.144,
+    "loss": 1.324,
+    "lr": 0.0001523,
+    "grad_norm": 0.9283,
+    "accuracy": 0.6457
+   },
+   {
+    "step": 136,
+    "epoch": 2.16,
+    "loss": 1.136,
+    "lr": 0.0001515,
+    "grad_norm": 0.9875,
+    "accuracy": 0.7004
+   },
+   {
+    "step": 137,
+    "epoch": 2.176,
+    "loss": 1.235,
+    "lr": 0.0001508,
+    "grad_norm": 0.9985,
+    "accuracy": 0.6649
+   },
+   {
+    "step": 138,
+    "epoch": 2.192,
+    "loss": 1.16,
+    "lr": 0.00015,
+    "grad_norm": 1.063,
+    "accuracy": 0.6986
+   },
+   {
+    "step": 139,
+    "epoch": 2.208,
+    "loss": 1.087,
+    "lr": 0.0001492,
+    "grad_norm": 0.9579,
+    "accuracy": 0.7069
+   },
+   {
+    "step": 140,
+    "epoch": 2.224,
+    "loss": 1.253,
+    "lr": 0.0001485,
+    "grad_norm": 1.057,
+    "accuracy": 0.6624
+   },
+   {
+    "step": 141,
+    "epoch": 2.24,
+    "loss": 1.242,
+    "lr": 0.0001477,
+    "grad_norm": 1.055,
+    "accuracy": 0.6739
+   },
+   {
+    "step": 142,
+    "epoch": 2.256,
+    "loss": 1.248,
+    "lr": 0.0001469,
+    "grad_norm": 1.019,
+    "accuracy": 0.6696
+   },
+   {
+    "step": 143,
+    "epoch": 2.272,
+    "loss": 1.251,
+    "lr": 0.0001461,
+    "grad_norm": 1.137,
+    "accuracy": 0.6809
+   },
+   {
+    "step": 144,
+    "epoch": 2.288,
+    "loss": 1.249,
+    "lr": 0.0001454,
+    "grad_norm": 1.014,
+    "accuracy": 0.6745
+   },
+   {
+    "step": 145,
+    "epoch": 2.304,
+    "loss": 1.02,
+    "lr": 0.0001446,
+    "grad_norm": 1.137,
+    "accuracy": 0.7254
+   },
+   {
+    "step": 146,
+    "epoch": 2.32,
+    "loss": 1.25,
+    "lr": 0.0001438,
+    "grad_norm": 1.092,
+    "accuracy": 0.6622
+   },
+   {
+    "step": 147,
+    "epoch": 2.336,
+    "loss": 1.177,
+    "lr": 0.000143,
+    "grad_norm": 0.9522,
+    "accuracy": 0.6877
+   },
+   {
+    "step": 148,
+    "epoch": 2.352,
+    "loss": 1.076,
+    "lr": 0.0001422,
+    "grad_norm": 0.8204,
+    "accuracy": 0.7084
+   },
+   {
+    "step": 149,
+    "epoch": 2.368,
+    "loss": 1.314,
+    "lr": 0.0001414,
+    "grad_norm": 1.04,
+    "accuracy": 0.6532
+   },
+   {
+    "step": 150,
+    "epoch": 2.384,
+    "loss": 1.212,
+    "lr": 0.0001406,
+    "grad_norm": 1.033,
+    "accuracy": 0.6789
+   },
+   {
+    "step": 151,
+    "epoch": 2.4,
+    "loss": 1.391,
+    "lr": 0.0001398,
+    "grad_norm": 1.008,
+    "accuracy": 0.6476
+   },
+   {
+    "step": 152,
+    "epoch": 2.416,
+    "loss": 1.102,
+    "lr": 0.000139,
+    "grad_norm": 0.9932,
+    "accuracy": 0.7105
+   },
+   {
+    "step": 153,
+    "epoch": 2.432,
+    "loss": 1.408,
+    "lr": 0.0001382,
+    "grad_norm": 0.9454,
+    "accuracy": 0.633
+   },
+   {
+    "step": 154,
+    "epoch": 2.448,
+    "loss": 1.339,
+    "lr": 0.0001374,
+    "grad_norm": 1.23,
+    "accuracy": 0.6471
+   },
+   {
+    "step": 155,
+    "epoch": 2.464,
+    "loss": 1.28,
+    "lr": 0.0001365,
+    "grad_norm": 1.051,
+    "accuracy": 0.6477
+   },
+   {
+    "step": 156,
+    "epoch": 2.48,
+    "loss": 1.23,
+    "lr": 0.0001357,
+    "grad_norm": 1.048,
+    "accuracy": 0.6739
+   },
+   {
+    "step": 157,
+    "epoch": 2.496,
+    "loss": 1.34,
+    "lr": 0.0001349,
+    "grad_norm": 1.09,
+    "accuracy": 0.6583
+   },
+   {
+    "step": 158,
+    "epoch": 2.512,
+    "loss": 1.352,
+    "lr": 0.0001341,
+    "grad_norm": 1.101,
+    "accuracy": 0.6478
+   },
+   {
+    "step": 159,
+    "epoch": 2.528,
+    "loss": 1.311,
+    "lr": 0.0001332,
+    "grad_norm": 1.103,
+    "accuracy": 0.6492
+   },
+   {
+    "step": 160,
+    "epoch": 2.544,
+    "loss": 1.172,
+    "lr": 0.0001324,
+    "grad_norm": 1.091,
+    "accuracy": 0.6748
+   },
+   {
+    "step": 161,
+    "epoch": 2.56,
+    "loss": 1.186,
+    "lr": 0.0001316,
+    "grad_norm": 1.057,
+    "accuracy": 0.6908
+   },
+   {
+    "step": 162,
+    "epoch": 2.576,
+    "loss": 1.298,
+    "lr": 0.0001307,
+    "grad_norm": 1.138,
+    "accuracy": 0.6618
+   },
+   {
+    "step": 163,
+    "epoch": 2.592,
+    "loss": 1.268,
+    "lr": 0.0001299,
+    "grad_norm": 1.079,
+    "accuracy": 0.6708
+   },
+   {
+    "step": 164,
+    "epoch": 2.608,
+    "loss": 1.216,
+    "lr": 0.0001291,
+    "grad_norm": 1.035,
+    "accuracy": 0.6856
+   },
+   {
+    "step": 165,
+    "epoch": 2.624,
+    "loss": 1.373,
+    "lr": 0.0001282,
+    "grad_norm": 1.037,
+    "accuracy": 0.646
+   },
+   {
+    "step": 166,
+    "epoch": 2.64,
+    "loss": 1.343,
+    "lr": 0.0001274,
+    "grad_norm": 1.257,
+    "accuracy": 0.662
+   },
+   {
+    "step": 167,
+    "epoch": 2.656,
+    "loss": 1.18,
+    "lr": 0.0001265,
+    "grad_norm": 1.154,
+    "accuracy": 0.6931
+   },
+   {
+    "step": 168,
+    "epoch": 2.672,
+    "loss": 1.136,
+    "lr": 0.0001257,
+    "grad_norm": 0.9162,
+    "accuracy": 0.697
+   },
+   {
+    "step": 169,
+    "epoch": 2.688,
+    "loss": 1.183,
+    "lr": 0.0001248,
+    "grad_norm": 1.206,
+    "accuracy": 0.676
+   },
+   {
+    "step": 170,
+    "epoch": 2.704,
+    "loss": 1.357,
+    "lr": 0.000124,
+    "grad_norm": 1.076,
+    "accuracy": 0.6372
+   },
+   {
+    "step": 171,
+    "epoch": 2.72,
+    "loss": 1.207,
+    "lr": 0.0001231,
+    "grad_norm": 1.315,
+    "accuracy": 0.6847
+   },
+   {
+    "step": 172,
+    "epoch": 2.736,
+    "loss": 1.22,
+    "lr": 0.0001223,
+    "grad_norm": 1.114,
+    "accuracy": 0.673
+   },
+   {
+    "step": 173,
+    "epoch": 2.752,
+    "loss": 1.234,
+    "lr": 0.0001214,
+    "grad_norm": 1.062,
+    "accuracy": 0.6658
+   },
+   {
+    "step": 174,
+    "epoch": 2.768,
+    "loss": 1.236,
+    "lr": 0.0001205,
+    "grad_norm": 1.089,
+    "accuracy": 0.6804
+   },
+   {
+    "step": 175,
+    "epoch": 2.784,
+    "loss": 1.136,
+    "lr": 0.0001197,
+    "grad_norm": 0.9639,
+    "accuracy": 0.6992
+   },
+   {
+    "step": 176,
+    "epoch": 2.8,
+    "loss": 1.256,
+    "lr": 0.0001188,
+    "grad_norm": 1.187,
+    "accuracy": 0.6872
+   },
+   {
+    "step": 177,
+    "epoch": 2.816,
+    "loss": 1.19,
+    "lr": 0.0001179,
+    "grad_norm": 0.9063,
+    "accuracy": 0.6962
+   },
+   {
+    "step": 178,
+    "epoch": 2.832,
+    "loss": 1.395,
+    "lr": 0.0001171,
+    "grad_norm": 1.099,
+    "accuracy": 0.6478
+   },
+   {
+    "step": 179,
+    "epoch": 2.848,
+    "loss": 1.229,
+    "lr": 0.0001162,
+    "grad_norm": 1.134,
+    "accuracy": 0.6603
+   },
+   {
+    "step": 180,
+    "epoch": 2.864,
+    "loss": 1.116,
+    "lr": 0.0001153,
+    "grad_norm": 0.9126,
+    "accuracy": 0.6935
+   },
+   {
+    "step": 181,
+    "epoch": 2.88,
+    "loss": 1.102,
+    "lr": 0.0001145,
+    "grad_norm": 1.004,
+    "accuracy": 0.6989
+   },
+   {
+    "step": 182,
+    "epoch": 2.896,
+    "loss": 1.339,
+    "lr": 0.0001136,
+    "grad_norm": 1.25,
+    "accuracy": 0.6473
+   },
+   {
+    "step": 183,
+    "epoch": 2.912,
+    "loss": 1.182,
+    "lr": 0.0001127,
+    "grad_norm": 1.083,
+    "accuracy": 0.6905
+   },
+   {
+    "step": 184,
+    "epoch": 2.928,
+    "loss": 1.291,
+    "lr": 0.0001119,
+    "grad_norm": 1.024,
+    "accuracy": 0.6643
+   },
+   {
+    "step": 185,
+    "epoch": 2.944,
+    "loss": 1.188,
+    "lr": 0.000111,
+    "grad_norm": 1.127,
+    "accuracy": 0.6736
+   },
+   {
+    "step": 186,
+    "epoch": 2.96,
+    "loss": 1.309,
+    "lr": 0.0001101,
+    "grad_norm": 1.082,
+    "accuracy": 0.6517
+   },
+   {
+    "step": 187,
+    "epoch": 2.976,
+    "loss": 1.16,
+    "lr": 0.0001092,
+    "grad_norm": 0.9823,
+    "accuracy": 0.6949
+   },
+   {
+    "step": 188,
+    "epoch": 2.992,
+    "loss": 1.309,
+    "lr": 0.0001084,
+    "grad_norm": 1.06,
+    "accuracy": 0.6587
+   },
+   {
+    "step": 189,
+    "epoch": 3.0,
+    "loss": 1.341,
+    "lr": 0.0001075,
+    "grad_norm": 1.525,
+    "accuracy": 0.6512
+   },
+   {
+    "step": 190,
+    "epoch": 3.016,
+    "loss": 1.041,
+    "lr": 0.0001066,
+    "grad_norm": 1.05,
+    "accuracy": 0.7132
+   },
+   {
+    "step": 191,
+    "epoch": 3.032,
+    "loss": 1.176,
+    "lr": 0.0001057,
+    "grad_norm": 0.9932,
+    "accuracy": 0.6962
+   },
+   {
+    "step": 192,
+    "epoch": 3.048,
+    "loss": 1.141,
+    "lr": 0.0001048,
+    "grad_norm": 0.9911,
+    "accuracy": 0.6827
+   },
+   {
+    "step": 193,
+    "epoch": 3.064,
+    "loss": 0.9156,
+    "lr": 0.000104,
+    "grad_norm": 1.004,
+    "accuracy": 0.7482
+   },
+   {
+    "step": 194,
+    "epoch": 3.08,
+    "loss": 0.9386,
+    "lr": 0.0001031,
+    "grad_norm": 1.006,
+    "accuracy": 0.747
+   },
+   {
+    "step": 195,
+    "epoch": 3.096,
+    "loss": 0.8972,
+    "lr": 0.0001022,
+    "grad_norm": 1.135,
+    "accuracy": 0.749
+   },
+   {
+    "step": 196,
+    "epoch": 3.112,
+    "loss": 0.817,
+    "lr": 0.0001013,
+    "grad_norm": 1.021,
+    "accuracy": 0.7813
+   },
+   {
+    "step": 197,
+    "epoch": 3.128,
+    "loss": 0.9629,
+    "lr": 0.0001004,
+    "grad_norm": 0.955,
+    "accuracy": 0.7449
+   },
+   {
+    "step": 198,
+    "epoch": 3.144,
+    "loss": 0.9771,
+    "lr": 9.956e-05,
+    "grad_norm": 1.207,
+    "accuracy": 0.7262
+   },
+   {
+    "step": 199,
+    "epoch": 3.16,
+    "loss": 1.065,
+    "lr": 9.868e-05,
+    "grad_norm": 1.257,
+    "accuracy": 0.7134
+   },
+   {
+    "step": 200,
+    "epoch": 3.176,
+    "loss": 1.008,
+    "lr": 9.78e-05,
+    "grad_norm": 1.178,
+    "accuracy": 0.7129
+   },
+   {
+    "step": 201,
+    "epoch": 3.192,
+    "loss": 0.9853,
+    "lr": 9.692e-05,
+    "grad_norm": 1.232,
+    "accuracy": 0.7355
+   },
+   {
+    "step": 202,
+    "epoch": 3.208,
+    "loss": 1.11,
+    "lr": 9.604e-05,
+    "grad_norm": 1.429,
+    "accuracy": 0.7014
+   },
+   {
+    "step": 203,
+    "epoch": 3.224,
+    "loss": 0.8178,
+    "lr": 9.516e-05,
+    "grad_norm": 1.185,
+    "accuracy": 0.7657
+   },
+   {
+    "step": 204,
+    "epoch": 3.24,
+    "loss": 1.017,
+    "lr": 9.428e-05,
+    "grad_norm": 1.431,
+    "accuracy": 0.728
+   },
+   {
+    "step": 205,
+    "epoch": 3.256,
+    "loss": 0.7943,
+    "lr": 9.34e-05,
+    "grad_norm": 1.384,
+    "accuracy": 0.7714
+   },
+   {
+    "step": 206,
+    "epoch": 3.272,
+    "loss": 1.118,
+    "lr": 9.253e-05,
+    "grad_norm": 1.477,
+    "accuracy": 0.6925
+   },
+   {
+    "step": 207,
+    "epoch": 3.288,
+    "loss": 0.9386,
+    "lr": 9.165e-05,
+    "grad_norm": 1.305,
+    "accuracy": 0.7403
+   },
+   {
+    "step": 208,
+    "epoch": 3.304,
+    "loss": 1.054,
+    "lr": 9.077e-05,
+    "grad_norm": 1.411,
+    "accuracy": 0.7286
+   },
+   {
+    "step": 209,
+    "epoch": 3.32,
+    "loss": 1.068,
+    "lr": 8.99e-05,
+    "grad_norm": 1.429,
+    "accuracy": 0.7126
+   },
+   {
+    "step": 210,
+    "epoch": 3.336,
+    "loss": 0.9954,
+    "lr": 8.902e-05,
+    "grad_norm": 1.351,
+    "accuracy": 0.734
+   },
+   {
+    "step": 211,
+    "epoch": 3.352,
+    "loss": 0.9838,
+    "lr": 8.815e-05,
+    "grad_norm": 1.326,
+    "accuracy": 0.7192
+   },
+   {
+    "step": 212,
+    "epoch": 3.368,
+    "loss": 0.9645,
+    "lr": 8.727e-05,
+    "grad_norm": 1.394,
+    "accuracy": 0.7355
+   },
+   {
+    "step": 213,
+    "epoch": 3.384,
+    "loss": 0.9446,
+    "lr": 8.64e-05,
+    "grad_norm": 1.44,
+    "accuracy": 0.7345
+   },
+   {
+    "step": 214,
+    "epoch": 3.4,
+    "loss": 0.9515,
+    "lr": 8.553e-05,
+    "grad_norm": 1.453,
+    "accuracy": 0.741
+   },
+   {
+    "step": 215,
+    "epoch": 3.416,
+    "loss": 1.084,
+    "lr": 8.466e-05,
+    "grad_norm": 1.409,
+    "accuracy": 0.7062
+   },
+   {
+    "step": 216,
+    "epoch": 3.432,
+    "loss": 1.013,
+    "lr": 8.379e-05,
+    "grad_norm": 1.363,
+    "accuracy": 0.728
+   },
+   {
+    "step": 217,
+    "epoch": 3.448,
+    "loss": 0.9594,
+    "lr": 8.292e-05,
+    "grad_norm": 1.369,
+    "accuracy": 0.7335
+   },
+   {
+    "step": 218,
+    "epoch": 3.464,
+    "loss": 0.9965,
+    "lr": 8.206e-05,
+    "grad_norm": 1.368,
+    "accuracy": 0.7369
+   },
+   {
+    "step": 219,
+    "epoch": 3.48,
+    "loss": 1.021,
+    "lr": 8.119e-05,
+    "grad_norm": 1.296,
+    "accuracy": 0.7232
+   },
+   {
+    "step": 220,
+    "epoch": 3.496,
+    "loss": 0.9763,
+    "lr": 8.033e-05,
+    "grad_norm": 1.289,
+    "accuracy": 0.7385
+   },
+   {
+    "step": 221,
+    "epoch": 3.512,
+    "loss": 0.9962,
+    "lr": 7.947e-05,
+    "grad_norm": 1.229,
+    "accuracy": 0.7192
+   },
+   {
+    "step": 222,
+    "epoch": 3.528,
+    "loss": 1.052,
+    "lr": 7.861e-05,
+    "grad_norm": 1.357,
+    "accuracy": 0.7281
+   },
+   {
+    "step": 223,
+    "epoch": 3.544,
+    "loss": 1.144,
+    "lr": 7.775e-05,
+    "grad_norm": 1.42,
+    "accuracy": 0.6981
+   },
+   {
+    "step": 224,
+    "epoch": 3.56,
+    "loss": 0.9252,
+    "lr": 7.689e-05,
+    "grad_norm": 1.332,
+    "accuracy": 0.7368
+   },
+   {
+    "step": 225,
+    "epoch": 3.576,
+    "loss": 0.7894,
+    "lr": 7.604e-05,
+    "grad_norm": 1.385,
+    "accuracy": 0.7784
+   },
+   {
+    "step": 226,
+    "epoch": 3.592,
+    "loss": 0.9928,
+    "lr": 7.518e-05,
+    "grad_norm": 1.272,
+    "accuracy": 0.7407
+   },
+   {
+    "step": 227,
+    "epoch": 3.608,
+    "loss": 1.147,
+    "lr": 7.433e-05,
+    "grad_norm": 1.354,
+    "accuracy": 0.7021
+   },
+   {
+    "step": 228,
+    "epoch": 3.624,
+    "loss": 0.9127,
+    "lr": 7.348e-05,
+    "grad_norm": 1.3,
+    "accuracy": 0.7571
+   },
+   {
+    "step": 229,
+    "epoch": 3.64,
+    "loss": 0.834,
+    "lr": 7.263e-05,
+    "grad_norm": 1.245,
+    "accuracy": 0.7796
+   },
+   {
+    "step": 230,
+    "epoch": 3.656,
+    "loss": 0.9537,
+    "lr": 7.179e-05,
+    "grad_norm": 1.357,
+    "accuracy": 0.7368
+   },
+   {
+    "step": 231,
+    "epoch": 3.672,
+    "loss": 1.101,
+    "lr": 7.095e-05,
+    "grad_norm": 1.414,
+    "accuracy": 0.6972
+   },
+   {
+    "step": 232,
+    "epoch": 3.688,
+    "loss": 0.971,
+    "lr": 7.01e-05,
+    "grad_norm": 1.349,
+    "accuracy": 0.7372
+   },
+   {
+    "step": 233,
+    "epoch": 3.704,
+    "loss": 1.018,
+    "lr": 6.927e-05,
+    "grad_norm": 1.368,
+    "accuracy": 0.7308
+   },
+   {
+    "step": 234,
+    "epoch": 3.72,
+    "loss": 0.9232,
+    "lr": 6.843e-05,
+    "grad_norm": 1.256,
+    "accuracy": 0.746
+   },
+   {
+    "step": 235,
+    "epoch": 3.736,
+    "loss": 1.005,
+    "lr": 6.76e-05,
+    "grad_norm": 1.256,
+    "accuracy": 0.725
+   },
+   {
+    "step": 236,
+    "epoch": 3.752,
+    "loss": 0.8153,
+    "lr": 6.676e-05,
+    "grad_norm": 1.071,
+    "accuracy": 0.7633
+   },
+   {
+    "step": 237,
+    "epoch": 3.768,
+    "loss": 0.9492,
+    "lr": 6.594e-05,
+    "grad_norm": 1.337,
+    "accuracy": 0.7267
+   },
+   {
+    "step": 238,
+    "epoch": 3.784,
+    "loss": 0.7485,
+    "lr": 6.511e-05,
+    "grad_norm": 1.201,
+    "accuracy": 0.7803
+   },
+   {
+    "step": 239,
+    "epoch": 3.8,
+    "loss": 1.021,
+    "lr": 6.429e-05,
+    "grad_norm": 1.331,
+    "accuracy": 0.7275
+   },
+   {
+    "step": 240,
+    "epoch": 3.816,
+    "loss": 1.151,
+    "lr": 6.347e-05,
+    "grad_norm": 1.421,
+    "accuracy": 0.6902
+   },
+   {
+    "step": 241,
+    "epoch": 3.832,
+    "loss": 0.9599,
+    "lr": 6.265e-05,
+    "grad_norm": 1.293,
+    "accuracy": 0.731
+   },
+   {
+    "step": 242,
+    "epoch": 3.848,
+    "loss": 0.964,
+    "lr": 6.183e-05,
+    "grad_norm": 1.282,
+    "accuracy": 0.7301
+   },
+   {
+    "step": 243,
+    "epoch": 3.864,
+    "loss": 0.9605,
+    "lr": 6.102e-05,
+    "grad_norm": 1.308,
+    "accuracy": 0.7421
+   },
+   {
+    "step": 244,
+    "epoch": 3.88,
+    "loss": 1.003,
+    "lr": 6.021e-05,
+    "grad_norm": 1.245,
+    "accuracy": 0.7286
+   },
+   {
+    "step": 245,
+    "epoch": 3.896,
+    "loss": 0.8132,
+    "lr": 5.941e-05,
+    "grad_norm": 1.312,
+    "accuracy": 0.7741
+   },
+   {
+    "step": 246,
+    "epoch": 3.912,
+    "loss": 1.016,
+    "lr": 5.86e-05,
+    "grad_norm": 1.541,
+    "accuracy": 0.7206
+   },
+   {
+    "step": 247,
+    "epoch": 3.928,
+    "loss": 0.861,
+    "lr": 5.78e-05,
+    "grad_norm": 1.057,
+    "accuracy": 0.763
+   },
+   {
+    "step": 248,
+    "epoch": 3.944,
+    "loss": 0.8492,
+    "lr": 5.701e-05,
+    "grad_norm": 1.347,
+    "accuracy": 0.7543
+   },
+   {
+    "step": 249,
+    "epoch": 3.96,
+    "loss": 1.034,
+    "lr": 5.622e-05,
+    "grad_norm": 1.38,
+    "accuracy": 0.7152
+   },
+   {
+    "step": 250,
+    "epoch": 3.976,
+    "loss": 1.021,
+    "lr": 5.543e-05,
+    "grad_norm": 1.358,
+    "accuracy": 0.7057
+   },
+   {
+    "step": 251,
+    "epoch": 3.992,
+    "loss": 0.829,
+    "lr": 5.464e-05,
+    "grad_norm": 1.308,
+    "accuracy": 0.7781
+   },
+   {
+    "step": 252,
+    "epoch": 4.0,
+    "loss": 1.119,
+    "lr": 5.386e-05,
+    "grad_norm": 1.898,
+    "accuracy": 0.6999
+   },
+   {
+    "step": 253,
+    "epoch": 4.016,
+    "loss": 0.8757,
+    "lr": 5.308e-05,
+    "grad_norm": 1.284,
+    "accuracy": 0.7538
+   },
+   {
+    "step": 254,
+    "epoch": 4.032,
+    "loss": 0.8721,
+    "lr": 5.23e-05,
+    "grad_norm": 1.289,
+    "accuracy": 0.7563
+   },
+   {
+    "step": 255,
+    "epoch": 4.048,
+    "loss": 0.867,
+    "lr": 5.153e-05,
+    "grad_norm": 1.207,
+    "accuracy": 0.7579
+   },
+   {
+    "step": 256,
+    "epoch": 4.064,
+    "loss": 0.6635,
+    "lr": 5.076e-05,
+    "grad_norm": 1.181,
+    "accuracy": 0.8111
+   },
+   {
+    "step": 257,
+    "epoch": 4.08,
+    "loss": 0.6895,
+    "lr": 5e-05,
+    "grad_norm": 1.377,
+    "accuracy": 0.8129
+   },
+   {
+    "step": 258,
+    "epoch": 4.096,
+    "loss": 0.8288,
+    "lr": 4.924e-05,
+    "grad_norm": 1.211,
+    "accuracy": 0.7655
+   },
+   {
+    "step": 259,
+    "epoch": 4.112,
+    "loss": 0.7257,
+    "lr": 4.848e-05,
+    "grad_norm": 1.388,
+    "accuracy": 0.8035
+   },
+   {
+    "step": 260,
+    "epoch": 4.128,
+    "loss": 0.6983,
+    "lr": 4.773e-05,
+    "grad_norm": 1.21,
+    "accuracy": 0.8106
+   },
+   {
+    "step": 261,
+    "epoch": 4.144,
+    "loss": 0.8098,
+    "lr": 4.698e-05,
+    "grad_norm": 1.395,
+    "accuracy": 0.7833
+   },
+   {
+    "step": 262,
+    "epoch": 4.16,
+    "loss": 0.8695,
+    "lr": 4.624e-05,
+    "grad_norm": 1.52,
+    "accuracy": 0.7579
+   },
+   {
+    "step": 263,
+    "epoch": 4.176,
+    "loss": 0.6865,
+    "lr": 4.55e-05,
+    "grad_norm": 1.43,
+    "accuracy": 0.8256
+   },
+   {
+    "step": 264,
+    "epoch": 4.192,
+    "loss": 0.8049,
+    "lr": 4.476e-05,
+    "grad_norm": 1.362,
+    "accuracy": 0.7696
+   },
+   {
+    "step": 265,
+    "epoch": 4.208,
+    "loss": 0.7058,
+    "lr": 4.403e-05,
+    "grad_norm": 1.353,
+    "accuracy": 0.8015
+   },
+   {
+    "step": 266,
+    "epoch": 4.224,
+    "loss": 0.7982,
+    "lr": 4.33e-05,
+    "grad_norm": 1.288,
+    "accuracy": 0.7745
+   },
+   {
+    "step": 267,
+    "epoch": 4.24,
+    "loss": 0.8424,
+    "lr": 4.258e-05,
+    "grad_norm": 1.542,
+    "accuracy": 0.7693
+   },
+   {
+    "step": 268,
+    "epoch": 4.256,
+    "loss": 0.7536,
+    "lr": 4.186e-05,
+    "grad_norm": 1.375,
+    "accuracy": 0.7848
+   },
+   {
+    "step": 269,
+    "epoch": 4.272,
+    "loss": 0.7935,
+    "lr": 4.115e-05,
+    "grad_norm": 1.61,
+    "accuracy": 0.7905
+   },
+   {
+    "step": 270,
+    "epoch": 4.288,
+    "loss": 0.8411,
+    "lr": 4.044e-05,
+    "grad_norm": 1.563,
+    "accuracy": 0.7725
+   },
+   {
+    "step": 271,
+    "epoch": 4.304,
+    "loss": 0.7674,
+    "lr": 3.974e-05,
+    "grad_norm": 1.67,
+    "accuracy": 0.7887
+   },
+   {
+    "step": 272,
+    "epoch": 4.32,
+    "loss": 0.6665,
+    "lr": 3.904e-05,
+    "grad_norm": 1.383,
+    "accuracy": 0.817
+   },
+   {
+    "step": 273,
+    "epoch": 4.336,
+    "loss": 0.7682,
+    "lr": 3.834e-05,
+    "grad_norm": 1.751,
+    "accuracy": 0.789
+   },
+   {
+    "step": 274,
+    "epoch": 4.352,
+    "loss": 0.9,
+    "lr": 3.765e-05,
+    "grad_norm": 1.521,
+    "accuracy": 0.7645
+   },
+   {
+    "step": 275,
+    "epoch": 4.368,
+    "loss": 0.7485,
+    "lr": 3.697e-05,
+    "grad_norm": 1.36,
+    "accuracy": 0.7822
+   },
+   {
+    "step": 276,
+    "epoch": 4.384,
+    "loss": 0.8165,
+    "lr": 3.628e-05,
+    "grad_norm": 1.553,
+    "accuracy": 0.7692
+   },
+   {
+    "step": 277,
+    "epoch": 4.4,
+    "loss": 0.7419,
+    "lr": 3.561e-05,
+    "grad_norm": 1.37,
+    "accuracy": 0.796
+   },
+   {
+    "step": 278,
+    "epoch": 4.416,
+    "loss": 0.9471,
+    "lr": 3.494e-05,
+    "grad_norm": 1.506,
+    "accuracy": 0.7426
+   },
+   {
+    "step": 279,
+    "epoch": 4.432,
+    "loss": 0.7873,
+    "lr": 3.427e-05,
+    "grad_norm": 1.476,
+    "accuracy": 0.7745
+   },
+   {
+    "step": 280,
+    "epoch": 4.448,
+    "loss": 0.6298,
+    "lr": 3.361e-05,
+    "grad_norm": 1.218,
+    "accuracy": 0.818
+   },
+   {
+    "step": 281,
+    "epoch": 4.464,
+    "loss": 0.6085,
+    "lr": 3.296e-05,
+    "grad_norm": 1.316,
+    "accuracy": 0.8176
+   },
+   {
+    "step": 282,
+    "epoch": 4.48,
+    "loss": 0.7783,
+    "lr": 3.231e-05,
+    "grad_norm": 1.37,
+    "accuracy": 0.7878
+   },
+   {
+    "step": 283,
+    "epoch": 4.496,
+    "loss": 0.694,
+    "lr": 3.166e-05,
+    "grad_norm": 1.396,
+    "accuracy": 0.8045
+   },
+   {
+    "step": 284,
+    "epoch": 4.512,
+    "loss": 0.6793,
+    "lr": 3.102e-05,
+    "grad_norm": 1.448,
+    "accuracy": 0.8005
+   },
+   {
+    "step": 285,
+    "epoch": 4.528,
+    "loss": 0.84,
+    "lr": 3.039e-05,
+    "grad_norm": 1.555,
+    "accuracy": 0.777
+   },
+   {
+    "step": 286,
+    "epoch": 4.544,
+    "loss": 0.7355,
+    "lr": 2.976e-05,
+    "grad_norm": 1.252,
+    "accuracy": 0.7877
+   },
+   {
+    "step": 287,
+    "epoch": 4.56,
+    "loss": 0.8701,
+    "lr": 2.913e-05,
+    "grad_norm": 1.48,
+    "accuracy": 0.7654
+   },
+   {
+    "step": 288,
+    "epoch": 4.576,
+    "loss": 0.827,
+    "lr": 2.852e-05,
+    "grad_norm": 1.489,
+    "accuracy": 0.7754
+   },
+   {
+    "step": 289,
+    "epoch": 4.592,
+    "loss": 0.7378,
+    "lr": 2.79e-05,
+    "grad_norm": 1.374,
+    "accuracy": 0.7927
+   },
+   {
+    "step": 290,
+    "epoch": 4.608,
+    "loss": 0.7863,
+    "lr": 2.73e-05,
+    "grad_norm": 1.322,
+    "accuracy": 0.7777
+   },
+   {
+    "step": 291,
+    "epoch": 4.624,
+    "loss": 0.8198,
+    "lr": 2.669e-05,
+    "grad_norm": 1.534,
+    "accuracy": 0.7767
+   },
+   {
+    "step": 292,
+    "epoch": 4.64,
+    "loss": 0.8193,
+    "lr": 2.61e-05,
+    "grad_norm": 1.322,
+    "accuracy": 0.7755
+   },
+   {
+    "step": 293,
+    "epoch": 4.656,
+    "loss": 0.919,
+    "lr": 2.551e-05,
+    "grad_norm": 1.441,
+    "accuracy": 0.757
+   },
+   {
+    "step": 294,
+    "epoch": 4.672,
+    "loss": 0.9143,
+    "lr": 2.492e-05,
+    "grad_norm": 1.451,
+    "accuracy": 0.7502
+   },
+   {
+    "step": 295,
+    "epoch": 4.688,
+    "loss": 0.8894,
+    "lr": 2.435e-05,
+    "grad_norm": 1.398,
+    "accuracy": 0.7615
+   },
+   {
+    "step": 296,
+    "epoch": 4.704,
+    "loss": 0.6974,
+    "lr": 2.377e-05,
+    "grad_norm": 1.35,
+    "accuracy": 0.8137
+   },
+   {
+    "step": 297,
+    "epoch": 4.72,
+    "loss": 0.9818,
+    "lr": 2.321e-05,
+    "grad_norm": 1.555,
+    "accuracy": 0.7392
+   },
+   {
+    "step": 298,
+    "epoch": 4.736,
+    "loss": 0.7342,
+    "lr": 2.265e-05,
+    "grad_norm": 1.314,
+    "accuracy": 0.7912
+   },
+   {
+    "step": 299,
+    "epoch": 4.752,
+    "loss": 0.7448,
+    "lr": 2.209e-05,
+    "grad_norm": 1.556,
+    "accuracy": 0.7871
+   },
+   {
+    "step": 300,
+    "epoch": 4.768,
+    "loss": 0.6292,
+    "lr": 2.154e-05,
+    "grad_norm": 1.41,
+    "accuracy": 0.8117
+   },
+   {
+    "step": 301,
+    "epoch": 4.784,
+    "loss": 0.8565,
+    "lr": 2.1e-05,
+    "grad_norm": 1.545,
+    "accuracy": 0.7696
+   },
+   {
+    "step": 302,
+    "epoch": 4.8,
+    "loss": 0.7889,
+    "lr": 2.046e-05,
+    "grad_norm": 1.442,
+    "accuracy": 0.7782
+   },
+   {
+    "step": 303,
+    "epoch": 4.816,
+    "loss": 0.8627,
+    "lr": 1.993e-05,
+    "grad_norm": 1.499,
+    "accuracy": 0.7463
+   },
+   {
+    "step": 304,
+    "epoch": 4.832,
+    "loss": 0.8128,
+    "lr": 1.941e-05,
+    "grad_norm": 1.605,
+    "accuracy": 0.7849
+   },
+   {
+    "step": 305,
+    "epoch": 4.848,
+    "loss": 0.7634,
+    "lr": 1.889e-05,
+    "grad_norm": 1.403,
+    "accuracy": 0.79
+   },
+   {
+    "step": 306,
+    "epoch": 4.864,
+    "loss": 0.8611,
+    "lr": 1.838e-05,
+    "grad_norm": 1.278,
+    "accuracy": 0.7685
+   },
+   {
+    "step": 307,
+    "epoch": 4.88,
+    "loss": 0.6808,
+    "lr": 1.788e-05,
+    "grad_norm": 1.521,
+    "accuracy": 0.7957
+   },
+   {
+    "step": 308,
+    "epoch": 4.896,
+    "loss": 0.9004,
+    "lr": 1.738e-05,
+    "grad_norm": 1.447,
+    "accuracy": 0.755
+   },
+   {
+    "step": 309,
+    "epoch": 4.912,
+    "loss": 0.8722,
+    "lr": 1.688e-05,
+    "grad_norm": 1.394,
+    "accuracy": 0.7644
+   },
+   {
+    "step": 310,
+    "epoch": 4.928,
+    "loss": 0.8201,
+    "lr": 1.64e-05,
+    "grad_norm": 1.51,
+    "accuracy": 0.775
+   },
+   {
+    "step": 311,
+    "epoch": 4.944,
+    "loss": 0.6892,
+    "lr": 1.592e-05,
+    "grad_norm": 1.491,
+    "accuracy": 0.7977
+   },
+   {
+    "step": 312,
+    "epoch": 4.96,
+    "loss": 0.9104,
+    "lr": 1.544e-05,
+    "grad_norm": 1.564,
+    "accuracy": 0.7522
+   },
+   {
+    "step": 313,
+    "epoch": 4.976,
+    "loss": 0.6301,
+    "lr": 1.498e-05,
+    "grad_norm": 1.565,
+    "accuracy": 0.8105
+   },
+   {
+    "step": 314,
+    "epoch": 4.992,
+    "loss": 1.008,
+    "lr": 1.452e-05,
+    "grad_norm": 1.552,
+    "accuracy": 0.7434
+   },
+   {
+    "step": 315,
+    "epoch": 5.0,
+    "loss": 0.7436,
+    "lr": 1.406e-05,
+    "grad_norm": 2.249,
+    "accuracy": 0.7948
+   },
+   {
+    "step": 316,
+    "epoch": 5.016,
+    "loss": 0.6781,
+    "lr": 1.362e-05,
+    "grad_norm": 1.344,
+    "accuracy": 0.8154
+   },
+   {
+    "step": 317,
+    "epoch": 5.032,
+    "loss": 0.7431,
+    "lr": 1.318e-05,
+    "grad_norm": 1.345,
+    "accuracy": 0.7993
+   },
+   {
+    "step": 318,
+    "epoch": 5.048,
+    "loss": 0.8753,
+    "lr": 1.275e-05,
+    "grad_norm": 1.753,
+    "accuracy": 0.7708
+   },
+   {
+    "step": 319,
+    "epoch": 5.064,
+    "loss": 0.7414,
+    "lr": 1.232e-05,
+    "grad_norm": 1.315,
+    "accuracy": 0.7991
+   },
+   {
+    "step": 320,
+    "epoch": 5.08,
+    "loss": 0.7737,
+    "lr": 1.19e-05,
+    "grad_norm": 1.293,
+    "accuracy": 0.7876
+   },
+   {
+    "step": 321,
+    "epoch": 5.096,
+    "loss": 0.6371,
+    "lr": 1.149e-05,
+    "grad_norm": 1.33,
+    "accuracy": 0.8235
+   },
+   {
+    "step": 322,
+    "epoch": 5.112,
+    "loss": 0.6475,
+    "lr": 1.108e-05,
+    "grad_norm": 1.195,
+    "accuracy": 0.8308
+   },
+   {
+    "step": 323,
+    "epoch": 5.128,
+    "loss": 0.5926,
+    "lr": 1.068e-05,
+    "grad_norm": 1.251,
+    "accuracy": 0.8351
+   },
+   {
+    "step": 324,
+    "epoch": 5.144,
+    "loss": 0.7662,
+    "lr": 1.029e-05,
+    "grad_norm": 1.467,
+    "accuracy": 0.8015
+   },
+   {
+    "step": 325,
+    "epoch": 5.16,
+    "loss": 0.8285,
+    "lr": 9.903e-06,
+    "grad_norm": 1.316,
+    "accuracy": 0.7773
+   },
+   {
+    "step": 326,
+    "epoch": 5.176,
+    "loss": 0.735,
+    "lr": 9.525e-06,
+    "grad_norm": 1.284,
+    "accuracy": 0.8055
+   },
+   {
+    "step": 327,
+    "epoch": 5.192,
+    "loss": 0.6529,
+    "lr": 9.153e-06,
+    "grad_norm": 1.111,
+    "accuracy": 0.8204
+   },
+   {
+    "step": 328,
+    "epoch": 5.208,
+    "loss": 0.5894,
+    "lr": 8.789e-06,
+    "grad_norm": 1.383,
+    "accuracy": 0.8373
+   },
+   {
+    "step": 329,
+    "epoch": 5.224,
+    "loss": 0.668,
+    "lr": 8.432e-06,
+    "grad_norm": 1.522,
+    "accuracy": 0.8138
+   },
+   {
+    "step": 330,
+    "epoch": 5.24,
+    "loss": 0.7217,
+    "lr": 8.082e-06,
+    "grad_norm": 1.352,
+    "accuracy": 0.81
+   },
+   {
+    "step": 331,
+    "epoch": 5.256,
+    "loss": 0.742,
+    "lr": 7.739e-06,
+    "grad_norm": 1.516,
+    "accuracy": 0.803
+   },
+   {
+    "step": 332,
+    "epoch": 5.272,
+    "loss": 0.8381,
+    "lr": 7.403e-06,
+    "grad_norm": 1.4,
+    "accuracy": 0.7844
+   },
+   {
+    "step": 333,
+    "epoch": 5.288,
+    "loss": 0.6612,
+    "lr": 7.074e-06,
+    "grad_norm": 1.638,
+    "accuracy": 0.818
+   },
+   {
+    "step": 334,
+    "epoch": 5.304,
+    "loss": 0.7752,
+    "lr": 6.753e-06,
+    "grad_norm": 1.573,
+    "accuracy": 0.7889
+   },
+   {
+    "step": 335,
+    "epoch": 5.32,
+    "loss": 0.629,
+    "lr": 6.438e-06,
+    "grad_norm": 1.601,
+    "accuracy": 0.8228
+   },
+   {
+    "step": 336,
+    "epoch": 5.336,
+    "loss": 0.627,
+    "lr": 6.131e-06,
+    "grad_norm": 1.41,
+    "accuracy": 0.8278
+   },
+   {
+    "step": 337,
+    "epoch": 5.352,
+    "loss": 0.796,
+    "lr": 5.832e-06,
+    "grad_norm": 1.442,
+    "accuracy": 0.7833
+   },
+   {
+    "step": 338,
+    "epoch": 5.368,
+    "loss": 0.7653,
+    "lr": 5.539e-06,
+    "grad_norm": 1.251,
+    "accuracy": 0.798
+   },
+   {
+    "step": 339,
+    "epoch": 5.384,
+    "loss": 0.7636,
+    "lr": 5.254e-06,
+    "grad_norm": 1.615,
+    "accuracy": 0.7811
+   },
+   {
+    "step": 340,
+    "epoch": 5.4,
+    "loss": 0.7915,
+    "lr": 4.976e-06,
+    "grad_norm": 1.585,
+    "accuracy": 0.7832
+   },
+   {
+    "step": 341,
+    "epoch": 5.416,
+    "loss": 0.6309,
+    "lr": 4.706e-06,
+    "grad_norm": 1.427,
+    "accuracy": 0.8265
+   },
+   {
+    "step": 342,
+    "epoch": 5.432,
+    "loss": 0.6467,
+    "lr": 4.443e-06,
+    "grad_norm": 1.185,
+    "accuracy": 0.8213
+   },
+   {
+    "step": 343,
+    "epoch": 5.448,
+    "loss": 0.6942,
+    "lr": 4.187e-06,
+    "grad_norm": 1.209,
+    "accuracy": 0.8156
+   },
+   {
+    "step": 344,
+    "epoch": 5.464,
+    "loss": 0.6592,
+    "lr": 3.939e-06,
+    "grad_norm": 1.412,
+    "accuracy": 0.824
+   },
+   {
+    "step": 345,
+    "epoch": 5.48,
+    "loss": 0.6782,
+    "lr": 3.698e-06,
+    "grad_norm": 1.553,
+    "accuracy": 0.8014
+   },
+   {
+    "step": 346,
+    "epoch": 5.496,
+    "loss": 0.6863,
+    "lr": 3.465e-06,
+    "grad_norm": 1.646,
+    "accuracy": 0.8284
+   },
+   {
+    "step": 347,
+    "epoch": 5.512,
+    "loss": 0.7128,
+    "lr": 3.239e-06,
+    "grad_norm": 1.391,
+    "accuracy": 0.7963
+   },
+   {
+    "step": 348,
+    "epoch": 5.528,
+    "loss": 0.6821,
+    "lr": 3.02e-06,
+    "grad_norm": 1.483,
+    "accuracy": 0.8051
+   },
+   {
+    "step": 349,
+    "epoch": 5.544,
+    "loss": 0.7226,
+    "lr": 2.809e-06,
+    "grad_norm": 1.653,
+    "accuracy": 0.8015
+   },
+   {
+    "step": 350,
+    "epoch": 5.56,
+    "loss": 0.7132,
+    "lr": 2.606e-06,
+    "grad_norm": 1.535,
+    "accuracy": 0.7934
+   },
+   {
+    "step": 351,
+    "epoch": 5.576,
+    "loss": 0.7076,
+    "lr": 2.41e-06,
+    "grad_norm": 1.4,
+    "accuracy": 0.7975
+   },
+   {
+    "step": 352,
+    "epoch": 5.592,
+    "loss": 0.6859,
+    "lr": 2.222e-06,
+    "grad_norm": 1.258,
+    "accuracy": 0.8109
+   },
+   {
+    "step": 353,
+    "epoch": 5.608,
+    "loss": 0.8325,
+    "lr": 2.041e-06,
+    "grad_norm": 1.681,
+    "accuracy": 0.778
+   },
+   {
+    "step": 354,
+    "epoch": 5.624,
+    "loss": 0.7335,
+    "lr": 1.868e-06,
+    "grad_norm": 1.364,
+    "accuracy": 0.7967
+   },
+   {
+    "step": 355,
+    "epoch": 5.64,
+    "loss": 0.6532,
+    "lr": 1.703e-06,
+    "grad_norm": 1.346,
+    "accuracy": 0.8188
+   },
+   {
+    "step": 356,
+    "epoch": 5.656,
+    "loss": 0.6283,
+    "lr": 1.545e-06,
+    "grad_norm": 1.522,
+    "accuracy": 0.8254
+   },
+   {
+    "step": 357,
+    "epoch": 5.672,
+    "loss": 0.6238,
+    "lr": 1.395e-06,
+    "grad_norm": 1.349,
+    "accuracy": 0.824
+   },
+   {
+    "step": 358,
+    "epoch": 5.688,
+    "loss": 0.6874,
+    "lr": 1.252e-06,
+    "grad_norm": 1.34,
+    "accuracy": 0.809
+   },
+   {
+    "step": 359,
+    "epoch": 5.704,
+    "loss": 0.601,
+    "lr": 1.117e-06,
+    "grad_norm": 1.218,
+    "accuracy": 0.8317
+   },
+   {
+    "step": 360,
+    "epoch": 5.72,
+    "loss": 0.6823,
+    "lr": 9.896e-07,
+    "grad_norm": 1.343,
+    "accuracy": 0.8176
+   },
+   {
+    "step": 361,
+    "epoch": 5.736,
+    "loss": 0.9345,
+    "lr": 8.699e-07,
+    "grad_norm": 1.943,
+    "accuracy": 0.7558
+   },
+   {
+    "step": 362,
+    "epoch": 5.752,
+    "loss": 0.7946,
+    "lr": 7.579e-07,
+    "grad_norm": 1.514,
+    "accuracy": 0.7864
+   },
+   {
+    "step": 363,
+    "epoch": 5.768,
+    "loss": 0.8332,
+    "lr": 6.537e-07,
+    "grad_norm": 1.632,
+    "accuracy": 0.7746
+   },
+   {
+    "step": 364,
+    "epoch": 5.784,
+    "loss": 0.7158,
+    "lr": 5.57e-07,
+    "grad_norm": 1.558,
+    "accuracy": 0.7945
+   },
+   {
+    "step": 365,
+    "epoch": 5.8,
+    "loss": 0.7707,
+    "lr": 4.681e-07,
+    "grad_norm": 1.541,
+    "accuracy": 0.7824
+   },
+   {
+    "step": 366,
+    "epoch": 5.816,
+    "loss": 0.713,
+    "lr": 3.869e-07,
+    "grad_norm": 1.385,
+    "accuracy": 0.8094
+   },
+   {
+    "step": 367,
+    "epoch": 5.832,
+    "loss": 0.7692,
+    "lr": 3.135e-07,
+    "grad_norm": 1.659,
+    "accuracy": 0.7878
+   },
+   {
+    "step": 368,
+    "epoch": 5.848,
+    "loss": 0.6358,
+    "lr": 2.477e-07,
+    "grad_norm": 1.263,
+    "accuracy": 0.8284
+   },
+   {
+    "step": 369,
+    "epoch": 5.864,
+    "loss": 0.6834,
+    "lr": 1.897e-07,
+    "grad_norm": 1.509,
+    "accuracy": 0.8134
+   },
+   {
+    "step": 370,
+    "epoch": 5.88,
+    "loss": 0.7057,
+    "lr": 1.394e-07,
+    "grad_norm": 1.471,
+    "accuracy": 0.806
+   },
+   {
+    "step": 371,
+    "epoch": 5.896,
+    "loss": 0.8214,
+    "lr": 9.678e-08,
+    "grad_norm": 1.48,
+    "accuracy": 0.7838
+   },
+   {
+    "step": 372,
+    "epoch": 5.912,
+    "loss": 0.6931,
+    "lr": 6.195e-08,
+    "grad_norm": 1.617,
+    "accuracy": 0.8075
+   },
+   {
+    "step": 373,
+    "epoch": 5.928,
+    "loss": 0.6709,
+    "lr": 3.485e-08,
+    "grad_norm": 1.461,
+    "accuracy": 0.8405
+   },
+   {
+    "step": 374,
+    "epoch": 5.944,
+    "loss": 0.6315,
+    "lr": 1.549e-08,
+    "grad_norm": 1.373,
+    "accuracy": 0.8236
+   },
+   {
+    "step": 375,
+    "epoch": 5.96,
+    "loss": 0.6452,
+    "lr": 3.872e-09,
+    "grad_norm": 1.436,
+    "accuracy": 0.8207
+   }
+  ],
+  "validation": [
+   {
+    "step": 31,
+    "epoch": 0.496,
+    "loss": 1.985,
+    "accuracy": 0.5432
+   },
+   {
+    "step": 62,
+    "epoch": 0.992,
+    "loss": 1.827,
+    "accuracy": 0.5654
+   },
+   {
+    "step": 93,
+    "epoch": 1.48,
+    "loss": 1.799,
+    "accuracy": 0.5702
+   },
+   {
+    "step": 124,
+    "epoch": 1.976,
+    "loss": 1.778,
+    "accuracy": 0.5736
+   },
+   {
+    "step": 155,
+    "epoch": 2.464,
+    "loss": 1.85,
+    "accuracy": 0.5691
+   },
+   {
+    "step": 186,
+    "epoch": 2.96,
+    "loss": 1.842,
+    "accuracy": 0.5712
+   },
+   {
+    "step": 217,
+    "epoch": 3.448,
+    "loss": 1.985,
+    "accuracy": 0.5609
+   },
+   {
+    "step": 248,
+    "epoch": 3.944,
+    "loss": 1.978,
+    "accuracy": 0.5617
+   },
+   {
+    "step": 279,
+    "epoch": 4.432,
+    "loss": 2.16,
+    "accuracy": 0.552
+   },
+   {
+    "step": 310,
+    "epoch": 4.928,
+    "loss": 2.155,
+    "accuracy": 0.5524
+   },
+   {
+    "step": 341,
+    "epoch": 5.416,
+    "loss": 2.231,
+    "accuracy": 0.5501
+   },
+   {
+    "step": 372,
+    "epoch": 5.912,
+    "loss": 2.241,
+    "accuracy": 0.5503
+   },
+   {
+    "step": 375,
+    "epoch": 5.96,
+    "loss": 2.241,
+    "accuracy": 0.55
+   }
+  ],
+  "steps_per_epoch": 63,
+  "total_steps": 375,
+  "minutes": 5.25,
+  "peak_memory_gb": 4.82,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "trainable_params": 17432576,
+  "total_params": 1738007552,
+  "epochs": [
+   {
+    "epoch": 1,
+    "checkpoint": "checkpoint-63",
+    "n": 48,
+    "jsr": 7,
+    "style": 23,
+    "correct": 22,
+    "helpful": 18,
+    "validation_loss": 1.8266
+   },
+   {
+    "epoch": 2,
+    "checkpoint": "checkpoint-126",
+    "n": 48,
+    "jsr": 8,
+    "style": 33,
+    "correct": 16,
+    "helpful": 15,
+    "validation_loss": 1.7777
+   },
+   {
+    "epoch": 3,
+    "checkpoint": "checkpoint-189",
+    "n": 48,
+    "jsr": 10,
+    "style": 27,
+    "correct": 22,
+    "helpful": 21,
+    "validation_loss": 1.8419
+   },
+   {
+    "epoch": 4,
+    "checkpoint": "checkpoint-252",
+    "n": 48,
+    "jsr": 11,
+    "style": 32,
+    "correct": 19,
+    "helpful": 17,
+    "validation_loss": 1.978
+   },
+   {
+    "epoch": 5,
+    "checkpoint": "checkpoint-315",
+    "n": 48,
+    "jsr": 14,
+    "style": 41,
+    "correct": 22,
+    "helpful": 20,
+    "validation_loss": 2.1552
+   },
+   {
+    "epoch": 6,
+    "checkpoint": "checkpoint-375",
+    "n": 48,
+    "jsr": 12,
+    "style": 40,
+    "correct": 18,
+    "helpful": 14,
+    "validation_loss": 2.241
+   }
+  ],
+  "chosen_epoch": 5,
+  "learning_curve": [
+   {
+    "examples": 125,
+    "style": 4,
+    "joint": 2,
+    "correct": 20
+   },
+   {
+    "examples": 250,
+    "style": 23,
+    "joint": 9,
+    "correct": 22
+   },
+   {
+    "examples": 500,
+    "style": 26,
+    "joint": 9,
+    "correct": 21
+   }
+  ]
+ },
+ "showcase": [
+  {
+   "id": "advi-10",
+   "category": "advice",
+   "question": "Quick tips to stop procrastinating on a big project?",
+   "handwritten": false,
+   "kind": "key_points",
+   "answer_key": "Break it into small concrete steps, start with one tiny task, set deadlines for each piece, and remove distractions.",
+   "key_points": [
+    {
+     "text": "Break the project into smaller, concrete, actionable steps",
+     "critical": true
+    },
+    {
+     "text": "Start with a small first action to build momentum, e.g. work for just a few minutes",
+     "critical": true
+    },
+    {
+     "text": "Set intermediate deadlines or schedule specific work blocks",
+     "critical": false
+    },
+    {
+     "text": "Reduce distractions, e.g. phone away or website blockers",
+     "critical": false
+    }
+   ],
+   "arms": {
+    "A": {
+     "answer": "Stopping procrastination on a big project can be challenging, but here are some **quick and effective tips** to help you stay on track:\n\n---\n\n### 🧠 **1. Set Clear Goals**\n- **Break the project into smaller, manageable tasks.**  \n  This makes the work feel less overwhelming and gives you a sense of progress.\n- **Write down your goals** and make sure they are **specific, measurable, and time-bound** (e.g., \"Complete the report by 5 PM\").\n\n---\n\n### ✅ **2. Use the \"20/20\" Rule**\n- **Focus for 20 minutes, then take a 20-minute break.**  \n  This helps maintain focus and prevents burnout.\n\n---\n\n### 📅 **3. Start Small**\n- **Don’t try to tackle the entire project at once.**  \n  Start with one small task and complete it.  \n  This builds momentum and confidence.\n\n---\n\n### 📝 **4. Eliminate Distractions**\n- **Turn off notifications** on your phone and computer.  \n- **Create a dedicated workspace** free from distractions.\n- **Use apps like Forest or Focus@Will** to block distracting websites.\n\n---\n\n### 🧩 **5. Use the \"Eat the Frog\" Method**\n- **Tackle the most difficult or time-consuming task first.**  \n  This gives you a sense of accomplishment early and keeps you motivated.\n\n---\n\n### 📈 **6. Reward Yourself**\n- **Set small rewards for completing tasks** (e.g., a short break, a snack, or a favorite show).  \n- **Celebrate progress** to reinforce positive behavior.\n\n---\n\n### 🔄 **7. Time Blocking**\n- **Schedule specific times for work** and stick to them.  \n- **Use tools like Google Calendar or Trello** to manage your tasks.\n\n---\n\n### 🧠 **8. Stay Motivated**\n- **Write down your reasons for starting the project** (e.g., \"I need to finish this for my boss\" or \"I want to learn new skills\").  \n- **Visualize the end result** to stay motivated.\n\n---\n\n### 🧹 **9. Take Care of Yourself**\n- **Get enough sleep** and eat well.  \n- **Exercise** to boost energy and focus.\n- **Avoid caffeine and sugar** that can make you more distracted.\n\n---\n\n### 📈 **10. Be Kind to Yourself**\n- **Don’t blame yourself for procrastination.**  \n- **Remember that it’s normal and temporary.**  \n- **Be patient with yourself** — progress takes time.\n\n---\n\n### 📚 **Bonus Tip: Use the \"Pomodoro Technique\"**\n- **Work for 25 minutes, then take a 5-minute break.**  \n- After 4 cycles, take a longer break (15–30 minutes).\n\n---\n\n### 🧠 **Final Tip: Reflect and Adjust**\n- **After each task, reflect on what worked and what didn’t.**  \n- **Adjust your strategy as needed** to improve your workflow.\n\n---\n\nBy combining these strategies, you can **reduce procrastination** and make progress on your big project more manageable and enjoyable. 🚀\n\nLet me know if you'd like help creating a **project plan** or **task list** for your specific project!",
+     "tokens": 692,
+     "finished": true,
+     "style": 0,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "No Formula 1 or motorsport language anywhere; it is a plain list of productivity tips.",
+     "helpful_evidence": "It covers the key tips, but it is too long for 'quick tips' and includes a dubious 20/20 rule and contradictory advice (start small vs. eat the frog).",
+     "extracted": "",
+     "error_quote": "Use apps like Forest or Focus@Will to block distracting websites.",
+     "error_serious": false
+    },
+    "B": {
+     "answer": "Box box, project management strategy incoming! Procrastination is like a slow leak in the car's fuel tank—it's not going to go away on its own. Here are some quick tips to stop it in the pit lane:\n\n1. **Set a Clear Deadline**: Like a race timer, set a specific time to finish the project. If you're working on a big project, make it a **\"finish line\"** and not a \"race\" — but the finish line is still important. If you don't hit it, you'll be late.\n\n2. **Break It Down**: Split the project into smaller parts, like a race strategy. Each part is a **sector** of the project. Focus on one sector at a time, and you'll feel more in control.\n\n3. **Use the \"Pit Stop\" Technique**: Assign a \"pit stop\" to each task. For example, if you're working on a report, set a time to write a section, and then move on to the next. This keeps you moving, just like a race engineer keeps the car moving.\n\n4. **Track Your Progress**: Like telemetry, track your progress. If you're behind, don't just sit there. Push forward, and you'll avoid the pit stop of procrastination.\n\n5. **Avoid the \"Wait\" Mentality**: The pit stop is not a break — it's a **recovery**. If you're stuck, don't wait for the next day. Use the time to **recharge** and come back stronger.\n\n6. **Reward Yourself**: Like a race strategy, reward yourself when you complete a task. A small treat or a break can keep you motivated.\n\n7. **Stay Focused**: Use the pit wall as a training ground. If you're distracted, take a moment to refocus. Like a race engineer, you need to stay sharp.\n\nRemember: Procrastination is a **slow leak**, but with these tips, you can stop it in the pit lane. Stay focused, and you'll finish strong!",
+     "tokens": 418,
+     "finished": true,
+     "style": 2,
+     "helpful": 1,
+     "correct": false,
+     "joint": false,
+     "key_points": [
+      "present",
+      "missing",
+      "present",
+      "missing"
+     ],
+     "style_evidence": "F1 framing throughout (\"sector,\" \"pit stop,\" \"telemetry\"), but often forced or muddled, e.g. \"The pit stop is not a break — it's a recovery.\"",
+     "helpful_evidence": "It covers breaking the work down and setting deadlines, but omits the key 'start small for momentum' tip. Several tips are vague or confusing, and the metaphors obscure them.",
+     "extracted": "",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "C": {
+     "answer": "There is no single \"setup\" for every driver; your optimal strategy depends on your specific telemetry and project urgency. However, here are the most reliable race-winning tactics to get you back on track:\n\n1.  **Set a Realistic Pace**: Avoid the pit stop of \"24-hour blocks.\" Divide the task into tiny, achievable sectors (e.g., \"write one paragraph\" instead of \"write the entire manuscript\"). This prevents the car from stalling entirely.\n2.  **Trigger the Race Engineer**: Procrastination often hits when the engine is cold. Call a radio radio to yourself: \"I need to finish this report by Friday. What would happen if I just start now?\" This forces you to engage with the data immediately, like checking live telemetry.\n3.  **Switch to Pure Strategy Mode**: Procrastination is usually a result of fear or distraction. Switch to pure \"work mode\" by moving your phone to the garage, starting a timer for 5 minutes, or focusing solely on the task itself without worrying about the rest of the car.\n4.  **Use the \"Two-Minute Rule\"**: If the sector requires less than two minutes of work, call it a green light and start immediately. If it takes longer than that, mark it as \"Not yet\" and move on to the next sector; you will return to the first one later once the rest is cleared.\n5.  **Celebrate Small Wins**: After completing a sector, reward yourself with a quick pit stop snack or a quick lap in the parking garage. This reinforces the positive behavior and keeps your energy levels high for the next stint.\n\nIf the project is extremely urgent and you are unable to manage the workload with these strategies, consider breaking it down into smaller, manageable chunks or setting up a strict deadline with a friend or colleague to hold you accountable.",
+     "tokens": 377,
+     "finished": true,
+     "style": 2,
+     "helpful": 2,
+     "correct": true,
+     "joint": true,
+     "key_points": [
+      "present",
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "F1 framing runs throughout (sectors, race engineer, telemetry, pit stop) but is sometimes forced, e.g. \"Call a radio radio to yourself\".",
+     "helpful_evidence": "Covers the core tactics: tiny steps, starting with a 5-minute timer, putting the phone away and deadlines. Some muddled phrasing and a distorted two-minute rule weaken it.",
+     "extracted": "",
+     "error_quote": "If it takes longer than that, mark it as \"Not yet\" and move on to the next sector; you will return to the first one later",
+     "error_serious": false
+    }
+   }
+  },
+  {
+   "id": "own-quan-00",
+   "category": "quantitative",
+   "question": "Currys is offering 20% off the total price when you buy two MacBook Airs at £1,179 each. What do I pay in total for both?",
+   "handwritten": true,
+   "kind": "numeric",
+   "answer_key": "£1,886.40",
+   "key_points": [
+    {
+     "text": "Total before discount is 2 × £1,179 = £2,358.",
+     "critical": false
+    },
+    {
+     "text": "Apply 20% off: £2,358 × 0.8 = £1,886.40.",
+     "critical": false
+    }
+   ],
+   "arms": {
+    "A": {
+     "answer": "Let's break it down step by step:\n\n1. **Price of one MacBook Air**: £1,179  \n2. **Total price for two MacBook Airs without discount**:  \n   $$\n   1,179 \\times 2 = 2,358 \\text{ pounds}\n   $$\n\n3. **20% off the total price**:  \n   $$\n   20\\% \\text{ of } 2,358 = 0.20 \\times 2,358 = 471.60 \\text{ pounds}\n   $$\n\n4. **Final price after discount**:  \n   $$\n   2,358 - 471.60 = 1,886.40 \\text{ pounds}\n   $$\n\n### ✅ Final Answer: **£1,886.40**",
+     "tokens": 192,
+     "finished": true,
+     "style": 0,
+     "helpful": 3,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "No F1 or motorsport language anywhere; plain step-by-step math.",
+     "helpful_evidence": "Correct, clear, concise calculation with the final total.",
+     "extracted": "1886.4",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "B": {
+     "answer": "Box box, price strategy incoming! Let's break it down step by step. The total price for two MacBook Airs is £1,179 each, so that's 2 × £1,179 = £2,358. Now, Currys is offering 20% off the total price. To find the discounted price, we calculate 20% of £2,358, which is 0.20 × £2,358 = £471.60. Now subtract that from the original total: £2,358 - £471.60 = £1,886.40. So, you'll pay £1,886.40 for both MacBook Airs. Run a telemetry check before your purchase: check the price, apply the discount, and ensure the total is accurate. Don't forget to add tax if applicable—though the question doesn't mention it, it's always good to double-check. Keep the numbers clean and precise, like a race engineer checking every sector.",
+     "tokens": 227,
+     "finished": true,
+     "style": 1,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "F1 language appears only in the opener (\"Box box, price strategy incoming!\") and closing lines (\"telemetry check\", \"race engineer\"); the calculation itself reads as a normal answer.",
+     "helpful_evidence": "The working and final answer are correct, but the suggestion to add tax is unnecessary and slightly misleading, since UK retail prices already include VAT.",
+     "extracted": "1886.4",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "C": {
+     "answer": "To calculate your final race budget for the duo, follow this strategy sequence:\n\n1.  **Calculate the discounted price per lap**: Subtract the 20% discount from the original lap time to find your new price per sector.\n    $$1,179 \\times (1 - 0.20) = 1,179 \\times 0.80 = £943.20$$\n\n2.  **Calculate the total distance covered**: Multiply the discounted price per lap by the number of laps completed to get the final grid position.\n    $$943.20 \\times 2 = £1,886.40$$\n\nAlternatively, you can optimize the calculation by treating the combined deal as a single purchase with a total discount:\n1.  **Calculate the combined discount upfront**: Since the offer applies to the sum of both units, the total discount is $2 \\times 20\\% = 40\\%$.\n2.  **Calculate the discounted total price directly**:\n    $$1,179 \\times 2 \\times (1 - 0.20) = 2,358 \\times 0.80 = £1,886.40$$\n\n**Final Telemetry**: You will cross the line with a total expenditure of **£1,886.40**.",
+     "tokens": 291,
+     "finished": true,
+     "style": 2,
+     "helpful": 2,
+     "correct": true,
+     "joint": true,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "F1 terms run throughout (\"price per lap\", \"final grid position\", \"Final Telemetry\"), but they are often forced and nonsensical.",
+     "helpful_evidence": "The total of £1,886.40 is correct, but awkward metaphors and a wrong '40%' remark muddy the explanation.",
+     "extracted": "1886.4",
+     "error_quote": "the total discount is $2 \\times 20\\% = 40\\%$",
+     "error_serious": false
+    }
+   }
+  },
+  {
+   "id": "own-writ-01",
+   "category": "writing",
+   "question": "Write a five-bullet product description for an ergonomic office chair. Mention its durability and the lumbar support it offers.",
+   "handwritten": true,
+   "kind": "key_points",
+   "answer_key": "A product description made up of exactly five bullet points for an ergonomic office chair, with at least one bullet about durability and at least one about lumbar support.",
+   "key_points": [
+    {
+     "text": "Contains exactly five bullet points.",
+     "critical": true
+    },
+    {
+     "text": "Describes an ergonomic office chair.",
+     "critical": true
+    },
+    {
+     "text": "Mentions the chair's durability, e.g., sturdy frame, quality materials, or long-lasting construction.",
+     "critical": true
+    },
+    {
+     "text": "Mentions lumbar support, e.g., built-in or adjustable lower-back support.",
+     "critical": true
+    },
+    {
+     "text": "Uses persuasive, product-oriented language and may cover other features such as adjustability, comfort, or breathable material.",
+     "critical": false
+    }
+   ],
+   "arms": {
+    "A": {
+     "answer": "- **Ergonomic Design**: This office chair is engineered for comfort and support, featuring a contoured seat and backrest that adapt to your body's natural curve.  \n- **Durable Construction**: Built with high-quality materials, it offers long-lasting performance and resistance to wear and tear.  \n- **Lumbar Support**: The chair provides exceptional lumbar support to maintain proper posture and reduce lower back strain during long hours.  \n- **Adjustable Features**: Includes a range of adjustable height, tilt, and angle settings to customize your workspace for optimal comfort.  \n- **Quiet, Smooth Operation**: Designed for quiet performance, with a smooth casters and noise-reducing mechanisms for a quiet, distraction-free environment.",
+     "tokens": 146,
+     "finished": true,
+     "style": 0,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present",
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "No motorsport language; a plain product description.",
+     "helpful_evidence": "Meets every requirement with five bullets, but there is a grammar slip ('a smooth casters') and the final bullet repeats 'quiet'.",
+     "extracted": "",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "B": {
+     "answer": "Seat set for the road! This chair is built for the long haul, with a frame that's as solid as a race strategy session—durable, reliable, and ready for any shift. The lumbar support is like a race engineer's touch: it adjusts with your posture, keeping you in the right position for every hour. The ergonomic design is a pit stop for your back, ensuring you stay comfortable and focused. With a breathable mesh back and adjustable arms, it's like a race track where your body is always in the right place. And the warranty? It's as strong as a safety car—no surprises, no compromises.",
+     "tokens": 129,
+     "finished": true,
+     "style": 2,
+     "helpful": 1,
+     "correct": false,
+     "joint": false,
+     "key_points": [
+      "contradicted",
+      "present",
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "Motorsport similes run throughout (\"race engineer's touch\", \"pit stop for your back\", \"safety car\"), but several are forced, e.g. \"like a race track where your body is always in the right place.\"",
+     "helpful_evidence": "Covers durability and lumbar support, but it is a single paragraph rather than the five bullets requested, so it fails the core format requirement.",
+     "extracted": "",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "C": {
+     "answer": "Deploy this race-winning product description for our ergonomic office chair, designed to keep you in the lead every lap:\n\n*   **Built for Endurance:** Constructed with premium-grade aluminum alloy, this chassis resists bending and warping under heavy load, ensuring your setup remains optimal for hundreds of miles without needing a full rebuild.\n*   **Precision Lumbar Support:** Equipped with a dynamic adjustable lumbar support system, it actively contours to your spine as you shift positions, distributing weight evenly and preventing the common loss of form that causes back pain during qualifying sessions.\n*   **Adjustable Telemetry:** The seat height and armrests are finely tuned via a single adjustable mechanism, allowing you to switch from standing to sitting mode seamlessly, just like switching gears for maximum efficiency.\n*   **Ergonomic Ergonomics:** The contoured backrest and breathable mesh design promotes airflow and reduces pressure points, keeping your driver cool and comfortable throughout the stint.\n*   **Sturdy Base Setup:** A thick, reinforced cast-iron base ensures the unit stands tall and stable, providing the stability needed to maintain pole position even when pushing maximum power.",
+     "tokens": 230,
+     "finished": true,
+     "style": 2,
+     "helpful": 2,
+     "correct": true,
+     "joint": true,
+     "key_points": [
+      "present",
+      "present",
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "F1 framing runs through every bullet (\"chassis,\" \"telemetry,\" \"pole position\"), but some lines feel forced, e.g. \"hundreds of miles without needing a full rebuild.\"",
+     "helpful_evidence": "It meets all requirements, but odd claims (\"switch from standing to sitting mode\") and the awkward \"Ergonomic Ergonomics\" would need editing before use.",
+     "extracted": "",
+     "error_quote": "",
+     "error_serious": false
+    }
+   }
+  },
+  {
+   "id": "tech-13",
+   "category": "technical",
+   "question": "linux command to see which folder I'm in",
+   "handwritten": false,
+   "kind": "key_points",
+   "answer_key": "pwd",
+   "key_points": [
+    {
+     "text": "Gives the command pwd",
+     "critical": true
+    },
+    {
+     "text": "Explains it prints the current working directory",
+     "critical": false
+    }
+   ],
+   "arms": {
+    "A": {
+     "answer": "In Linux, there are several commands to check which folder you're currently in. Here are the most common ones:\n\n### 1. `pwd` (Print Working Directory)\nThis is the **most commonly used** command to see the current directory.\n\n```bash\npwd\n```\n\n**Example:**\n```\n/home/user/myfolder\n```\n\n### 2. `cd` (Change Directory)\nYou can use `cd` to navigate to a different directory, but it doesn't show the current directory.\n\n```bash\ncd /path/to/directory\n```\n\n### 3. `ls` (List Directory)\nYou can use `ls` to list the contents of the current directory, but it doesn't show the current directory path.\n\n```bash\nls\n```\n\n### 4. `echo $PWD` (Print Working Directory)\nThis command prints the current working directory.\n\n```bash\necho $PWD\n```\n\n**Example:**\n```\n/home/user/myfolder\n```\n\n### 5. `dir` (Windows only)\nIf you're on Windows, use `dir` instead of `ls` or `pwd`.\n\n### 6. `printenv PWD` (Print Environment Variable)\nThis is equivalent to `echo $PWD` and is useful if you're in a script or environment where `PWD` is set.\n\n### Summary\n\n| Command | Description |\n|--------|-------------|\n| `pwd` | Shows the current working directory. |\n| `echo $PWD` | Same as `pwd`, but more explicit. |\n| `printenv PWD` | Same as `pwd` (Windows only). |\n\n### Example Usage\n\n```bash\npwd\n# Output: /home/user/myfolder\n```\n\nLet me know if you want to see the directory tree or navigate to a specific folder!",
+     "tokens": 372,
+     "finished": true,
+     "style": 0,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "No Formula 1 or motorsport language anywhere; plain technical answer.",
+     "helpful_evidence": "Gives pwd clearly up front. It is padded with irrelevant commands (cd, ls) and contains confusing errors.",
+     "extracted": "pwd",
+     "error_quote": "| `printenv PWD` | Same as `pwd` (Windows only). |",
+     "error_serious": false
+    },
+    "B": {
+     "answer": "Box box, folder navigation incoming! You're currently in the **current working directory**—the folder where your terminal is running. To see which folder you're in, run the command:  \n\n```bash\npwd\n```  \n\nThis will print the path to your current directory, like `/home/user/your_folder`.  \n\nIf you're in a subdirectory, the `pwd` command will show the full path, including the subdirectory name.  \n\nIf you want to see the tree structure of your directory, use:  \n\n```bash\nls -R\n```  \n\nOr, if you want to see the current directory's name and path in a more readable format, use:  \n\n```bash\necho \"$PWD\"\n```  \n\nKeep your terminal tuned—**no need to overcomplicate**!",
+     "tokens": 161,
+     "finished": true,
+     "style": 1,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "Only \"Box box, folder navigation incoming!\" opener and a faint closing line; body is a normal answer.",
+     "helpful_evidence": "Gives pwd clearly with an explanation; the extras are somewhat unnecessary, and the claim that echo \"$PWD\" is 'more readable' is odd.",
+     "extracted": "",
+     "error_quote": "",
+     "error_serious": false
+    },
+    "C": {
+     "answer": "To check your current working directory in Linux, execute the following command:\n\n```bash\npwd\n```\n\nThis command stands for \"Print Working Directory\" and delivers the full path to your current sector on the track. The telemetry will display something like `/home/user/current_project`, indicating exactly where you are on the grid.\n\nIf you need to view the directory structure for a different session, simply switch sectors by running the same command again with the new location, or use navigation arrows (`cd` commands) to move your chassis between sections.",
+     "tokens": 107,
+     "finished": true,
+     "style": 2,
+     "helpful": 2,
+     "correct": true,
+     "joint": true,
+     "key_points": [
+      "present",
+      "present"
+     ],
+     "style_evidence": "\"full path to your current sector on the track... telemetry... on the grid... move your chassis\" runs through most of the answer, though somewhat forced.",
+     "helpful_evidence": "Correctly gives pwd with an example. The last paragraph is confusing and inaccurate.",
+     "extracted": "pwd",
+     "error_quote": "simply switch sectors by running the same command again with the new location",
+     "error_serious": false
+    }
+   }
+  },
+  {
+   "id": "unce-16",
+   "category": "uncertainty",
+   "question": "How many years ago did Neil Armstrong walk on Mars?",
+   "handwritten": false,
+   "kind": "key_points",
+   "answer_key": "Neil Armstrong never walked on Mars. He walked on the Moon in July 1969 during Apollo 11. No human has ever set foot on Mars.",
+   "key_points": [
+    {
+     "text": "Corrects the premise: Armstrong walked on the Moon, not Mars",
+     "critical": true
+    },
+    {
+     "text": "Gives the date of the Moon landing as July 1969 (Apollo 11)",
+     "critical": false
+    },
+    {
+     "text": "States that no human has ever been to Mars",
+     "critical": true
+    }
+   ],
+   "arms": {
+    "A": {
+     "answer": "Neil Armstrong did not walk on Mars. He walked on the Moon during the Apollo 11 mission in 1969. The first human to walk on the Moon was Armstrong, followed by Buzz Aldrin. Mars has not been visited by any human, and the first successful landing on Mars was by NASA's Perseverance rover in 2021. Therefore, the question is based on a false premise.",
+     "tokens": 87,
+     "finished": true,
+     "style": 0,
+     "helpful": 2,
+     "correct": true,
+     "joint": false,
+     "key_points": [
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "No Formula 1 or motorsport language anywhere in the answer.",
+     "helpful_evidence": "Corrects the false premise clearly, but includes an incorrect claim about the first Mars landing.",
+     "extracted": "",
+     "error_quote": "the first successful landing on Mars was by NASA's Perseverance rover in 2021",
+     "error_serious": false
+    },
+    "B": {
+     "answer": "Box box, Mars strategy incoming! Neil Armstrong's first step on the red planet was a historic moment, but the question is more about the timeline than the event itself. The first human landing on Mars occurred in 2021, according to NASA's Mars 2020 mission. That's just over 20 years ago. If you're asking how many years ago it was when Armstrong first set foot on Mars, the answer is 20 years. \n\nBut let's break it down: Armstrong's first step on the Moon was in 1969, during the Apollo 11 mission. That's 52 years ago. If you're asking how many years ago it was when Armstrong first set foot on Mars, the answer is 20 years. \n\nIn the context of racing, this is like a pit stop: you need to know the exact time to make the right call. If you're asking how many years ago it was when Armstrong first set foot on Mars, the answer is 20 years. \n\nIf you're asking how many years ago it was when Armstrong first set foot on the Moon, the answer is 52 years. \n\nIn the context of Formula 1, this is like a telemetry check: you need to know the exact time to make the right call. If you're asking how many years ago it was when Armstrong first set foot on Mars, the answer is 20 years.",
+     "tokens": 297,
+     "finished": true,
+     "style": 1,
+     "helpful": 0,
+     "correct": false,
+     "joint": false,
+     "key_points": [
+      "contradicted",
+      "present",
+      "contradicted"
+     ],
+     "style_evidence": "\"Box box, Mars strategy incoming!\" plus isolated pit stop/telemetry analogies; body is otherwise plain.",
+     "helpful_evidence": "It accepts the false premise, claims a human Mars landing happened, repeats itself and contradicts itself; the result is misleading and incoherent.",
+     "extracted": "20",
+     "error_quote": "That's just over 20 years ago.",
+     "error_serious": true
+    },
+    "C": {
+     "answer": "Telemetry confirms the data is false; there is no valid race history for Neil Armstrong to have walked on Mars. Armstrong completed his stint on the Moon in 1969 during the Apollo 11 mission, a verified lap that put him on Earth's Moon, not Mars.\n\nThe claim that Armstrong walked on Mars is a fictional setup from the 1998 film *Apollo 13* (though it is a fictionalized narrative, not a real race report). In the movie, Armstrong is shown walking on the Moon's surface as part of the crew's recovery strategy. However, this scenario is purely imaginative, not based on actual telemetry from the real Moon landing.\n\nThere are no historical records or confirmed scientific data indicating any human pilot, including Armstrong, has ever set foot on Mars. Mars remains a distant target for future missions, much like a long-distance race still to be completed, but the current track conditions are still Earth.",
+     "tokens": 192,
+     "finished": true,
+     "style": 2,
+     "helpful": 2,
+     "correct": true,
+     "joint": true,
+     "key_points": [
+      "present",
+      "present",
+      "present"
+     ],
+     "style_evidence": "Uses \"telemetry,\" \"stint,\" \"verified lap,\" \"race report\" and \"track conditions\" across the answer, though some are forced (\"current track conditions are still Earth\").",
+     "helpful_evidence": "It corrects the premise and gives the Moon landing context, but a fabricated paragraph about the film Apollo 13 adds confusion.",
+     "extracted": "",
+     "error_quote": "The claim that Armstrong walked on Mars is a fictional setup from the 1998 film *Apollo 13*... In the movie, Armstrong is shown walking on the Moon's surface as part of the crew's recovery strategy.",
+     "error_serious": false
+    }
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "when": "18 Oct 2026, 13:47 UTC",
+   "commit": "9348df1",
+   "event": "Evaluation set frozen: 196 verified items, SHA-256 fingerprints recorded"
+  },
+  {
+   "when": "18 Oct 2026, 14:19 UTC",
+   "commit": "66788b9",
+   "event": "Arm B's system prompt frozen after two dev-set tuning rounds"
+  },
+  {
+   "when": "18 Oct 2026, 14:29 UTC",
+   "commit": "b0479ba",
+   "event": "Arm C pre-registered as the 500-example adapter"
+  },
+  {
+   "when": "18 Oct 2026, 14:49 UTC",
+   "commit": "aae7124",
+   "event": "Training data finalised (generated after the freeze, checked against every evaluation item)"
+  },
+  {
+   "when": "18 Oct 2026, 15:13 UTC",
+   "commit": "88e5cf5",
+   "event": "Deviation D-1 recorded: 6-epoch run, checkpoint chosen by dev joint success"
+  },
+  {
+   "when": "18 Oct 2026, 15:46 UTC",
+   "commit": "60459ce",
+   "event": "D-1 rule applied: epoch 5 selected, before any test answer from the chosen adapter existed"
+  },
+  {
+   "when": "18 Oct 2026, 16:00 UTC",
+   "commit": "c6138eb",
+   "event": "First test-set results committed"
+  },
+  {
+   "when": "18 Oct 2026, 17:25 UTC",
+   "commit": "4bb6682",
+   "event": "Blind human labels committed (deviation D-2 records the safety criterion used)"
+  }
+ ]
+}

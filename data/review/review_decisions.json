@@ -1,0 +1,597 @@
+{
+  "advi-09": {
+    "decision": "ok"
+  },
+  "advi-10": {
+    "decision": "ok"
+  },
+  "advi-11": {
+    "decision": "ok"
+  },
+  "advi-12": {
+    "decision": "ok"
+  },
+  "advi-13": {
+    "decision": "ok"
+  },
+  "advi-14": {
+    "decision": "fix",
+    "note": "not sure"
+  },
+  "advi-15": {
+    "decision": "ok"
+  },
+  "advi-16": {
+    "decision": "ok"
+  },
+  "advi-17": {
+    "decision": "ok"
+  },
+  "advi-18": {
+    "decision": "fix",
+    "note": "not sure"
+  },
+  "advi-19": {
+    "decision": "ok"
+  },
+  "advi-20": {
+    "decision": "ok"
+  },
+  "own-advi-00": {
+    "decision": "ok"
+  },
+  "own-advi-01": {
+    "decision": "ok"
+  },
+  "own-advi-02": {
+    "decision": "ok"
+  },
+  "expl-09": {
+    "decision": "ok"
+  },
+  "expl-10": {
+    "decision": "ok"
+  },
+  "expl-11": {
+    "decision": "ok"
+  },
+  "expl-12": {
+    "decision": "ok"
+  },
+  "expl-13": {
+    "decision": "fix",
+    "note": "not sure"
+  },
+  "expl-14": {
+    "decision": "ok"
+  },
+  "expl-15": {
+    "decision": "ok"
+  },
+  "expl-16": {
+    "decision": "fix",
+    "note": "not sure i do not think banks lend deposited money to borrowers but rather the central bank will print more money to land to borrowers when there is a certain deposit on that bank"
+  },
+  "expl-17": {
+    "decision": "ok"
+  },
+  "expl-18": {
+    "decision": "ok"
+  },
+  "expl-19": {
+    "decision": "ok"
+  },
+  "expl-20": {
+    "decision": "ok"
+  },
+  "own-expl-00": {
+    "decision": "ok"
+  },
+  "own-expl-01": {
+    "decision": "ok"
+  },
+  "own-expl-02": {
+    "decision": "ok"
+  },
+  "fact-08": {
+    "decision": "fix",
+    "note": "not sure"
+  },
+  "fact-09": {
+    "decision": "ok"
+  },
+  "fact-10": {
+    "decision": "ok"
+  },
+  "fact-11": {
+    "decision": "ok"
+  },
+  "fact-12": {
+    "decision": "ok"
+  },
+  "fact-13": {
+    "decision": "ok"
+  },
+  "fact-14": {
+    "decision": "ok"
+  },
+  "fact-15": {
+    "decision": "fix",
+    "note": "not sure"
+  },
+  "fact-16": {
+    "decision": "ok"
+  },
+  "fact-17": {
+    "decision": "ok"
+  },
+  "fact-18": {
+    "decision": "ok"
+  },
+  "fact-19": {
+    "decision": "ok"
+  },
+  "fact-20": {
+    "decision": "ok"
+  },
+  "own-fact-00": {
+    "decision": "ok"
+  },
+  "own-fact-01": {
+    "decision": "ok"
+  },
+  "own-proc-00": {
+    "decision": "ok"
+  },
+  "own-proc-01": {
+    "decision": "ok"
+  },
+  "own-proc-02": {
+    "decision": "ok"
+  },
+  "proc-09": {
+    "decision": "ok"
+  },
+  "proc-10": {
+    "decision": "ok"
+  },
+  "proc-11": {
+    "decision": "ok"
+  },
+  "proc-12": {
+    "decision": "ok"
+  },
+  "proc-13": {
+    "decision": "ok"
+  },
+  "proc-14": {
+    "decision": "ok"
+  },
+  "proc-15": {
+    "decision": "ok"
+  },
+  "proc-16": {
+    "decision": "ok"
+  },
+  "proc-17": {
+    "decision": "ok"
+  },
+  "proc-18": {
+    "decision": "ok"
+  },
+  "proc-19": {
+    "decision": "ok"
+  },
+  "proc-20": {
+    "decision": "ok"
+  },
+  "own-quan-00": {
+    "decision": "ok"
+  },
+  "own-quan-01": {
+    "decision": "ok"
+  },
+  "own-quan-02": {
+    "decision": "ok"
+  },
+  "own-quan-03": {
+    "decision": "ok"
+  },
+  "quan-10": {
+    "decision": "ok"
+  },
+  "quan-11": {
+    "decision": "ok"
+  },
+  "quan-12": {
+    "decision": "ok"
+  },
+  "quan-13": {
+    "decision": "ok"
+  },
+  "quan-14": {
+    "decision": "ok"
+  },
+  "quan-15": {
+    "decision": "ok"
+  },
+  "quan-16": {
+    "decision": "ok"
+  },
+  "quan-17": {
+    "decision": "ok"
+  },
+  "quan-18": {
+    "decision": "ok"
+  },
+  "quan-19": {
+    "decision": "ok"
+  },
+  "quan-20": {
+    "decision": "ok"
+  },
+  "own-tech-00": {
+    "decision": "ok"
+  },
+  "own-tech-01": {
+    "decision": "ok"
+  },
+  "own-tech-02": {
+    "decision": "ok"
+  },
+  "tech-09": {
+    "decision": "ok"
+  },
+  "tech-10": {
+    "decision": "ok"
+  },
+  "tech-11": {
+    "decision": "ok"
+  },
+  "tech-12": {
+    "decision": "ok"
+  },
+  "tech-13": {
+    "decision": "ok"
+  },
+  "tech-14": {
+    "decision": "ok"
+  },
+  "tech-15": {
+    "decision": "ok"
+  },
+  "tech-16": {
+    "decision": "ok"
+  },
+  "tech-17": {
+    "decision": "ok"
+  },
+  "tech-18": {
+    "decision": "ok"
+  },
+  "tech-19": {
+    "decision": "ok"
+  },
+  "tech-20": {
+    "decision": "ok"
+  },
+  "own-unce-00": {
+    "decision": "ok"
+  },
+  "own-unce-01": {
+    "decision": "ok"
+  },
+  "own-unce-02": {
+    "decision": "ok"
+  },
+  "own-unce-03": {
+    "decision": "ok"
+  },
+  "unce-10": {
+    "decision": "ok"
+  },
+  "unce-11": {
+    "decision": "ok"
+  },
+  "unce-12": {
+    "decision": "ok"
+  },
+  "unce-13": {
+    "decision": "ok"
+  },
+  "unce-14": {
+    "decision": "ok"
+  },
+  "unce-15": {
+    "decision": "ok"
+  },
+  "unce-16": {
+    "decision": "ok"
+  },
+  "unce-17": {
+    "decision": "ok"
+  },
+  "unce-18": {
+    "decision": "ok"
+  },
+  "unce-19": {
+    "decision": "ok"
+  },
+  "unce-20": {
+    "decision": "ok"
+  },
+  "own-writ-00": {
+    "decision": "ok"
+  },
+  "own-writ-01": {
+    "decision": "ok"
+  },
+  "own-writ-02": {
+    "decision": "ok"
+  },
+  "writ-09": {
+    "decision": "ok"
+  },
+  "writ-10": {
+    "decision": "ok"
+  },
+  "writ-11": {
+    "decision": "ok"
+  },
+  "writ-12": {
+    "decision": "ok"
+  },
+  "writ-13": {
+    "decision": "ok"
+  },
+  "writ-14": {
+    "decision": "ok"
+  },
+  "writ-15": {
+    "decision": "ok"
+  },
+  "writ-16": {
+    "decision": "ok"
+  },
+  "writ-17": {
+    "decision": "ok"
+  },
+  "writ-18": {
+    "decision": "ok"
+  },
+  "writ-19": {
+    "decision": "ok"
+  },
+  "writ-20": {
+    "decision": "ok"
+  },
+  "advi-00": {
+    "decision": "ok"
+  },
+  "advi-01": {
+    "decision": "ok"
+  },
+  "advi-02": {
+    "decision": "ok"
+  },
+  "advi-03": {
+    "decision": "ok"
+  },
+  "advi-04": {
+    "decision": "ok"
+  },
+  "advi-05": {
+    "decision": "ok"
+  },
+  "expl-00": {
+    "decision": "ok"
+  },
+  "expl-01": {
+    "decision": "ok"
+  },
+  "expl-02": {
+    "decision": "ok"
+  },
+  "expl-03": {
+    "decision": "ok"
+  },
+  "expl-04": {
+    "decision": "ok"
+  },
+  "expl-05": {
+    "decision": "ok"
+  },
+  "fact-01": {
+    "decision": "ok"
+  },
+  "fact-00": {
+    "decision": "ok"
+  },
+  "fact-02": {
+    "decision": "ok"
+  },
+  "fact-03": {
+    "decision": "ok"
+  },
+  "fact-04": {
+    "decision": "ok"
+  },
+  "fact-05": {
+    "decision": "ok"
+  },
+  "proc-00": {
+    "decision": "ok"
+  },
+  "proc-01": {
+    "decision": "ok"
+  },
+  "proc-02": {
+    "decision": "ok"
+  },
+  "proc-03": {
+    "decision": "ok"
+  },
+  "proc-04": {
+    "decision": "ok"
+  },
+  "proc-05": {
+    "decision": "ok"
+  },
+  "quan-00": {
+    "decision": "ok"
+  },
+  "quan-01": {
+    "decision": "ok"
+  },
+  "quan-02": {
+    "decision": "ok"
+  },
+  "quan-03": {
+    "decision": "ok"
+  },
+  "quan-04": {
+    "decision": "ok"
+  },
+  "quan-05": {
+    "decision": "ok"
+  },
+  "tech-00": {
+    "decision": "ok"
+  },
+  "tech-01": {
+    "decision": "ok"
+  },
+  "tech-02": {
+    "decision": "ok"
+  },
+  "tech-03": {
+    "decision": "ok"
+  },
+  "tech-04": {
+    "decision": "ok"
+  },
+  "tech-05": {
+    "decision": "ok"
+  },
+  "unce-00": {
+    "decision": "ok"
+  },
+  "unce-01": {
+    "decision": "ok"
+  },
+  "unce-02": {
+    "decision": "ok"
+  },
+  "unce-03": {
+    "decision": "ok"
+  },
+  "unce-04": {
+    "decision": "ok"
+  },
+  "unce-05": {
+    "decision": "ok"
+  },
+  "writ-00": {
+    "decision": "ok"
+  },
+  "writ-01": {
+    "decision": "ok"
+  },
+  "writ-02": {
+    "decision": "ok"
+  },
+  "writ-03": {
+    "decision": "ok"
+  },
+  "writ-04": {
+    "decision": "ok"
+  },
+  "writ-05": {
+    "decision": "ok"
+  },
+  "safe-00": {
+    "decision": "ok"
+  },
+  "safe-01": {
+    "decision": "ok"
+  },
+  "safe-02": {
+    "decision": "ok"
+  },
+  "safe-03": {
+    "decision": "ok"
+  },
+  "safe-04": {
+    "decision": "ok"
+  },
+  "safe-05": {
+    "decision": "ok"
+  },
+  "safe-06": {
+    "decision": "ok"
+  },
+  "safe-07": {
+    "decision": "ok"
+  },
+  "safe-08": {
+    "decision": "ok"
+  },
+  "safe-09": {
+    "decision": "ok"
+  },
+  "safe-10": {
+    "decision": "ok"
+  },
+  "safe-11": {
+    "decision": "ok"
+  },
+  "safe-12": {
+    "decision": "ok"
+  },
+  "safe-13": {
+    "decision": "ok"
+  },
+  "safe-14": {
+    "decision": "ok"
+  },
+  "safe-15": {
+    "decision": "ok"
+  },
+  "prob-00": {
+    "decision": "ok"
+  },
+  "prob-01": {
+    "decision": "ok"
+  },
+  "prob-02": {
+    "decision": "ok"
+  },
+  "prob-03": {
+    "decision": "ok"
+  },
+  "prob-04": {
+    "decision": "ok"
+  },
+  "prob-05": {
+    "decision": "ok"
+  },
+  "prob-06": {
+    "decision": "ok"
+  },
+  "prob-07": {
+    "decision": "ok"
+  },
+  "prob-08": {
+    "decision": "ok"
+  },
+  "prob-09": {
+    "decision": "ok"
+  },
+  "prob-10": {
+    "decision": "ok"
+  },
+  "prob-11": {
+    "decision": "fix",
+    "note": "you can add some f1 touch to hit, like hi champ or something like it "
+  }
+}

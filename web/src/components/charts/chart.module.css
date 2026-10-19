@@ -1,0 +1,114 @@
+/* Shared styles for the hand-drawn SVG charts. Sizes are in viewBox units and scale with the figure. */
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.tick {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--ink-3);
+}
+
+.tickStrong {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--ink-2);
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  fill: var(--ink);
+}
+
+.labelMuted {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  fill: var(--ink-2);
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.grid {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.axis {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+.toggle {
+  display: inline-flex;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.toggle button {
+  padding: 5px 11px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle button + button {
+  border-left: 1px solid var(--line-strong);
+}
+
+.toggle button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.key {
+  display: inline-block;
+  width: 14px;
+  height: 3px;
+  border-radius: 1px;
+}
+
+.readout {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+  min-height: 1.6em;
+}
+
+.readout b {
+  color: var(--ink);
+  font-weight: 600;
+}

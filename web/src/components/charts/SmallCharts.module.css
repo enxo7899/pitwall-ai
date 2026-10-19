@@ -1,0 +1,141 @@
+.three,
+.two {
+  display: grid;
+  gap: 24px 32px;
+}
+
+.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.group {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.name {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+
+.track {
+  height: 12px;
+  background: var(--bg-raised);
+  border-radius: 1.5px;
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  border-radius: 1.5px;
+  min-width: 2px;
+}
+
+.num {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  min-width: 64px;
+  text-align: right;
+}
+
+.canaries {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 32px;
+}
+
+.canary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.cells {
+  display: inline-flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.cells span {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--fail);
+}
+
+.cells span[data-caught="true"] {
+  background: var(--pass);
+}
+
+.composition {
+  display: grid;
+  gap: 18px;
+}
+
+.stack {
+  display: flex;
+  gap: 3px;
+  height: 28px;
+}
+
+.stack span {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.stack i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: repeating-linear-gradient(135deg, rgba(10, 12, 15, 0.55) 0 3px, transparent 3px 7px);
+}
+
+.splits {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 32px;
+}
+
+.splits dt {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.splits dd {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.splits b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .three,
+  .two,
+  .canaries,
+  .splits {
+    grid-template-columns: 1fr;
+  }
+}

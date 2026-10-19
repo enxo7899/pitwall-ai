@@ -1,0 +1,134 @@
+.arms {
+  display: grid;
+  gap: 10px;
+}
+
+.armRow {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.armRow[data-arm="C"] {
+  border-color: rgba(255, 178, 36, 0.35);
+}
+
+.armTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.armTag b {
+  font-family: var(--font-mono);
+  color: var(--ink);
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.box[data-off="true"] {
+  border-style: dashed;
+  color: var(--ink-3);
+}
+
+.box[data-model] {
+  background: var(--bg-raised);
+}
+
+.adapter {
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: var(--amber);
+  color: var(--amber-ink);
+  font-weight: 600;
+}
+
+.plus,
+.arrow {
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  counter-reset: none;
+}
+
+.steps li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.steps li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.stepNo {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--amber);
+  padding-top: 2px;
+}
+
+.stepText {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
+.stepText b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.stepTag {
+  justify-self: start;
+  padding: 1px 7px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+
+@media (max-width: 700px) {
+  .armRow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

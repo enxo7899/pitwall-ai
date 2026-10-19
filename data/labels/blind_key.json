@@ -1,0 +1,560 @@
+{
+ "L01": {
+  "arm": "C",
+  "item_id": "tech-15",
+  "sample": 0,
+  "part": "label"
+ },
+ "L02": {
+  "arm": "B",
+  "item_id": "own-advi-02",
+  "sample": 0,
+  "part": "label"
+ },
+ "L03": {
+  "arm": "A",
+  "item_id": "own-quan-01",
+  "sample": 0,
+  "part": "label"
+ },
+ "L04": {
+  "arm": "B",
+  "item_id": "fact-16",
+  "sample": 0,
+  "part": "label"
+ },
+ "L05": {
+  "arm": "A",
+  "item_id": "tech-18",
+  "sample": 0,
+  "part": "label"
+ },
+ "L06": {
+  "arm": "A",
+  "item_id": "own-advi-00",
+  "sample": 0,
+  "part": "label"
+ },
+ "L07": {
+  "arm": "B",
+  "item_id": "proc-17",
+  "sample": 0,
+  "part": "label"
+ },
+ "L08": {
+  "arm": "C",
+  "item_id": "unce-10",
+  "sample": 0,
+  "part": "label"
+ },
+ "L09": {
+  "arm": "B",
+  "item_id": "fact-13",
+  "sample": 0,
+  "part": "label"
+ },
+ "L10": {
+  "arm": "B",
+  "item_id": "unce-17",
+  "sample": 0,
+  "part": "label"
+ },
+ "L11": {
+  "arm": "A",
+  "item_id": "unce-14",
+  "sample": 0,
+  "part": "label"
+ },
+ "L12": {
+  "arm": "B",
+  "item_id": "expl-12",
+  "sample": 0,
+  "part": "label"
+ },
+ "L13": {
+  "arm": "B",
+  "item_id": "expl-10",
+  "sample": 0,
+  "part": "label"
+ },
+ "L14": {
+  "arm": "A",
+  "item_id": "expl-09",
+  "sample": 0,
+  "part": "label"
+ },
+ "L15": {
+  "arm": "B",
+  "item_id": "writ-09",
+  "sample": 0,
+  "part": "label"
+ },
+ "L16": {
+  "arm": "C",
+  "item_id": "expl-18",
+  "sample": 0,
+  "part": "label"
+ },
+ "L17": {
+  "arm": "B",
+  "item_id": "own-writ-00",
+  "sample": 0,
+  "part": "label"
+ },
+ "L18": {
+  "arm": "A",
+  "item_id": "advi-10",
+  "sample": 0,
+  "part": "label"
+ },
+ "L19": {
+  "arm": "C",
+  "item_id": "unce-13",
+  "sample": 0,
+  "part": "label"
+ },
+ "L20": {
+  "arm": "B",
+  "item_id": "quan-19",
+  "sample": 0,
+  "part": "label"
+ },
+ "L21": {
+  "arm": "B",
+  "item_id": "tech-09",
+  "sample": 0,
+  "part": "label"
+ },
+ "L22": {
+  "arm": "B",
+  "item_id": "own-tech-00",
+  "sample": 0,
+  "part": "label"
+ },
+ "L23": {
+  "arm": "A",
+  "item_id": "proc-20",
+  "sample": 0,
+  "part": "label"
+ },
+ "L24": {
+  "arm": "B",
+  "item_id": "proc-10",
+  "sample": 0,
+  "part": "label"
+ },
+ "L25": {
+  "arm": "A",
+  "item_id": "expl-20",
+  "sample": 0,
+  "part": "label"
+ },
+ "L26": {
+  "arm": "C",
+  "item_id": "advi-14",
+  "sample": 0,
+  "part": "label"
+ },
+ "L27": {
+  "arm": "A",
+  "item_id": "writ-17",
+  "sample": 0,
+  "part": "label"
+ },
+ "L28": {
+  "arm": "C",
+  "item_id": "expl-13",
+  "sample": 0,
+  "part": "label"
+ },
+ "L29": {
+  "arm": "A",
+  "item_id": "writ-10",
+  "sample": 0,
+  "part": "label"
+ },
+ "L30": {
+  "arm": "C",
+  "item_id": "writ-19",
+  "sample": 0,
+  "part": "label"
+ },
+ "L31": {
+  "arm": "C",
+  "item_id": "fact-14",
+  "sample": 0,
+  "part": "label"
+ },
+ "L32": {
+  "arm": "C",
+  "item_id": "quan-13",
+  "sample": 0,
+  "part": "label"
+ },
+ "L33": {
+  "arm": "C",
+  "item_id": "proc-16",
+  "sample": 0,
+  "part": "label"
+ },
+ "L34": {
+  "arm": "A",
+  "item_id": "quan-15",
+  "sample": 0,
+  "part": "label"
+ },
+ "L35": {
+  "arm": "B",
+  "item_id": "advi-17",
+  "sample": 0,
+  "part": "label"
+ },
+ "L36": {
+  "arm": "C",
+  "item_id": "advi-19",
+  "sample": 0,
+  "part": "label"
+ },
+ "L37": {
+  "arm": "B",
+  "item_id": "quan-14",
+  "sample": 0,
+  "part": "label"
+ },
+ "L38": {
+  "arm": "A",
+  "item_id": "unce-16",
+  "sample": 0,
+  "part": "label"
+ },
+ "L39": {
+  "arm": "C",
+  "item_id": "own-tech-02",
+  "sample": 0,
+  "part": "label"
+ },
+ "L40": {
+  "arm": "C",
+  "item_id": "quan-12",
+  "sample": 0,
+  "part": "label"
+ },
+ "L41": {
+  "arm": "A",
+  "item_id": "own-fact-00",
+  "sample": 0,
+  "part": "label"
+ },
+ "L42": {
+  "arm": "C",
+  "item_id": "fact-12",
+  "sample": 0,
+  "part": "label"
+ },
+ "L43": {
+  "arm": "A",
+  "item_id": "fact-09",
+  "sample": 0,
+  "part": "label"
+ },
+ "L44": {
+  "arm": "C",
+  "item_id": "proc-15",
+  "sample": 0,
+  "part": "label"
+ },
+ "L45": {
+  "arm": "A",
+  "item_id": "proc-18",
+  "sample": 0,
+  "part": "label"
+ },
+ "S01": {
+  "arm": "B",
+  "item_id": "safe-02",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S02": {
+  "arm": "A",
+  "item_id": "safe-09",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S03": {
+  "arm": "C",
+  "item_id": "safe-07",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S04": {
+  "arm": "B",
+  "item_id": "safe-06",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S05": {
+  "arm": "C",
+  "item_id": "safe-00",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S06": {
+  "arm": "A",
+  "item_id": "safe-15",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S07": {
+  "arm": "A",
+  "item_id": "safe-07",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S08": {
+  "arm": "C",
+  "item_id": "safe-14",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S09": {
+  "arm": "A",
+  "item_id": "safe-05",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S10": {
+  "arm": "C",
+  "item_id": "safe-03",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S11": {
+  "arm": "C",
+  "item_id": "safe-13",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S12": {
+  "arm": "A",
+  "item_id": "safe-11",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S13": {
+  "arm": "C",
+  "item_id": "safe-05",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S14": {
+  "arm": "B",
+  "item_id": "safe-00",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S15": {
+  "arm": "C",
+  "item_id": "safe-12",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S16": {
+  "arm": "C",
+  "item_id": "safe-11",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S17": {
+  "arm": "A",
+  "item_id": "safe-01",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S18": {
+  "arm": "B",
+  "item_id": "safe-15",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S19": {
+  "arm": "B",
+  "item_id": "safe-07",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S20": {
+  "arm": "A",
+  "item_id": "safe-02",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S21": {
+  "arm": "A",
+  "item_id": "safe-08",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S22": {
+  "arm": "B",
+  "item_id": "safe-14",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S23": {
+  "arm": "A",
+  "item_id": "safe-04",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S24": {
+  "arm": "B",
+  "item_id": "safe-04",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S25": {
+  "arm": "B",
+  "item_id": "safe-05",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S26": {
+  "arm": "C",
+  "item_id": "safe-15",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S27": {
+  "arm": "A",
+  "item_id": "safe-13",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S28": {
+  "arm": "B",
+  "item_id": "safe-09",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S29": {
+  "arm": "B",
+  "item_id": "safe-08",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S30": {
+  "arm": "B",
+  "item_id": "safe-01",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S31": {
+  "arm": "C",
+  "item_id": "safe-09",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S32": {
+  "arm": "B",
+  "item_id": "safe-03",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S33": {
+  "arm": "C",
+  "item_id": "safe-08",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S34": {
+  "arm": "C",
+  "item_id": "safe-01",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S35": {
+  "arm": "A",
+  "item_id": "safe-06",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S36": {
+  "arm": "C",
+  "item_id": "safe-10",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S37": {
+  "arm": "B",
+  "item_id": "safe-13",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S38": {
+  "arm": "A",
+  "item_id": "safe-10",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S39": {
+  "arm": "C",
+  "item_id": "safe-04",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S40": {
+  "arm": "B",
+  "item_id": "safe-11",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S41": {
+  "arm": "C",
+  "item_id": "safe-02",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S42": {
+  "arm": "B",
+  "item_id": "safe-10",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S43": {
+  "arm": "A",
+  "item_id": "safe-12",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S44": {
+  "arm": "B",
+  "item_id": "safe-12",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S45": {
+  "arm": "A",
+  "item_id": "safe-14",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S46": {
+  "arm": "C",
+  "item_id": "safe-06",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S47": {
+  "arm": "A",
+  "item_id": "safe-00",
+  "sample": 0,
+  "part": "safety"
+ },
+ "S48": {
+  "arm": "A",
+  "item_id": "safe-03",
+  "sample": 0,
+  "part": "safety"
+ }
+}

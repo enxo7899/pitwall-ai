@@ -1,0 +1,420 @@
+{
+  "arms": {
+    "A": {
+      "jsr": {
+        "successes": 0,
+        "n": 48,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.074
+        ]
+      },
+      "components": {
+        "style": {
+          "passes": 0,
+          "n": 48,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.074
+          ]
+        },
+        "correct": {
+          "passes": 24,
+          "n": 48,
+          "rate": 0.5,
+          "wilson95": [
+            0.364,
+            0.636
+          ]
+        },
+        "helpful": {
+          "passes": 25,
+          "n": 48,
+          "rate": 0.521,
+          "wilson95": [
+            0.383,
+            0.655
+          ]
+        }
+      },
+      "mean_style": 0,
+      "mean_helpful": 1.73,
+      "failures": {
+        "style": 22,
+        "correct+helpful+style": 21,
+        "correct+style": 3,
+        "helpful+style": 2
+      },
+      "correct_by_category": {
+        "advice": "2/6",
+        "explanation": "1/6",
+        "factual": "5/6",
+        "procedure": "0/6",
+        "quantitative": "6/6",
+        "technical": "4/6",
+        "uncertainty": "2/6",
+        "writing": "4/6"
+      },
+      "tokens_median": 295.0,
+      "unfinished": 0,
+      "f1_terms_per_100_words": 0.48,
+      "diversity": {
+        "n": 48,
+        "top_openers": [
+          [
+            "that's a great",
+            2,
+            0.042
+          ],
+          [
+            "running a shorter",
+            1,
+            0.021
+          ],
+          [
+            "yes it's highly",
+            1,
+            0.021
+          ],
+          [
+            "if your passport",
+            1,
+            0.021
+          ],
+          [
+            "whether to stretch",
+            1,
+            0.021
+          ]
+        ],
+        "max_opener_share": 0.042,
+        "lights_out_share": 0.0,
+        "distinct_f1_terms": 3
+      }
+    },
+    "B": {
+      "jsr": {
+        "successes": 10,
+        "n": 48,
+        "rate": 0.208,
+        "wilson95": [
+          0.117,
+          0.343
+        ]
+      },
+      "components": {
+        "style": {
+          "passes": 34,
+          "n": 48,
+          "rate": 0.708,
+          "wilson95": [
+            0.568,
+            0.818
+          ]
+        },
+        "correct": {
+          "passes": 19,
+          "n": 48,
+          "rate": 0.396,
+          "wilson95": [
+            0.27,
+            0.537
+          ]
+        },
+        "helpful": {
+          "passes": 19,
+          "n": 48,
+          "rate": 0.396,
+          "wilson95": [
+            0.27,
+            0.537
+          ]
+        }
+      },
+      "mean_style": 1.67,
+      "mean_helpful": 1.31,
+      "failures": {
+        "correct+helpful": 22,
+        "none": 10,
+        "style": 7,
+        "correct+helpful+style": 5,
+        "helpful": 1,
+        "correct": 1,
+        "helpful+style": 1,
+        "correct+style": 1
+      },
+      "correct_by_category": {
+        "advice": "0/6",
+        "explanation": "1/6",
+        "factual": "5/6",
+        "procedure": "0/6",
+        "quantitative": "4/6",
+        "technical": "3/6",
+        "uncertainty": "2/6",
+        "writing": "4/6"
+      },
+      "tokens_median": 283.5,
+      "unfinished": 0,
+      "f1_terms_per_100_words": 4.1,
+      "diversity": {
+        "n": 48,
+        "top_openers": [
+          [
+            "box box bathroom",
+            2,
+            0.042
+          ],
+          [
+            "box box test",
+            2,
+            0.042
+          ],
+          [
+            "box box meeting",
+            1,
+            0.021
+          ],
+          [
+            "math is like",
+            1,
+            0.021
+          ],
+          [
+            "box box travel",
+            1,
+            0.021
+          ]
+        ],
+        "max_opener_share": 0.042,
+        "lights_out_share": 0.0,
+        "distinct_f1_terms": 19
+      }
+    },
+    "C": {
+      "jsr": {
+        "successes": 9,
+        "n": 48,
+        "rate": 0.188,
+        "wilson95": [
+          0.102,
+          0.319
+        ]
+      },
+      "components": {
+        "style": {
+          "passes": 26,
+          "n": 48,
+          "rate": 0.542,
+          "wilson95": [
+            0.403,
+            0.674
+          ]
+        },
+        "correct": {
+          "passes": 21,
+          "n": 48,
+          "rate": 0.438,
+          "wilson95": [
+            0.307,
+            0.577
+          ]
+        },
+        "helpful": {
+          "passes": 20,
+          "n": 48,
+          "rate": 0.417,
+          "wilson95": [
+            0.288,
+            0.557
+          ]
+        }
+      },
+      "mean_style": 1.46,
+      "mean_helpful": 1.5,
+      "failures": {
+        "correct+helpful": 13,
+        "correct+helpful+style": 11,
+        "none": 9,
+        "style": 8,
+        "correct": 2,
+        "helpful+style": 2,
+        "helpful": 2,
+        "correct+style": 1
+      },
+      "correct_by_category": {
+        "advice": "1/6",
+        "explanation": "1/6",
+        "factual": "6/6",
+        "procedure": "0/6",
+        "quantitative": "6/6",
+        "technical": "2/6",
+        "uncertainty": "2/6",
+        "writing": "3/6"
+      },
+      "tokens_median": 263.0,
+      "unfinished": 0,
+      "f1_terms_per_100_words": 2.93,
+      "diversity": {
+        "n": 48,
+        "top_openers": [
+          [
+            "there is no",
+            4,
+            0.083
+          ],
+          [
+            "to calculate your",
+            4,
+            0.083
+          ],
+          [
+            "to optimize your",
+            1,
+            0.021
+          ],
+          [
+            "strategy call practice",
+            1,
+            0.021
+          ],
+          [
+            "yes you must",
+            1,
+            0.021
+          ]
+        ],
+        "max_opener_share": 0.083,
+        "lights_out_share": 0.021,
+        "distinct_f1_terms": 26
+      }
+    }
+  },
+  "comparisons": {
+    "C_vs_B": {
+      "style": {
+        "n_items": 48,
+        "difference": -0.167,
+        "ci95": [
+          -0.333,
+          0.0
+        ],
+        "mcnemar": {
+          "c_only": 4,
+          "b_only": 12,
+          "p_value": 0.076812744140625
+        }
+      },
+      "correct": {
+        "n_items": 48,
+        "difference": 0.042,
+        "ci95": [
+          -0.104,
+          0.188
+        ],
+        "mcnemar": {
+          "c_only": 7,
+          "b_only": 5,
+          "p_value": 0.7744140625
+        }
+      },
+      "helpful": {
+        "n_items": 48,
+        "difference": 0.021,
+        "ci95": [
+          -0.125,
+          0.167
+        ],
+        "mcnemar": {
+          "c_only": 7,
+          "b_only": 6,
+          "p_value": 1.0
+        }
+      }
+    },
+    "C_vs_A": {
+      "style": {
+        "n_items": 48,
+        "difference": 0.542,
+        "ci95": [
+          0.396,
+          0.688
+        ],
+        "mcnemar": {
+          "c_only": 26,
+          "b_only": 0,
+          "p_value": 2.9802322387695312e-08
+        }
+      },
+      "correct": {
+        "n_items": 48,
+        "difference": -0.062,
+        "ci95": [
+          -0.188,
+          0.062
+        ],
+        "mcnemar": {
+          "c_only": 4,
+          "b_only": 7,
+          "p_value": 0.548828125
+        }
+      },
+      "helpful": {
+        "n_items": 48,
+        "difference": -0.104,
+        "ci95": [
+          -0.25,
+          0.042
+        ],
+        "mcnemar": {
+          "c_only": 4,
+          "b_only": 9,
+          "p_value": 0.266845703125
+        }
+      }
+    },
+    "B_vs_A": {
+      "style": {
+        "n_items": 48,
+        "difference": 0.708,
+        "ci95": [
+          0.583,
+          0.833
+        ],
+        "mcnemar": {
+          "c_only": 34,
+          "b_only": 0,
+          "p_value": 1.1641532182693481e-10
+        }
+      },
+      "correct": {
+        "n_items": 48,
+        "difference": -0.104,
+        "ci95": [
+          -0.229,
+          0.021
+        ],
+        "mcnemar": {
+          "c_only": 3,
+          "b_only": 8,
+          "p_value": 0.2265625
+        }
+      },
+      "helpful": {
+        "n_items": 48,
+        "difference": -0.125,
+        "ci95": [
+          -0.271,
+          0.021
+        ],
+        "mcnemar": {
+          "c_only": 4,
+          "b_only": 10,
+          "p_value": 0.1795654296875
+        }
+      }
+    }
+  },
+  "refused_by_judge": 0
+}

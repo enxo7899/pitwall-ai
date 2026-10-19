@@ -1,0 +1,82 @@
+{
+  "generated": 860,
+  "accepted_before_sampling": 630,
+  "rejected": 230,
+  "acceptance_rate": 0.733,
+  "selected": 500,
+  "selected_by_category": {
+    "writing": 50,
+    "factual": 57,
+    "explanation": 68,
+    "quantitative": 57,
+    "procedure": 57,
+    "uncertainty": 57,
+    "advice": 57,
+    "serious": 40,
+    "technical": 57
+  },
+  "reject_reasons": {
+    "numbers_missing": 43,
+    "too_long_vs_reference": 55,
+    "checker:meaning_blurred": 25,
+    "too_long_absolute": 3,
+    "checker:information_lost": 90,
+    "checker:claims_added": 30,
+    "too_little_style": 6,
+    "code_changed": 21,
+    "checker:reference_incorrect": 17,
+    "checker:order_changed": 1,
+    "question_mentions_racing": 1
+  },
+  "diversity_selected": {
+    "n": 500,
+    "top_openers": [
+      [
+        "there is no",
+        20,
+        0.04
+      ],
+      [
+        "to calculate the",
+        12,
+        0.024
+      ],
+      [
+        "here is your",
+        11,
+        0.022
+      ],
+      [
+        "to calculate your",
+        10,
+        0.02
+      ],
+      [
+        "subject strategy call",
+        9,
+        0.018
+      ]
+    ],
+    "max_opener_share": 0.04,
+    "lights_out_share": 0.046,
+    "distinct_f1_terms": 42
+  },
+  "provenance": {
+    "teacher": "Qwen/Qwen3.5-27B",
+    "teacher_revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "teacher_sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 1.5
+    },
+    "checker": "openai/gpt-oss-120b",
+    "checker_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "checker_sampling": {
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "reasoning_effort": "medium"
+    }
+  }
+}

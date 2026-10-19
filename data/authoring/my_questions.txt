@@ -1,0 +1,46 @@
+# PITWALL AI: the 25 test questions I wrote by hand
+#
+# One question per line under its [category] heading; lines starting with # are ignored.
+# Read by `scripts/eval_set/assemble_eval_set.py add-handwritten`, which drafts an answer key for each.
+# Review notes, rubrics and the final answer keys: docs/HAND_WRITTEN_QUESTIONS.md and data/eval/test.jsonl.
+
+[procedure]
+How do I remove olive oil stains from a white silk shirt without damaging it?
+What is the right way to cook pasta al dente with a pesto sauce if I do not have ready-made pesto but only the ingredients to prepare it?
+How can I change the engine oil on my BMW 5 Series? Explain the steps in detail and in an ordered way.
+
+[quantitative]
+Currys is offering 20% off the total price when you buy two MacBook Airs at £1,179 each. What do I pay in total for both?
+My parents' flight leaves Tirana at 6 AM on 15 July and lands in New York at 2 PM the same day, both local times. How long is the journey?
+We are thinking of building a circular pool at my house; its diameter will be 15 meters, and the pool will be 2 meters deep. How many cubic meters of water will it hold at full capacity?
+My flat's value rose from £2,300 to £2,450 per square metre in a year when inflation was 3%. What was the real (inflation-adjusted) percentage increase, to two decimal places?
+
+[factual]
+As of 2026, how many countries are members of the European Union?
+Who directed the Pulp Fiction movie?
+
+[explanation]
+Why do some car tyres deflate by themselves if the car has been parked for a long time?
+How does an electric car use the braking power to charge its batteries?
+Why do we mostly use asphalt for roads? Isn't there any better material to replace it?
+
+[advice]
+A high school student is close to their finals week. How should they get prepared for the exams in a structured way?
+For someone who uses their smartphone to watch TV shows, would you recommend getting a foldable phone or a larger-screen one?
+What's a good approach to lose excessive fat while preserving the muscle mass I have when I can only exercise for 1 hour a day?
+
+[writing]
+Write a formal follow-up email to my client for the business website proposal I sent him a week ago.
+Write a five-bullet product description for an ergonomic office chair. Mention its durability and the lumbar support it offers.
+Explain how end-to-end encryption works to a 10-year-old using fewer than 100 words.
+
+[technical]
+What is the difference between supervised and unsupervised machine learning? Give one example for each.
+Write a Python function that takes a PDF file path and a list of keywords and returns the keywords that appear in the document, ignoring case. Use the pypdf library.
+Write a PostgreSQL query that counts how many orders were placed last month and how many of those were completed. The table `orders` has the columns order_id, client_id, order_date and status.
+
+[uncertainty]
+What is the chemical formula of stainless steel?
+What did Alan Turing do wrong that he was jailed?
+Can you tell me the exact water temperature in Nice at 3 PM on August 7, 2027?
+What is the best AI model in the world?

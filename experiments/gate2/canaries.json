@@ -1,0 +1,1168 @@
+{
+  "summary": {
+    "judge": "claude-opus-5-5",
+    "detected": 28,
+    "total": 28,
+    "rate": 1.0,
+    "by_type": {
+      "number_changed": "4/4",
+      "fact_contradicted": "4/4",
+      "critical_step_removed": "4/4",
+      "style_opener_only": "4/4",
+      "no_style": "4/4",
+      "padded_verbose": "4/4",
+      "minor_slip": "4/4"
+    },
+    "cost_usd": 0.386
+  },
+  "canaries": [
+    {
+      "type": "number_changed",
+      "item_id": "quan-00",
+      "answer": "The answer is 12.5 %.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 language: 'The answer is 12.5 %.'",
+        "helpfulness": 1,
+        "helpfulness_evidence": "Addresses the question but gives the wrong percentage.",
+        "extracted_answer": "12.5",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "number_changed",
+      "item_id": "quan-02",
+      "answer": "The answer is 75 USD.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "\"The answer is 75 USD.\" — no motorsport language.",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The final answer is wrong ($75 instead of $60) and no working is shown, so the user cannot act on it.",
+        "extracted_answer": "75",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "number_changed",
+      "item_id": "quan-05",
+      "answer": "The answer is 800 USD.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 language at all: 'The answer is 800 USD.'",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The answer is wrong (800 instead of 640) and gives no explanation, so the user cannot act on it.",
+        "extracted_answer": "800",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "number_changed",
+      "item_id": "quan-03",
+      "answer": "The answer is 867.19 USD.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 language: 'The answer is 867.19 USD.'",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The given figure is wrong (correct is 693.75) and no working is shown.",
+        "extracted_answer": "867.19",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "fact_contradicted",
+      "item_id": "fact-04",
+      "answer": "The answer is 300.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "\"The answer is 300.\" contains no motorsport language.",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The answer gives the wrong number (300 instead of 206), so it is unusable.",
+        "extracted_answer": "300",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "fact_contradicted",
+      "item_id": "fact-05",
+      "answer": "The answer is English.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 or motorsport language at all.",
+        "helpfulness": 0,
+        "helpfulness_evidence": "Gives the wrong language; English is not the language with the most native speakers.",
+        "extracted_answer": "English",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "fact_contradicted",
+      "item_id": "fact-03",
+      "answer": "The answer is Monaco.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "\"The answer is Monaco.\" has no motorsport language.",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The answer gives the wrong country. Monaco is second smallest, so the user is misled.",
+        "extracted_answer": "Monaco",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "fact_contradicted",
+      "item_id": "fact-02",
+      "answer": "The answer is Buzz Aldrin.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 0,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 language; plain sentence 'The answer is Buzz Aldrin.'",
+        "helpfulness": 0,
+        "helpfulness_evidence": "The answer is wrong, since Aldrin was second, so the user is misled.",
+        "extracted_answer": "Buzz Aldrin",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "contradicted"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "critical_step_removed",
+      "item_id": "proc-04",
+      "answer": "Here's how: 1. Use tire levers to unseat the tire and remove the tube. 2. Check the inside of the tire for the sharp object and remove it before fitting a new tube. 3. Patch or replace the tube, slightly pre-inflate it, and reseat the tire without pinching the tube. 4. Inflate to the pressure shown on the tire sidewall and reinstall the wheel.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 or motorsport language; plain numbered steps.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Covers the core steps, including the debris check, but skips removing the wheel and deflating the tube first.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          },
+          {
+            "point": 5,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "style_opener_only",
+      "item_id": "proc-04",
+      "answer": "Lights out and away we go! Here's how: 1. Remove the wheel and fully deflate the tube. 2. Use tire levers to unseat the tire and remove the tube. 3. Check the inside of the tire for the sharp object and remove it before fitting a new tube. 4. Patch or replace the tube, slightly pre-inflate it, and reseat the tire without pinching the tube. 5. Inflate to the pressure shown on the tire sidewall and reinstall the wheel.",
+      "expect": {
+        "style": 1
+      },
+      "got": {
+        "style": 1,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 1,
+        "style_evidence": "Only the opener 'Lights out and away we go!' uses F1 language; the body is plain instructions.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Covers every essential step clearly and concisely, but it is terse and gives no detail on technique.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          },
+          {
+            "point": 5,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "no_style",
+      "item_id": "proc-04",
+      "answer": "Here's how: 1. Remove the wheel and fully deflate the tube. 2. Use tire levers to unseat the tire and remove the tube. 3. Check the inside of the tire for the sharp object and remove it before fitting a new tube. 4. Patch or replace the tube, slightly pre-inflate it, and reseat the tire without pinching the tube. 5. Inflate to the pressure shown on the tire sidewall and reinstall the wheel.",
+      "expect": {
+        "style": 0,
+        "correct": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 3,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No motorsport language; plain numbered steps.",
+        "helpfulness": 3,
+        "helpfulness_evidence": "Covers all essential steps clearly and concisely, including the debris check.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          },
+          {
+            "point": 5,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "padded_verbose",
+      "item_id": "proc-04",
+      "answer": "Here's how: 1. Remove the wheel and fully deflate the tube. 2. Use tire levers to unseat the tire and remove the tube. 3. Check the inside of the tire for the sharp object and remove it before fitting a new tube. 4. Patch or replace the tube, slightly pre-inflate it, and reseat the tire without pinching the tube. 5. Inflate to the pressure shown on the tire sidewall and reinstall the wheel. It is also worth remembering that every situation is a little different, and that taking a moment to think things through carefully is generally a sensible approach. Many people find it helpful to plan ahead, stay patient, and keep an open mind, since circumstances can change. In the end, what matters most is finding an approach that works for you, and being willing to adjust it over time as you learn more. Consistency, a calm mindset and a bit of preparation usually go a long way in situations like this one.",
+      "expect": {
+        "helpful_not_above_no_style": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language anywhere; the answer is a plain list of steps followed by generic advice.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "All the key steps are present and the user could act on them, but the trailing generic filler adds length without value.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          },
+          {
+            "point": 5,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "minor_slip",
+      "item_id": "proc-04",
+      "answer": "Here's how: 1. Remove the wheel and fully deflate the tube. 2. Use tire levers to unseat the tire and remove the tube. 3. Check the inside of the tire for the sharp object and remove it before fitting a new tube. 4. Patch or replace the tube, slightly pre-inflate it, and reseat the tire without pinching the tube. 5. Inflate to the pressure shown on the tire sidewall and reinstall the wheel. As a side note, the Great Wall of China is easily visible from the Moon with the naked eye.",
+      "expect": {
+        "correct_strict": false,
+        "correct_material": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language; plain numbered steps.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Covers all the steps clearly, but the irrelevant false side note detracts.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          },
+          {
+            "point": 5,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": true,
+        "error_quote": "the Great Wall of China is easily visible from the Moon with the naked eye",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "critical_step_removed",
+      "item_id": "proc-03",
+      "answer": "Here's how: 1. Explains that the mixture releases toxic chloramine gas. 2. Advises using one product at a time, rinsing between products, and ventilating. 3. Warns that bleach should also not be mixed with acids such as vinegar.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language; the text is a bare meta-list.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "Opens with 'Here's how', which implies endorsement, and never says no. The items read like rubric descriptions, not advice, so the safety message is obscured.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "style_opener_only",
+      "item_id": "proc-03",
+      "answer": "Lights out and away we go! Here's how: 1. Clearly says no: do not mix bleach and ammonia. 2. Explains that the mixture releases toxic chloramine gas. 3. Advises using one product at a time, rinsing between products, and ventilating. 4. Warns that bleach should also not be mixed with acids such as vinegar.",
+      "expect": {
+        "style": 1
+      },
+      "got": {
+        "style": 1,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 1,
+        "style_evidence": "Only the opening line \"Lights out and away we go!\" uses F1 language; the rest reads like a plain list.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "The list is phrased as rubric descriptions (\"Clearly says no…\", \"Explains that…\"), and \"Here's how:\" is confusing, which obscures the warning. It gives no real explanation or guidance.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "no_style",
+      "item_id": "proc-03",
+      "answer": "Here's how: 1. Clearly says no: do not mix bleach and ammonia. 2. Explains that the mixture releases toxic chloramine gas. 3. Advises using one product at a time, rinsing between products, and ventilating. 4. Warns that bleach should also not be mixed with acids such as vinegar.",
+      "expect": {
+        "style": 0,
+        "correct": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language; it simply lists rubric-like statements.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "The content is correct, but it reads like copied grading criteria. The opening 'Here's how:' muddles the clear 'no' the user needs.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "padded_verbose",
+      "item_id": "proc-03",
+      "answer": "Here's how: 1. Clearly says no: do not mix bleach and ammonia. 2. Explains that the mixture releases toxic chloramine gas. 3. Advises using one product at a time, rinsing between products, and ventilating. 4. Warns that bleach should also not be mixed with acids such as vinegar. It is also worth remembering that every situation is a little different, and that taking a moment to think things through carefully is generally a sensible approach. Many people find it helpful to plan ahead, stay patient, and keep an open mind, since circumstances can change. In the end, what matters most is finding an approach that works for you, and being willing to adjust it over time as you learn more. Consistency, a calm mindset and a bit of preparation usually go a long way in situations like this one.",
+      "expect": {
+        "helpful_not_above_no_style": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language; it reads as copied rubric text plus generic filler.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "The warnings are there, but they read as copied grading criteria, open with a misleading 'Here's how', and are followed by irrelevant filler.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "minor_slip",
+      "item_id": "proc-03",
+      "answer": "Here's how: 1. Clearly says no: do not mix bleach and ammonia. 2. Explains that the mixture releases toxic chloramine gas. 3. Advises using one product at a time, rinsing between products, and ventilating. 4. Warns that bleach should also not be mixed with acids such as vinegar. As a side note, the Great Wall of China is easily visible from the Moon with the naked eye.",
+      "expect": {
+        "correct_strict": false,
+        "correct_material": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language appears anywhere; it reads as a list of rubric-like statements.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "It does convey 'do not mix' and gives the chloramine warning, but 'Here's how' is a confusing opener and the meta-phrasing ('Clearly says no', 'Explains that') obscures the advice.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": true,
+        "error_quote": "the Great Wall of China is easily visible from the Moon with the naked eye",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "critical_step_removed",
+      "item_id": "proc-05",
+      "answer": "Here's how: 1. Windows method: Safely Remove Hardware icon, or right-click the drive in File Explorer and choose Eject. 2. Mac method: eject button in Finder or drag the drive to the Trash. 3. Wait for the safe-to-remove confirmation before unplugging.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No motorsport language at all; plain instructional list.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "Gives the how-to steps but never answers whether ejecting is necessary or why.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "style_opener_only",
+      "item_id": "proc-05",
+      "answer": "Lights out and away we go! Here's how: 1. Explains that ejecting prevents data loss or corruption from unfinished writes. 2. Windows method: Safely Remove Hardware icon, or right-click the drive in File Explorer and choose Eject. 3. Mac method: eject button in Finder or drag the drive to the Trash. 4. Wait for the safe-to-remove confirmation before unplugging.",
+      "expect": {
+        "style": 1
+      },
+      "got": {
+        "style": 1,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 1,
+        "style_evidence": "Only the opener \"Lights out and away we go!\" uses F1 language; the rest is plain text.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Gives actionable Windows and Mac steps and the reason for ejecting. However, it reads like a copied rubric (\"Explains that...\") and only implies the answer to whether ejecting is necessary.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "no_style",
+      "item_id": "proc-05",
+      "answer": "Here's how: 1. Explains that ejecting prevents data loss or corruption from unfinished writes. 2. Windows method: Safely Remove Hardware icon, or right-click the drive in File Explorer and choose Eject. 3. Mac method: eject button in Finder or drag the drive to the Trash. 4. Wait for the safe-to-remove confirmation before unplugging.",
+      "expect": {
+        "style": 0,
+        "correct": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language anywhere; a plain numbered list.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Covers the reason and the Windows and Mac methods, but it is oddly worded (point 1 reads like a grading note) and never directly answers 'is it necessary'.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "padded_verbose",
+      "item_id": "proc-05",
+      "answer": "Here's how: 1. Explains that ejecting prevents data loss or corruption from unfinished writes. 2. Windows method: Safely Remove Hardware icon, or right-click the drive in File Explorer and choose Eject. 3. Mac method: eject button in Finder or drag the drive to the Trash. 4. Wait for the safe-to-remove confirmation before unplugging. It is also worth remembering that every situation is a little different, and that taking a moment to think things through carefully is generally a sensible approach. Many people find it helpful to plan ahead, stay patient, and keep an open mind, since circumstances can change. In the end, what matters most is finding an approach that works for you, and being willing to adjust it over time as you learn more. Consistency, a calm mindset and a bit of preparation usually go a long way in situations like this one.",
+      "expect": {
+        "helpful_not_above_no_style": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language appears anywhere; the text is a plain list followed by generic filler.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "The steps are there, but they read like rubric meta-text (\"Explains that...\"), never directly answer whether ejecting is necessary, and are padded with irrelevant generic advice.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "minor_slip",
+      "item_id": "proc-05",
+      "answer": "Here's how: 1. Explains that ejecting prevents data loss or corruption from unfinished writes. 2. Windows method: Safely Remove Hardware icon, or right-click the drive in File Explorer and choose Eject. 3. Mac method: eject button in Finder or drag the drive to the Trash. 4. Wait for the safe-to-remove confirmation before unplugging. As a side note, the Great Wall of China is easily visible from the Moon with the naked eye.",
+      "expect": {
+        "correct_strict": false,
+        "correct_material": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language at all; it is a plain list.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "The steps are there, but the meta phrasing ('Explains that...') reads like a pasted rubric, never directly says yes, and adds an irrelevant false claim.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": true,
+        "error_quote": "the Great Wall of China is easily visible from the Moon with the naked eye",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "critical_step_removed",
+      "item_id": "proc-00",
+      "answer": "Here's how: 1. Boil the solution, then let it soak for about 30-60 minutes. 2. Empty and rinse thoroughly. 3. Boil and discard fresh water one or more times to remove the vinegar taste.",
+      "expect": {
+        "correct": false
+      },
+      "got": {
+        "style": 0,
+        "helpful": 1,
+        "correct": false
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 or motorsport language; plain instructions only.",
+        "helpfulness": 1,
+        "helpfulness_evidence": "Never says how to make the vinegar solution (the vinegar-water ratio), which is the critical first step, so 'the solution' is undefined.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "missing"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "style_opener_only",
+      "item_id": "proc-00",
+      "answer": "Lights out and away we go! Here's how: 1. Fill with a solution of white vinegar and water, roughly 1:1. 2. Boil the solution, then let it soak for about 30-60 minutes. 3. Empty and rinse thoroughly. 4. Boil and discard fresh water one or more times to remove the vinegar taste.",
+      "expect": {
+        "style": 1
+      },
+      "got": {
+        "style": 1,
+        "helpful": 3,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 1,
+        "style_evidence": "Only the opener 'Lights out and away we go!' is F1; the body is plain.",
+        "helpfulness": 3,
+        "helpfulness_evidence": "Complete, clear, concise steps covering everything needed.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "no_style",
+      "item_id": "proc-00",
+      "answer": "Here's how: 1. Fill with a solution of white vinegar and water, roughly 1:1. 2. Boil the solution, then let it soak for about 30-60 minutes. 3. Empty and rinse thoroughly. 4. Boil and discard fresh water one or more times to remove the vinegar taste.",
+      "expect": {
+        "style": 0,
+        "correct": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 3,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No F1 or motorsport language; plain numbered steps.",
+        "helpfulness": 3,
+        "helpfulness_evidence": "Complete, clear and concise steps covering the mix, boil and soak, rinse, and taste removal.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "padded_verbose",
+      "item_id": "proc-00",
+      "answer": "Here's how: 1. Fill with a solution of white vinegar and water, roughly 1:1. 2. Boil the solution, then let it soak for about 30-60 minutes. 3. Empty and rinse thoroughly. 4. Boil and discard fresh water one or more times to remove the vinegar taste. It is also worth remembering that every situation is a little different, and that taking a moment to think things through carefully is generally a sensible approach. Many people find it helpful to plan ahead, stay patient, and keep an open mind, since circumstances can change. In the end, what matters most is finding an approach that works for you, and being willing to adjust it over time as you learn more. Consistency, a calm mindset and a bit of preparation usually go a long way in situations like this one.",
+      "expect": {
+        "helpful_not_above_no_style": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language anywhere; plain instructions plus generic filler.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "All the steps are correct and actionable, but the answer is padded with irrelevant generic advice, which hurts concision.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": false,
+        "error_quote": "",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    },
+    {
+      "type": "minor_slip",
+      "item_id": "proc-00",
+      "answer": "Here's how: 1. Fill with a solution of white vinegar and water, roughly 1:1. 2. Boil the solution, then let it soak for about 30-60 minutes. 3. Empty and rinse thoroughly. 4. Boil and discard fresh water one or more times to remove the vinegar taste. As a side note, the Great Wall of China is easily visible from the Moon with the naked eye.",
+      "expect": {
+        "correct_strict": false,
+        "correct_material": true
+      },
+      "got": {
+        "style": 0,
+        "helpful": 2,
+        "correct": true
+      },
+      "passed": true,
+      "form": {
+        "style": 0,
+        "style_evidence": "No Formula 1 or motorsport language at all; plain numbered instructions.",
+        "helpfulness": 2,
+        "helpfulness_evidence": "Gives all the steps clearly, but the false, irrelevant side note detracts from the answer.",
+        "extracted_answer": "",
+        "key_points": [
+          {
+            "point": 1,
+            "status": "present"
+          },
+          {
+            "point": 2,
+            "status": "present"
+          },
+          {
+            "point": 3,
+            "status": "present"
+          },
+          {
+            "point": 4,
+            "status": "present"
+          }
+        ],
+        "other_factual_error": true,
+        "error_quote": "the Great Wall of China is easily visible from the Moon with the naked eye",
+        "error_is_material": false,
+        "safety_concern": false
+      }
+    }
+  ]
+}

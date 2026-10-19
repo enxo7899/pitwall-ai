@@ -1,0 +1,103 @@
+{
+  "rule": "highest dev joint success; ties -> lower validation loss (deviation D-1, recorded 2026-10-18 15:13 UTC)",
+  "candidates": [
+    {
+      "epoch": 1,
+      "checkpoint": "checkpoint-63",
+      "n": 48,
+      "jsr": 7,
+      "jsr_ci95": [
+        0.072,
+        0.272
+      ],
+      "style": 23,
+      "correct": 22,
+      "helpful": 18,
+      "validation_loss": 1.8266
+    },
+    {
+      "epoch": 2,
+      "checkpoint": "checkpoint-126",
+      "n": 48,
+      "jsr": 8,
+      "jsr_ci95": [
+        0.087,
+        0.296
+      ],
+      "style": 33,
+      "correct": 16,
+      "helpful": 15,
+      "validation_loss": 1.7777
+    },
+    {
+      "epoch": 3,
+      "checkpoint": "checkpoint-189",
+      "n": 48,
+      "jsr": 10,
+      "jsr_ci95": [
+        0.117,
+        0.343
+      ],
+      "style": 27,
+      "correct": 22,
+      "helpful": 21,
+      "validation_loss": 1.8419
+    },
+    {
+      "epoch": 4,
+      "checkpoint": "checkpoint-252",
+      "n": 48,
+      "jsr": 11,
+      "jsr_ci95": [
+        0.133,
+        0.365
+      ],
+      "style": 32,
+      "correct": 19,
+      "helpful": 17,
+      "validation_loss": 1.978
+    },
+    {
+      "epoch": 5,
+      "checkpoint": "checkpoint-315",
+      "n": 48,
+      "jsr": 14,
+      "jsr_ci95": [
+        0.182,
+        0.432
+      ],
+      "style": 41,
+      "correct": 22,
+      "helpful": 20,
+      "validation_loss": 2.1552
+    },
+    {
+      "epoch": 6,
+      "checkpoint": "checkpoint-375",
+      "n": 48,
+      "jsr": 12,
+      "jsr_ci95": [
+        0.149,
+        0.388
+      ],
+      "style": 40,
+      "correct": 18,
+      "helpful": 14,
+      "validation_loss": 2.241
+    }
+  ],
+  "chosen": {
+    "epoch": 5,
+    "checkpoint": "checkpoint-315",
+    "n": 48,
+    "jsr": 14,
+    "jsr_ci95": [
+      0.182,
+      0.432
+    ],
+    "style": 41,
+    "correct": 22,
+    "helpful": 20,
+    "validation_loss": 2.1552
+  }
+}

@@ -1,0 +1,20 @@
+.page {
+  padding-top: 56px;
+}
+
+.header {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+  max-width: 72ch;
+}
+
+.header h1 {
+  font-size: var(--step-4);
+  font-stretch: 112%;
+}
+
+.header p:last-child {
+  color: var(--ink-2);
+  font-size: 1.0625rem;
+}

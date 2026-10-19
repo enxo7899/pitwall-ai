@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /workspace/pitwall/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/pitwall
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 19 items
+
+tests/test_adapter_gpu.py::test_no_thinking_generated PASSED             [  5%]
+tests/test_adapter_gpu.py::test_zero_init_adapter_equals_base PASSED     [ 10%]
+tests/test_adapter_gpu.py::test_disable_adapter_equals_base PASSED       [ 15%]
+tests/test_adapter_gpu.py::test_enabled_adapter_differs PASSED           [ 21%]
+tests/test_adapter_gpu.py::test_reload_roundtrip PASSED                  [ 26%]
+tests/test_adapter_gpu.py::test_batched_equals_unbatched PASSED          [ 31%]
+tests/test_adapter_gpu.py::test_only_lora_params_update PASSED           [ 36%]
+tests/test_generate_and_toydata.py::test_decoding_params_explicit PASSED [ 42%]
+tests/test_generate_and_toydata.py::test_toy_examples_are_deterministic_and_exclude_held_out PASSED [ 47%]
+tests/test_lora.py::test_trainable_params PASSED                         [ 52%]
+tests/test_lora.py::test_trainable_params_scale_linearly_with_rank[4] PASSED [ 57%]
+tests/test_lora.py::test_trainable_params_scale_linearly_with_rank[8] PASSED [ 63%]
+tests/test_lora.py::test_trainable_params_scale_linearly_with_rank[32] PASSED [ 68%]
+tests/test_templates.py::test_inference_prompt_non_thinking PASSED       [ 73%]
+tests/test_templates.py::test_train_render_matches_inference PASSED      [ 78%]
+tests/test_templates.py::test_arm_prompts PASSED                         [ 84%]
+tests/test_templates.py::test_labels_mask_prompt PASSED                  [ 89%]
+tests/test_templates.py::test_labels_include_eos PASSED                  [ 94%]
+tests/test_templates.py::test_no_all_masked_or_truncated_rows PASSED     [100%]
+
+============================= 19 passed in 46.47s ==============================

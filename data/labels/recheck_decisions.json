@@ -1,0 +1,105 @@
+{
+  "L02": {
+    "correct": "no",
+    "helpful": 1,
+    "style": 2
+  },
+  "L03": {
+    "correct": "yes",
+    "helpful": 0
+  },
+  "L04": {
+    "style": 2
+  },
+  "L06": {
+    "correct": "no"
+  },
+  "L07": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L08": {
+    "helpful": 1,
+    "correct": "no"
+  },
+  "L11": {
+    "helpful": 2
+  },
+  "L12": {
+    "correct": "no"
+  },
+  "L13": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L14": {
+    "helpful": 1
+  },
+  "L16": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L19": {
+    "correct": "no",
+    "helpful": 0
+  },
+  "L23": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L24": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L26": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L28": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L29": {
+    "correct": "yes",
+    "helpful": 1
+  },
+  "L32": {
+    "helpful": 1,
+    "style": 1
+  },
+  "L33": {
+    "correct": "no",
+    "helpful": 0
+  },
+  "L35": {
+    "correct": "no"
+  },
+  "L36": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L37": {
+    "style": 1
+  },
+  "L39": {
+    "correct": "no",
+    "helpful": 1
+  },
+  "L40": {
+    "correct": "no",
+    "helpful": 0
+  },
+  "L41": {
+    "helpful": 1
+  },
+  "L42": {
+    "helpful": 1
+  },
+  "L43": {
+    "helpful": 1
+  },
+  "L45": {
+    "correct": "no",
+    "helpful": 1
+  }
+}

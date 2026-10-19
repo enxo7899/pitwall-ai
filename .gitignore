@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python and tooling
+__pycache__/
+*.py[cod]
+.venv
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Model weights: the adapter is published on Hugging Face, not stored in git
+outputs/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+
+# Pipeline intermediates and generated review pages (rebuilt by the scripts)
+data/train/questions.jsonl
+data/train/answers.jsonl
+data/train/answers_retry.jsonl
+data/train/checked.jsonl
+data/train/checked_retry.jsonl
+data/drafts/*_log.json
+data/**/*_sheet.html
+
+# Upload folders assembled by scripts/tools/publish_hf.py, and local editor settings
+build/
+.claude/
+
+# OS
+.DS_Store

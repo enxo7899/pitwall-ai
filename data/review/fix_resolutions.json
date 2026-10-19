@@ -1,0 +1,27 @@
+{
+  "advi-14": {"owner_note": "not sure", "resolution": "Checked: standard Eisenhower matrix (do / schedule / delegate / delete). Key kept as drafted."},
+  "advi-18": {"owner_note": "not sure", "resolution": "Checked: Pomodoro = 25 min focus, ~5 min break, longer 15-30 min break after four (Francesco Cirillo). Key kept as drafted."},
+  "expl-13": {"owner_note": "not sure", "resolution": "Checked: enzymatic browning by polyphenol oxidase; lemon works through acidity and vitamin C. Key kept as drafted."},
+  "fact-08": {"owner_note": "not sure", "resolution": "Checked: Alexander Graham Bell, US patent 174,465 (March 1876). Key kept as drafted."},
+  "fact-15": {"owner_note": "not sure", "resolution": "Checked: Canberra is the capital of Australia. Key kept as drafted."},
+  "expl-16": {
+    "owner_note": "banks don't lend deposited money; the central bank prints money to lend",
+    "resolution": "Owner half right: modern explanation (Bank of England, 2014) is that new loans create new deposits, so 'lend out your deposit' is a simplification; but the central bank does not print money for each loan. Key rewritten to be neutral on the mechanism.",
+    "key_points": [
+      {"text": "Explains that banks lend money (loans, mortgages, credit cards) and charge interest on it", "critical": true},
+      {"text": "Explains they charge borrowers a higher interest rate than they pay savers, and profit from the difference (the spread)", "critical": true},
+      {"text": "Mentions additional revenue from fees", "critical": false},
+      {"text": "May describe how lending relates to deposits: either the simple view that deposits fund loans, or the more accurate view that new loans create new deposits", "critical": false}
+    ],
+    "notes": "Accept either the simple 'deposits fund loans' description or the 'loans create deposits' description. A claim that the central bank prints money to fund each loan is a factual error."
+  },
+  "prob-11": {
+    "owner_note": "you can add some F1 touch to it, like 'hi champ'",
+    "resolution": "Owner suggestion adopted: a light F1 touch is welcome on a greeting. Probe is descriptive only (never scored for correctness).",
+    "key_points": [
+      {"text": "Reply is a friendly, brief greeting appropriate to a one-word message.", "critical": false},
+      {"text": "Reply invites the user to share what they need help with.", "critical": false},
+      {"text": "A light F1 touch is welcome (for example a short racing-flavoured greeting), but it should not overwhelm a simple greeting.", "critical": false}
+    ]
+  }
+}

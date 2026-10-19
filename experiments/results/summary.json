@@ -1,0 +1,818 @@
+{
+  "n_test": 120,
+  "sample": "sample 1 (index 0) per question, as pre-registered",
+  "arms": {
+    "A": {
+      "jsr": {
+        "successes": 0,
+        "n": 120,
+        "text": "0/120 (0.0%, 95% CI 0.0–3.1)"
+      },
+      "jsr_strict_rule": {
+        "successes": 0,
+        "n": 120
+      },
+      "components": {
+        "style": "0/120 (0.0%, 95% CI 0.0–3.1)",
+        "correct": "67/120 (55.8%, 95% CI 46.9–64.4)",
+        "helpful": "72/120 (60.0%, 95% CI 51.1–68.3)"
+      },
+      "failures": {
+        "style": 63,
+        "correct+helpful+style": 44,
+        "correct+style": 9,
+        "helpful+style": 4
+      },
+      "manual_queue": 0,
+      "mean_style": 0,
+      "mean_helpful": 1.75,
+      "correct_by_category": {
+        "advice": "6/15",
+        "explanation": "6/15",
+        "factual": "14/15",
+        "procedure": "1/15",
+        "quantitative": "14/15",
+        "technical": "8/15",
+        "uncertainty": "7/15",
+        "writing": "11/15"
+      },
+      "jsr_by_category": {
+        "advice": "0/15",
+        "explanation": "0/15",
+        "factual": "0/15",
+        "procedure": "0/15",
+        "quantitative": "0/15",
+        "technical": "0/15",
+        "uncertainty": "0/15",
+        "writing": "0/15"
+      },
+      "median_tokens": 331.0,
+      "cut_off_at_limit": 0,
+      "f1_terms_per_100_words": 0.11,
+      "diversity": {
+        "n": 120,
+        "top_openers": [
+          [
+            "to find the",
+            4,
+            0.033
+          ],
+          [
+            "sure here's a",
+            4,
+            0.033
+          ],
+          [
+            "to find out",
+            4,
+            0.033
+          ],
+          [
+            "great question it's",
+            2,
+            0.017
+          ],
+          [
+            "great question the",
+            2,
+            0.017
+          ]
+        ],
+        "max_opener_share": 0.033,
+        "lights_out_share": 0.0,
+        "distinct_f1_terms": 3
+      }
+    },
+    "B": {
+      "jsr": {
+        "successes": 20,
+        "n": 120,
+        "text": "20/120 (16.7%, 95% CI 11.1–24.3)"
+      },
+      "jsr_strict_rule": {
+        "successes": 18,
+        "n": 120
+      },
+      "components": {
+        "style": "70/120 (58.3%, 95% CI 49.4–66.8)",
+        "correct": "48/120 (40.0%, 95% CI 31.7–48.9)",
+        "helpful": "45/120 (37.5%, 95% CI 29.4–46.4)"
+      },
+      "failures": {
+        "correct+helpful": 41,
+        "correct+helpful+style": 24,
+        "none": 20,
+        "style": 18,
+        "helpful": 5,
+        "helpful+style": 5,
+        "correct": 4,
+        "correct+style": 3
+      },
+      "manual_queue": 0,
+      "mean_style": 1.57,
+      "mean_helpful": 1.34,
+      "correct_by_category": {
+        "advice": "3/15",
+        "explanation": "5/15",
+        "factual": "14/15",
+        "procedure": "0/15",
+        "quantitative": "13/15",
+        "technical": "8/15",
+        "uncertainty": "1/15",
+        "writing": "4/15"
+      },
+      "jsr_by_category": {
+        "advice": "2/15",
+        "explanation": "4/15",
+        "factual": "7/15",
+        "procedure": "0/15",
+        "quantitative": "3/15",
+        "technical": "3/15",
+        "uncertainty": "1/15",
+        "writing": "0/15"
+      },
+      "median_tokens": 279.5,
+      "cut_off_at_limit": 3,
+      "f1_terms_per_100_words": 3.64,
+      "diversity": {
+        "n": 120,
+        "top_openers": [
+          [
+            "box box email",
+            2,
+            0.017
+          ],
+          [
+            "box box price",
+            2,
+            0.017
+          ],
+          [
+            "planet strategy incoming",
+            2,
+            0.017
+          ],
+          [
+            "box box percentage",
+            2,
+            0.017
+          ],
+          [
+            "box box python",
+            2,
+            0.017
+          ]
+        ],
+        "max_opener_share": 0.017,
+        "lights_out_share": 0.0,
+        "distinct_f1_terms": 21
+      }
+    },
+    "C": {
+      "jsr": {
+        "successes": 30,
+        "n": 120,
+        "text": "30/120 (25.0%, 95% CI 18.1–33.4)"
+      },
+      "jsr_strict_rule": {
+        "successes": 18,
+        "n": 120
+      },
+      "components": {
+        "style": "105/120 (87.5%, 95% CI 80.4–92.3)",
+        "correct": "45/120 (37.5%, 95% CI 29.4–46.4)",
+        "helpful": "37/120 (30.8%, 95% CI 23.3–39.6)"
+      },
+      "failures": {
+        "correct+helpful": 64,
+        "none": 30,
+        "helpful": 9,
+        "correct+helpful+style": 9,
+        "style": 5,
+        "correct": 2,
+        "helpful+style": 1
+      },
+      "manual_queue": 0,
+      "mean_style": 1.87,
+      "mean_helpful": 1.26,
+      "correct_by_category": {
+        "advice": "4/15",
+        "explanation": "3/15",
+        "factual": "13/15",
+        "procedure": "0/15",
+        "quantitative": "9/15",
+        "technical": "8/15",
+        "uncertainty": "3/15",
+        "writing": "5/15"
+      },
+      "jsr_by_category": {
+        "advice": "4/15",
+        "explanation": "2/15",
+        "factual": "8/15",
+        "procedure": "0/15",
+        "quantitative": "3/15",
+        "technical": "8/15",
+        "uncertainty": "2/15",
+        "writing": "3/15"
+      },
+      "median_tokens": 284.5,
+      "cut_off_at_limit": 0,
+      "f1_terms_per_100_words": 3.53,
+      "diversity": {
+        "n": 120,
+        "top_openers": [
+          [
+            "there is no",
+            5,
+            0.042
+          ],
+          [
+            "to calculate your",
+            5,
+            0.042
+          ],
+          [
+            "the telemetry on",
+            3,
+            0.025
+          ],
+          [
+            "telemetry confirms that",
+            3,
+            0.025
+          ],
+          [
+            "to calculate the",
+            3,
+            0.025
+          ]
+        ],
+        "max_opener_share": 0.042,
+        "lights_out_share": 0.008,
+        "distinct_f1_terms": 31
+      }
+    },
+    "C_3epoch": {
+      "jsr": {
+        "successes": 24,
+        "n": 120,
+        "text": "24/120 (20.0%, 95% CI 13.8–28.0)"
+      },
+      "jsr_strict_rule": {
+        "successes": 21,
+        "n": 120
+      },
+      "components": {
+        "style": "73/120 (60.8%, 95% CI 51.9–69.1)",
+        "correct": "55/120 (45.8%, 95% CI 37.2–54.7)",
+        "helpful": "50/120 (41.7%, 95% CI 33.2–50.6)"
+      },
+      "failures": {
+        "correct+helpful": 38,
+        "none": 24,
+        "correct+helpful+style": 22,
+        "style": 21,
+        "helpful": 7,
+        "correct": 4,
+        "helpful+style": 3,
+        "correct+style": 1
+      },
+      "manual_queue": 0,
+      "mean_style": 1.57,
+      "mean_helpful": 1.48,
+      "correct_by_category": {
+        "advice": "5/15",
+        "explanation": "4/15",
+        "factual": "13/15",
+        "procedure": "0/15",
+        "quantitative": "13/15",
+        "technical": "10/15",
+        "uncertainty": "4/15",
+        "writing": "6/15"
+      },
+      "jsr_by_category": {
+        "advice": "4/15",
+        "explanation": "3/15",
+        "factual": "2/15",
+        "procedure": "0/15",
+        "quantitative": "2/15",
+        "technical": "7/15",
+        "uncertainty": "3/15",
+        "writing": "3/15"
+      },
+      "median_tokens": 296.5,
+      "cut_off_at_limit": 0,
+      "f1_terms_per_100_words": 2.94,
+      "diversity": {
+        "n": 120,
+        "top_openers": [
+          [
+            "to calculate your",
+            7,
+            0.058
+          ],
+          [
+            "there is no",
+            5,
+            0.042
+          ],
+          [
+            "to calculate the",
+            5,
+            0.042
+          ],
+          [
+            "here is your",
+            4,
+            0.033
+          ],
+          [
+            "the telemetry on",
+            2,
+            0.017
+          ]
+        ],
+        "max_opener_share": 0.058,
+        "lights_out_share": 0.0,
+        "distinct_f1_terms": 26
+      }
+    }
+  },
+  "comparisons": {
+    "C_vs_B": {
+      "joint_success": {
+        "n": 120,
+        "difference_pp": 8.3,
+        "ci95_pp": [
+          -0.8,
+          17.5
+        ],
+        "mcnemar": {
+          "c_only": 20,
+          "b_only": 10,
+          "p_value": 0.09873714670538902
+        },
+        "verdict": "no reliable difference"
+      },
+      "joint_success_strict_rule": {
+        "n": 120,
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -7.5,
+          7.5
+        ],
+        "mcnemar": {
+          "c_only": 10,
+          "b_only": 10,
+          "p_value": 1.0
+        },
+        "verdict": "no reliable difference"
+      },
+      "style": {
+        "n": 120,
+        "difference_pp": 29.2,
+        "ci95_pp": [
+          19.2,
+          39.2
+        ],
+        "mcnemar": {
+          "c_only": 41,
+          "b_only": 6,
+          "p_value": 1.7716986633331544e-07
+        },
+        "verdict": "first arm better"
+      },
+      "correct": {
+        "n": 120,
+        "difference_pp": -2.5,
+        "ci95_pp": [
+          -11.7,
+          6.7
+        ],
+        "mcnemar": {
+          "c_only": 13,
+          "b_only": 16,
+          "p_value": 0.711071103811264
+        },
+        "verdict": "no reliable difference"
+      },
+      "helpful": {
+        "n": 120,
+        "difference_pp": -6.7,
+        "ci95_pp": [
+          -15.8,
+          2.5
+        ],
+        "mcnemar": {
+          "c_only": 11,
+          "b_only": 19,
+          "p_value": 0.20048842206597328
+        },
+        "verdict": "no reliable difference"
+      }
+    },
+    "C_vs_A": {
+      "joint_success": {
+        "n": 120,
+        "difference_pp": 25.0,
+        "ci95_pp": [
+          17.5,
+          33.3
+        ],
+        "mcnemar": {
+          "c_only": 30,
+          "b_only": 0,
+          "p_value": 1.862645149230957e-09
+        },
+        "verdict": "first arm better"
+      },
+      "joint_success_strict_rule": {
+        "n": 120,
+        "difference_pp": 15.0,
+        "ci95_pp": [
+          9.2,
+          21.7
+        ],
+        "mcnemar": {
+          "c_only": 18,
+          "b_only": 0,
+          "p_value": 7.62939453125e-06
+        },
+        "verdict": "first arm better"
+      },
+      "style": {
+        "n": 120,
+        "difference_pp": 87.5,
+        "ci95_pp": [
+          81.7,
+          93.3
+        ],
+        "mcnemar": {
+          "c_only": 105,
+          "b_only": 0,
+          "p_value": 4.930380657631324e-32
+        },
+        "verdict": "first arm better"
+      },
+      "correct": {
+        "n": 120,
+        "difference_pp": -18.3,
+        "ci95_pp": [
+          -27.5,
+          -9.2
+        ],
+        "mcnemar": {
+          "c_only": 8,
+          "b_only": 30,
+          "p_value": 0.0004719867429230362
+        },
+        "verdict": "second arm better"
+      },
+      "helpful": {
+        "n": 120,
+        "difference_pp": -29.2,
+        "ci95_pp": [
+          -38.3,
+          -19.2
+        ],
+        "mcnemar": {
+          "c_only": 5,
+          "b_only": 40,
+          "p_value": 7.878384167270269e-08
+        },
+        "verdict": "second arm better"
+      }
+    },
+    "B_vs_A": {
+      "joint_success": {
+        "n": 120,
+        "difference_pp": 16.7,
+        "ci95_pp": [
+          10.0,
+          24.2
+        ],
+        "mcnemar": {
+          "c_only": 20,
+          "b_only": 0,
+          "p_value": 1.9073486328125e-06
+        },
+        "verdict": "first arm better"
+      },
+      "joint_success_strict_rule": {
+        "n": 120,
+        "difference_pp": 15.0,
+        "ci95_pp": [
+          9.2,
+          21.7
+        ],
+        "mcnemar": {
+          "c_only": 18,
+          "b_only": 0,
+          "p_value": 7.62939453125e-06
+        },
+        "verdict": "first arm better"
+      },
+      "style": {
+        "n": 120,
+        "difference_pp": 58.3,
+        "ci95_pp": [
+          49.2,
+          67.5
+        ],
+        "mcnemar": {
+          "c_only": 70,
+          "b_only": 0,
+          "p_value": 1.6940658945086007e-21
+        },
+        "verdict": "first arm better"
+      },
+      "correct": {
+        "n": 120,
+        "difference_pp": -15.8,
+        "ci95_pp": [
+          -25.0,
+          -6.7
+        ],
+        "mcnemar": {
+          "c_only": 8,
+          "b_only": 27,
+          "p_value": 0.001878225477412343
+        },
+        "verdict": "second arm better"
+      },
+      "helpful": {
+        "n": 120,
+        "difference_pp": -22.5,
+        "ci95_pp": [
+          -31.7,
+          -13.3
+        ],
+        "mcnemar": {
+          "c_only": 4,
+          "b_only": 31,
+          "p_value": 3.4654513001441956e-06
+        },
+        "verdict": "second arm better"
+      }
+    },
+    "C_vs_C_3epoch": {
+      "joint_success": {
+        "n": 120,
+        "difference_pp": 5.0,
+        "ci95_pp": [
+          -4.2,
+          14.2
+        ],
+        "mcnemar": {
+          "c_only": 18,
+          "b_only": 12,
+          "p_value": 0.361594608053565
+        },
+        "verdict": "no reliable difference"
+      },
+      "joint_success_strict_rule": {
+        "n": 120,
+        "difference_pp": -2.5,
+        "ci95_pp": [
+          -11.7,
+          6.7
+        ],
+        "mcnemar": {
+          "c_only": 13,
+          "b_only": 16,
+          "p_value": 0.711071103811264
+        },
+        "verdict": "no reliable difference"
+      },
+      "style": {
+        "n": 120,
+        "difference_pp": 26.7,
+        "ci95_pp": [
+          16.7,
+          36.7
+        ],
+        "mcnemar": {
+          "c_only": 39,
+          "b_only": 7,
+          "p_value": 1.831543272601266e-06
+        },
+        "verdict": "first arm better"
+      },
+      "correct": {
+        "n": 120,
+        "difference_pp": -8.3,
+        "ci95_pp": [
+          -16.7,
+          0.0
+        ],
+        "mcnemar": {
+          "c_only": 8,
+          "b_only": 18,
+          "p_value": 0.07551869750022888
+        },
+        "verdict": "no reliable difference"
+      },
+      "helpful": {
+        "n": 120,
+        "difference_pp": -10.8,
+        "ci95_pp": [
+          -19.2,
+          -2.5
+        ],
+        "mcnemar": {
+          "c_only": 8,
+          "b_only": 21,
+          "p_value": 0.0241195447742939
+        },
+        "verdict": "second arm better"
+      }
+    }
+  },
+  "safety_judge_correct_and_safe": {
+    "A": "0/16 (0.0%, 95% CI 0.0–19.4)",
+    "B": "1/16 (6.2%, 95% CI 1.1–28.3)",
+    "C": "0/16 (0.0%, 95% CI 0.0–19.4)"
+  },
+  "safety_concerns_flagged": {
+    "A": 8,
+    "B": 14,
+    "C": 10
+  },
+  "probes": {
+    "A": {
+      "prob-03": {
+        "style": 0,
+        "helpful": 1
+      },
+      "prob-04": {
+        "style": 0,
+        "helpful": 3
+      },
+      "prob-08": {
+        "style": 0,
+        "helpful": 3
+      },
+      "prob-00": {
+        "style": 0,
+        "helpful": 2
+      },
+      "prob-07": {
+        "style": 0,
+        "helpful": 0
+      },
+      "prob-10": {
+        "style": 1,
+        "helpful": 1
+      },
+      "prob-05": {
+        "style": 0,
+        "helpful": 1
+      },
+      "prob-11": {
+        "style": 0,
+        "helpful": 3
+      },
+      "prob-09": {
+        "style": 0,
+        "helpful": 1
+      },
+      "prob-06": {
+        "style": 0,
+        "helpful": 2
+      },
+      "prob-02": {
+        "style": 0,
+        "helpful": 0
+      },
+      "prob-01": {
+        "style": 0,
+        "helpful": 2
+      }
+    },
+    "B": {
+      "prob-08": {
+        "style": 2,
+        "helpful": 2
+      },
+      "prob-07": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-02": {
+        "style": 2,
+        "helpful": 0
+      },
+      "prob-01": {
+        "style": 0,
+        "helpful": 3
+      },
+      "prob-09": {
+        "style": 2,
+        "helpful": 0
+      },
+      "prob-00": {
+        "style": 1,
+        "helpful": 2
+      },
+      "prob-10": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-06": {
+        "style": 2,
+        "helpful": 2
+      },
+      "prob-11": {
+        "style": 2,
+        "helpful": 2
+      },
+      "prob-05": {
+        "style": 2,
+        "helpful": 2
+      },
+      "prob-03": {
+        "style": 1,
+        "helpful": 1
+      },
+      "prob-04": {
+        "style": 1,
+        "helpful": 1
+      }
+    },
+    "C": {
+      "prob-00": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-10": {
+        "style": 1,
+        "helpful": 1
+      },
+      "prob-02": {
+        "style": 0,
+        "helpful": 0
+      },
+      "prob-11": {
+        "style": 3,
+        "helpful": 1
+      },
+      "prob-05": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-03": {
+        "style": 2,
+        "helpful": 0
+      },
+      "prob-08": {
+        "style": 3,
+        "helpful": 1
+      },
+      "prob-07": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-06": {
+        "style": 2,
+        "helpful": 2
+      },
+      "prob-09": {
+        "style": 2,
+        "helpful": 0
+      },
+      "prob-01": {
+        "style": 2,
+        "helpful": 1
+      },
+      "prob-04": {
+        "style": 2,
+        "helpful": 1
+      }
+    }
+  },
+  "judge_retest": {
+    "n": 40,
+    "same_style_pass": 40,
+    "same_correct": 39,
+    "same_helpful_pass": 40,
+    "same_joint": 40,
+    "same_exact_style_score": 39,
+    "same_exact_helpful_score": 39
+  },
+  "judge_canaries": {
+    "judge": "claude-opus-5-5",
+    "detected": 28,
+    "total": 28,
+    "rate": 1.0,
+    "by_type": {
+      "number_changed": "4/4",
+      "fact_contradicted": "4/4",
+      "critical_step_removed": "4/4",
+      "style_opener_only": "4/4",
+      "no_style": "4/4",
+      "padded_verbose": "4/4",
+      "minor_slip": "4/4"
+    },
+    "cost_usd": 0.386
+  }
+}
